@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\Exam;
+use App\Models\Exam;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Registration;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -34,7 +36,9 @@ class HomeController extends Controller
                         ->get();
 
             $availableExam = DB::table('t_exam')->get();
-            return view('home', compact('takenExam', 'availableExam'));
+            $totalRegister = DB::table('t_registration')->count();
+            $totalUserActive = DB::table('users')->where('is_active', 1)->count();
+            return view('home', compact('takenExam', 'availableExam', 'totalRegister', 'totalUserActive'));
         }
         
         return view('home');

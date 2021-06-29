@@ -307,9 +307,6 @@ $(document).on("submit", "#addQuestionFrm", $(this).serialize(), function(e) {
         }
 
     });
-
-
-
     return false;
 });
 

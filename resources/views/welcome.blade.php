@@ -88,7 +88,7 @@
                     <h1>Better Solutions For Your Business</h1>
                     <h2>We are team of talented designers making websites with Bootstrap</h2>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="{{url('/login')}}" class="btn-get-started scrollto">Get Started</a>
+                        <a href="{{url('/student-registration')}}" class="btn-get-started scrollto">Pendaftaran</a>
                         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
                     </div>
                 </div>

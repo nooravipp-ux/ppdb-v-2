@@ -28,7 +28,7 @@
                     <div class="widget-heading">Total Register</div>
                 </div>
                 <div class="widget-content-right">
-                    <div class="widget-numbers text-white"><span>200</span></div>
+                    <div class="widget-numbers text-white"><span>{{$totalRegister}}</span></div>
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@
                     <div class="widget-heading">Active User</div>
                 </div>
                 <div class="widget-content-right">
-                    <div class="widget-numbers text-white"><span>100</span></div>
+                    <div class="widget-numbers text-white"><span>{{$totalUserActive}}</span></div>
                 </div>
             </div>
         </div>

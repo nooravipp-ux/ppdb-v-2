@@ -35,4 +35,9 @@ Route::get('/start-exam/submit-exam/result/{id}', [App\Http\Controllers\Question
 
 // Registration route
 Route::get('/register', [App\Http\Controllers\RegistrationController::class, 'index'])->name('registration');
+Route::get('/register/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'getDetailRegister'])->name('detail.id');
+Route::get('/register/confirm/{id}', [App\Http\Controllers\RegistrationController::class, 'confirmRegister'])->name('confirm.id');
+Route::get('/student-registration', [App\Http\Controllers\RegistrationController::class, 'registrationStudent']);
+Route::get('/student-registration/save', [App\Http\Controllers\RegistrationController::class, 'save']);
+
 

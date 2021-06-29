@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'PPDB - Dashboard')
+@section('title', 'PPDB - Master List Register')
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -24,7 +24,7 @@
 <div class="row">
     <div class="col-md-12">
         <div class="main-card mb-3 card">
-            <div class="card-header">Active Users
+            <div class="card-header">Master List Of Register
                 <div class="btn-actions-pane-right">
                 </div>
             </div>
@@ -40,13 +40,24 @@
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($register as $r)
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="text-center">{{$r->nama_lengkap}}</td>
+                            <td>{{$r->alamat}}</td>
+                            <td class="text-center">{{$r->nama_sekolah_asal}}</td>
+                            @if($r->status == 0)
+                            <td class="text-center bg-danger">Applying</td>
+                            @elseif($r->status == 1)
+                            <td class="text-center bg-warning">Confirmed</td>
+                            @else
+                            <td class="text-center bg-success">Registered</td>
+                            @endif
+                            <td class="text-center">
+                                <a href="{{route('detail.id', ['id' => $r->id])}}" class="btn btn-primary btn-sm">View</a> | 
+                                <a href="{{route('confirm.id', ['id' => $r->id])}}" class="btn btn-primary btn-sm">Confirm</a>
+                            </td>
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
