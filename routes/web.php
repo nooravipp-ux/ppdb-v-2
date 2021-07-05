@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Mail\RegistrationMailNotif;
+use Illuminate\Support\Facades\Mail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,5 +48,6 @@ Route::get('/student-registration/save', [App\Http\Controllers\RegistrationContr
 
 //biodata
 Route::get('/home/biodata', [App\Http\Controllers\BiodataController::class, 'biodata'])->name('biodata');
+
 
 

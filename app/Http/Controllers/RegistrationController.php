@@ -8,6 +8,8 @@ use App\Models\Student;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
+use App\Mail\RegistrationMailNotif;
+use Illuminate\Support\Facades\Mail;
 
 class RegistrationController extends Controller
 {
@@ -91,13 +93,15 @@ class RegistrationController extends Controller
     public function confirmRegister($id){
         Registration::where('student_id', $id)->update(['status' => 1]);
         $data = Student::find($id);
-        User::create([
+        $user_data = User::create([
             'student_id' => $id,
             'name' => $data->nama_lengkap,
             'email' => $data->email,
             'role_name' => 'siswa',
             'password' => Hash::make('Abcd1234'),
         ]);
+
+        Mail::to($user_data->email)->send(new RegistrationMailNotif($user_data));
 
         return $this->index();
     }
