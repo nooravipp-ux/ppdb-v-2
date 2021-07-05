@@ -53,8 +53,7 @@
                             <td class="text-center bg-success">Registered</td>
                             @endif
                             <td class="text-center">
-                                <a href="{{route('detail.id', ['id' => $r->id])}}" class="btn btn-primary btn-sm">View</a> | 
-                                <a href="{{route('confirm.id', ['id' => $r->id])}}" class="btn btn-primary btn-sm">Confirm</a>
+                                <a href="{{route('detail.id', ['id' => $r->id])}}" class="btn btn-primary btn-sm">View</a> 
                             </td>
                         </tr>
                         @endforeach

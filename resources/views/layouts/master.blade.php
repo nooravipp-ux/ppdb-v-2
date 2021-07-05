@@ -12,6 +12,8 @@
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
     <link href="{{asset('admin-panel/main.css')}}" rel="stylesheet">
+
+    @yield('css')
 </head>
 
 <body>
@@ -192,7 +194,7 @@
                                 </a>
                                 <ul>
                                     <li>
-                                        <a href="components-tabs.html">
+                                        <a href="{{route('biodata')}}">
                                             <i class="metismenu-icon">
                                             </i>Edit Biodata
                                         </a>
@@ -200,59 +202,10 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{route('list-exam')}}">
                                     <i class="metismenu-icon pe-7s-pen"></i>
                                     Examination
-                                    <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="components-tabs.html">
-                                            <i class="metismenu-icon pe-7s-pen"></i>
-                                            Available Exam
-                                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                        </a>
-                                        <ul>
-                                            @if(isset($availableExam))
-                                            @foreach($availableExam as $ae)
-                                            <li>
-                                                <a href="{{route('exam.id', ['id' => $ae->id])}}">
-                                                    <i class="metismenu-icon pe-7s-pen"></i>
-                                                    {{$ae->title}}
-                                                </a>
-                                            </li>
-                                            @endforeach
-                                            @endif
-
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="components-tabs.html">
-                                            <i class="metismenu-icon pe-7s-pen"></i>
-                                            Taken Exam
-                                            <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                                        </a>
-                                        <ul>
-                                        @if(isset($takenExam))
-                                            @foreach($takenExam as $te)
-                                            <li>
-                                                <a href="{{route('result.id', ['id' => $te->id])}}">
-                                                    <i class="metismenu-icon pe-7s-pen"></i>
-                                                    <b>{{$te->title}}</b>
-                                                </a>
-                                            </li>
-                                            @endforeach
-                                        @endif
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="metismenu-icon pe-7s-volume"></i>
-                                    Annaouncement
-                                </a>
-
                             </li>
                             @endif
                         </ul>
@@ -269,11 +222,11 @@
     </div>
     @include('admin.modal')
     <script type="text/javascript" src="{{asset('admin-panel/assets/scripts/main.js')}}"></script>
-                                                        <script type="text/javascript" src="{{asset('admin-panel/js/jquery.js')}}"></script>
-                                                        <script type="text/javascript" src="{{asset('admin-panel/js/myjs.js')}}"></script>
-                                                        <script type="text/javascript" src="{{asset('admin-panel/js/ajax.js')}}"></script>
-                                                        <script type="text/javascript" src="{{asset('admin-panel/js/sweetalert.js')}}"></script>
-                                                        <script type="text/javascript" src="{{asset('admin-panel/js/facebox.js')}}"></script>
+    <script type="text/javascript" src="{{asset('admin-panel/js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{asset('admin-panel/js/myjs.js')}}"></script>
+    <script type="text/javascript" src="{{asset('admin-panel/js/ajax.js')}}"></script>
+    <script type="text/javascript" src="{{asset('admin-panel/js/sweetalert.js')}}"></script>
+    <script type="text/javascript" src="{{asset('admin-panel/js/facebox.js')}}"></script>
 
 
 </body>

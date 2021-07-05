@@ -9,6 +9,10 @@ use App\Models\Course;
 
 class ManageExamController extends Controller
 {
+    public function listExam(){
+        $listExam = Exam::all();
+        return view('student.exam-list', compact('listExam'));
+    }
     public function startExam($id){
         $exam = Exam::find($id);
         $exam_id = $id;

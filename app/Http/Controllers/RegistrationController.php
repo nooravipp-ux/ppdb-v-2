@@ -84,8 +84,8 @@ class RegistrationController extends Controller
         $register = DB::table('t_registration')
                     ->join('t_student', 't_student.id','=', 't_registration.student_id')
                     ->where('t_student.id', $id)
-                    ->get();
-        return view('admin.register-detail', compact('register'));
+                    ->first();
+        return view('admin.detail-register', compact('register'));
     }
 
     public function confirmRegister($id){
@@ -99,6 +99,10 @@ class RegistrationController extends Controller
             'password' => Hash::make('Abcd1234'),
         ]);
 
-        return response()->json(['status' => 'status was confirmed']);
+        return $this->index();
+    }
+
+    public function detailRegister(){
+
     }
 }
