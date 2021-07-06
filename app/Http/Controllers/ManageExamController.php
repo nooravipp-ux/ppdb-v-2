@@ -78,4 +78,14 @@ class ManageExamController extends Controller
         return view('admin.exam-report', compact('reportExam'));
     }
 
+    public function examHasTaken($exam_id, $student_id){
+        $hasTaken = DB::table('t_exam_attemp')->where('exam_id', $exam_id)->where('student_id', $student_id)->count();
+
+        if($hasTaken > 0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
