@@ -155,7 +155,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="elements-dropdowns.html">
+                                        <a href="{{route('exam-report')}}">
                                             <i class="metismenu-icon">
                                             </i>Report
                                         </a>
@@ -165,7 +165,7 @@
                             <li>
                                 <a href="">
                                     <i class="metismenu-icon pe-7s-ribbon"></i>
-                                    Registeration
+                                    Registration
                                     <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                 </a>
                                 <ul>

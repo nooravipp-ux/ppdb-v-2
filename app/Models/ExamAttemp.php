@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class ExamAttemp extends Model
 {
     use HasFactory;
-    protected $fillable = ['id','exam_id','student_id','status'];
+    protected $fillable = ['id','exam_id','student_id','status','score','date'];
 
     protected $table = 't_exam_attemp';
     public $timestamps = false;

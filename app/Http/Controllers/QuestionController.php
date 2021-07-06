@@ -31,11 +31,12 @@ class QuestionController extends Controller
     public function submitAnswer(Request $req){
         $exam_answer = $req->answer;
         $examId = $req->exam_id;
+        $student_id = auth::user()->student_id;
        
         foreach($exam_answer as $key => $value){
             $correct = $value['correct'];
             ExamAnswer::updateOrCreate([
-                'student_id' => auth()->user()->id,
+                'student_id' => auth::user()->student_id,
                 'exam_id' => $examId,
                 'question_id' => $key,
                 'exam_answer' => $correct,
@@ -43,10 +44,21 @@ class QuestionController extends Controller
             ]);
 
         }
+        $over = DB::table('t_exam')
+                ->join('t_exam_question', 't_exam.id','=','t_exam_question.exam_id')
+                ->where('t_exam_question.exam_id', $examId)
+                ->count();
+        $score = DB::select("SELECT COUNT(*) AS score FROM t_exam_question 
+                JOIN t_exam_answer ON 
+                t_exam_question.id = t_exam_answer.question_id
+                AND t_exam_question.answer = t_exam_answer.exam_answer
+                WHERE t_exam_answer.exam_id = $examId AND t_exam_answer.student_id = $student_id");
+        $score = (int)$score[0]->score / $over * 100;        
 
         ExamAttemp::updateOrCreate(
             ['exam_id' => $examId,
             'student_id' => auth::user()->student_id,
+            'score' => $score,
             'status' => 1]
         );
 

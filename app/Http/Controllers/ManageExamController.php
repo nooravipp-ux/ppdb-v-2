@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Exam;
 use App\Models\Question;
 use App\Models\Course;
+use Illuminate\Support\Facades\DB;
 
 class ManageExamController extends Controller
 {
@@ -66,6 +67,15 @@ class ManageExamController extends Controller
 
         return response()->json(['status' => 'success', 'data' => $course]);
 
+    }
+
+    public function examReport(){
+        $reportExam = DB::table('t_exam_attemp')
+                    ->select('t_student.nama_lengkap','t_exam.title','t_exam_attemp.score','t_exam_attemp.date')
+                    ->join('t_student', 't_student.id', '=', 't_exam_attemp.student_id')
+                    ->join('t_exam', 't_exam.id', '=', 't_exam_attemp.exam_id')
+                    ->get();
+        return view('admin.exam-report', compact('reportExam'));
     }
 
 }
