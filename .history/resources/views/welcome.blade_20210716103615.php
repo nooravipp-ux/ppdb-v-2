@@ -10,12 +10,12 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset('landing-page/assets/img/smkwd.png')}}" rel="icon">
+    <link href="{{asset('landing-page/assets/img/favicon.png')}}" rel="icon">
     <link href="{{asset('landing-page/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    
+
     <!-- Vendor CSS Files -->
     <link href="{{asset('landing-page/assets/vendor/aos/aos.css')}}" rel="stylesheet">
     <link href="{{asset('landing-page/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -24,25 +24,25 @@
     <link href="{{asset('landing-page/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
     <link href="{{asset('landing-page/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
     <link href="{{asset('landing-page/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
-    
+
     <!-- Template Main CSS File -->
     <link href="{{asset('landing-page/assets/css/style.css')}}" rel="stylesheet">
-    
+
     <!-- =======================================================
-        * Template Name: Arsha - v4.3.0
-        * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-        * Author: BootstrapMade.com
-        * License: https://bootstrapmade.com/license/
-        ======================================================== -->
-    </head>
-    
-    <body>
-        
-        <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top ">
-            <div class="container d-flex align-items-center">
-                
-                <h1 class="logo me-auto"> <img src="{{asset('landing-page/assets/img/clients/smkwd.png')}}" class="img-fluid" alt=""><a href="index.html"> PPDB SMK WD</a></h1>
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+        <div class="container d-flex align-items-center">
+
+            <h1 class="logo me-auto"><a href="index.html">PPDB SMK WD</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo me-auto"><img src="{{asset('landing-page/assets/img/smkwd2.png')}} alt="" class="img-fluid"></a>-->
 
@@ -107,18 +107,31 @@
         <section id="cliens" class="cliens section-bg">
             <div class="container">
 
-                <div class="row justify-content-center" data-aos="zoom-in">
+                <div class="row" data-aos="zoom-in">
 
-                    <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{asset('landing-page/assets/img/clients/honda.png')}}" class="img-fluid" alt="">
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <p>TKJ</p>
+                        {{-- <img src="{{asset('landing-page/assets/img/clients/client-1.png')}}" class="img-fluid" alt=""> --}}
                     </div>
-                    
-                    <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{asset('landing-page/assets/img/clients/telkom.png')}}" class="img-fluid" alt="">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="{{asset('landing-page/assets/img/clients/client-2.png')}}" class="img-fluid" alt="">
                     </div>
-                    
-                    <div class="col-lg-2 col-md-3 col-6 d-flex align-items-center justify-content-center">
-                        <img src="{{asset('landing-page/assets/img/clients/toyota.png')}}" class="img-fluid" alt="">
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="{{asset('landing-page/assets/img/clients/client-3.png')}}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="{{asset('landing-page/assets/img/clients/client-4.png')}}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="{{asset('landing-page/assets/img/clients/client-5.png')}}" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                        <img src="{{asset('landing-page/assets/img/clients/client-6.png')}}" class="img-fluid" alt="">
                     </div>
 
                 </div>
@@ -137,17 +150,16 @@
                 <div class="row content">
                     <div class="col-lg-6">
                         <p>
-                            SMK WIDYA DIRGANTARA menyediakan PPDB secara online diharapkan proses PPDB dapat berjalan cepat dan bisa dilakukan dimanapun dan kapanpun selama sesi PPDB Online dibuka. Proses pendaftaran calon siswa baru tidak menggunakan formulir konvensional hanya dengan mengakses website PPDB Online SMK WIDYA DIRGANTARA.
-                            Pengisian form PPDB Online mohon diperhatikan data yang dibutuhkan yang nantinya akan dipakai dalam proses PPDB. Setelah proses pengisian form PPDB secara online berhasil dilakukan, calon siswa akan mendapat bukti daftar dengan nomor pendaftaran dan harus disimpan yang akan digunakan untuk proses selanjutnya.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
                         </p>
-                        
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
                         <ul>
                             <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
                             <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
                             <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
                         </ul>
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>
                             Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                             velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
@@ -169,16 +181,16 @@
                     <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
 
                         <div class="content">
-                            <h3><strong>ALUR PPDB ONLINE</strong></h3>
+                            <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
                             <p>
-                                Berikut merupakan alur dari ppdb (penerimaan peserta didik baru) online SMK Widya Dirgantara
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
                             </p>
                         </div>
 
                         <div class="accordion-list">
                             <ul>
                                 <li>
-                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Calon Peserta Didik melakukan pendaftaran secara online pada website ppdb.smkwd-online.sch.id<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
                                         <p>
                                             Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -187,7 +199,7 @@
                                 </li>
 
                                 <li>
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Login menggunakan username dan password yang telah di berikan pada pesan di email yang telah didaftarkan<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
                                         <p>
                                             Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -196,7 +208,7 @@
                                 </li>
 
                                 <li>
-                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span>  <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                                     <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                                         <p>
                                             Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
@@ -209,8 +221,8 @@
 
                     </div>
 
-                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" data-aos="zoom-out" data-aos-delay="100">
-                    <img src="{{asset('landing-page/assets/img/ppdb_online.png')}}" class="img-fluid animated" alt="">
+                    <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="{{asset('landing-page/assets/img/skills.png')}}" class="img-fluid animated" alt="">
                     </div>
                 </div>
 
@@ -282,7 +294,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-wifi"></i></div>
+                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
                             <h4><a href="">TKJ</a></h4>
                             <p>Teknik Komputer dan Jaringan</p>
                         </div>
@@ -290,7 +302,7 @@
 
                     <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-wrench"></i></div>
+                            <div class="icon"><i class="bx bx-file"></i></div>
                             <h4><a href="">TBSM</a></h4>
                             <p>Teknik Bisnis dan Sepeda Motor</p>
                         </div>
@@ -298,7 +310,7 @@
 
                     <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-car"></i></div>
+                            <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4><a href="">TKRO</a></h4>
                             <p>Teknik Kendaraan Ringan dan Otomotif</p>
                         </div>
@@ -306,7 +318,7 @@
 
                     <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-shekel"></i></div>
+                            <div class="icon"><i class="bx bx-layer"></i></div>
                             <h4><a href="">TP</a></h4>
                             <p>Teknik Pemesinan</p>
                         </div>
@@ -694,20 +706,20 @@
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label for="name">Nama Lengkap</label>
+                                    <label for="name">Your Name</label>
                                     <input type="text" name="name" class="form-control" id="name" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="name">Email Aktif</label>
+                                    <label for="name">Your Email</label>
                                     <input type="email" class="form-control" name="email" id="email" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="name">Subjek</label>
+                                <label for="name">Subject</label>
                                 <input type="text" class="form-control" name="subject" id="subject" required>
                             </div>
                             <div class="form-group">
-                                <label for="name">Pesan</label>
+                                <label for="name">Message</label>
                                 <textarea class="form-control" name="message" rows="10" required></textarea>
                             </div>
                             <div class="my-3">
@@ -715,7 +727,7 @@
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Kirim Pesan</button></div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
                         </form>
                     </div>
 
@@ -799,7 +811,7 @@
 
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                &copy; Copyright <strong><span>SMKWD</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
