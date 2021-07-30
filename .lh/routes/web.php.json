@@ -1,0 +1,34 @@
+{
+    "sourceFile": "routes/web.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1627486866163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1627486922155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n |\r\n */\r\n \r\n Route::get('/', function () {\r\n-\r\n+    $password = Hash::make(\"admin123\");\r\n     return view('welcome');\r\n });\r\n \r\n Auth::routes();\r\n"
+                },
+                {
+                    "date": 1627486933578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n */\r\n \r\n Route::get('/', function () {\r\n     $password = Hash::make(\"admin123\");\r\n-    return view('welcome');\r\n+    return view('welcome', compact('password'));\r\n });\r\n \r\n Auth::routes();\r\n Route::auth();\r\n"
+                },
+                {
+                    "date": 1627487069705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n */\r\n \r\n Route::get('/', function () {\r\n     $password = Hash::make(\"admin123\");\r\n-    return view('welcome', compact('password'));\r\n+    return $password;\r\n });\r\n \r\n Auth::routes();\r\n Route::auth();\r\n"
+                },
+                {
+                    "date": 1627487414284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,8 @@\n use Illuminate\\Support\\Facades\\Route;\r\n use Illuminate\\Support\\Facades\\Auth;\r\n use App\\Mail\\RegistrationMailNotif;\r\n use Illuminate\\Support\\Facades\\Mail;\r\n-use Illuminate\\Support\\Facades\\Hash;\r\n /*\r\n |--------------------------------------------------------------------------\r\n | Web Routes\r\n |--------------------------------------------------------------------------\r\n@@ -16,10 +15,9 @@\n |\r\n */\r\n \r\n Route::get('/', function () {\r\n-    $password = Hash::make(\"admin123\");\r\n-    return $password;\r\n+    return view('welcome');\r\n });\r\n \r\n Auth::routes();\r\n Route::auth();\r\n"
+                }
+            ],
+            "date": 1627486866163,
+            "name": "Commit-0",
+            "content": "<?php\r\n\r\nuse Illuminate\\Support\\Facades\\Route;\r\nuse Illuminate\\Support\\Facades\\Auth;\r\nuse App\\Mail\\RegistrationMailNotif;\r\nuse Illuminate\\Support\\Facades\\Mail;\r\nuse Illuminate\\Support\\Facades\\Hash;\r\n/*\r\n|--------------------------------------------------------------------------\r\n| Web Routes\r\n|--------------------------------------------------------------------------\r\n|\r\n| Here is where you can register web routes for your application. These\r\n| routes are loaded by the RouteServiceProvider within a group which\r\n| contains the \"web\" middleware group. Now create something great!\r\n|\r\n*/\r\n\r\nRoute::get('/', function () {\r\n\r\n    return view('welcome');\r\n});\r\n\r\nAuth::routes();\r\nRoute::auth();\r\nRoute::get('/home', [App\\Http\\Controllers\\HomeController::class, 'index'])->name('home');\r\n\r\n//Exam Route\r\nRoute::get('/manage-exam', [App\\Http\\Controllers\\ManageExamController::class, 'manageExam'])->name('manage-exam');\r\nRoute::post('/manage-exam/add-course', [App\\Http\\Controllers\\ManageExamController::class, 'addCourse']);\r\nRoute::post('/add-or-update-exam', [App\\Http\\Controllers\\ManageExamController::class, 'addOrUpdateExam'])->name('add-or-update-exam');\r\nRoute::get('/manage-exam/manage-exam-question/{id}', [App\\Http\\Controllers\\ManageExamController::class, 'manageExamQuestion'])->name('manage-exam-question.id');\r\nRoute::get('/manage-exam/exam-report', [App\\Http\\Controllers\\ManageExamController::class, 'examReport'])->name('exam-report');\r\n\r\nRoute::post('/manage-exam/manage-exam-question/add-questions', [App\\Http\\Controllers\\QuestionController::class, 'addOrUpdateQuestions'])->name('add-questions');\r\nRoute::get('/start-exam/{id}', [App\\Http\\Controllers\\ManageExamController::class, 'startExam'])->name('exam.id');\r\nRoute::get('/examination-list', [App\\Http\\Controllers\\ManageExamController::class, 'listExam'])->name('list-exam');\r\n\r\nRoute::post('/start-exam/submit-exam', [App\\Http\\Controllers\\QuestionController::class, 'submitAnswer']);\r\nRoute::get('/start-exam/submit-exam/result/{id}', [App\\Http\\Controllers\\QuestionController::class, 'result'])->name('result.id');\r\n\r\n\r\n\r\n\r\n// Registration route\r\nRoute::get('/register', [App\\Http\\Controllers\\RegistrationController::class, 'index'])->name('registration');\r\nRoute::get('/register/detail/{id}', [App\\Http\\Controllers\\RegistrationController::class, 'getDetailRegister'])->name('detail.id');\r\nRoute::get('/register/confirm/{id}', [App\\Http\\Controllers\\RegistrationController::class, 'confirmRegister'])->name('confirm.id');\r\nRoute::get('/student-registration', [App\\Http\\Controllers\\RegistrationController::class, 'registrationStudent']);\r\nRoute::get('/student-registration/save', [App\\Http\\Controllers\\RegistrationController::class, 'save']);\r\n\r\n\r\n//biodata\r\nRoute::get('/home/biodata', [App\\Http\\Controllers\\BiodataController::class, 'biodata'])->name('biodata');\r\n\r\n\r\n\r\n"
+        }
+    ]
+}
