@@ -52,4 +52,9 @@ Route::get('/student-registration/save', [App\Http\Controllers\RegistrationContr
 Route::get('/home/biodata', [App\Http\Controllers\BiodataController::class, 'biodata'])->name('biodata');
 
 
+//pengumuman
+
+Route::get('/announcement', [App\Http\Controllers\AnnouncementController::class, 'index'])->name('announcement');
+Route::post('/announcement/add-announcement', [App\Http\Controllers\AnnouncementController::class, 'add'])->name('add-announcement');
+
 

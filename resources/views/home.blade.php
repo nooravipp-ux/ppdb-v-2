@@ -119,7 +119,7 @@
                 </i>
             </div>
             <div>
-                <div class="page-title-subheading">Monitoring Page For Registration
+                <div class="page-title-subheading">Pengumuman
                 </div>
             </div>
         </div>
@@ -132,16 +132,15 @@
 </div>
 <div class="row">
     <div class="col-md-12 col-xl-12">
-        <div class="card mb-3 widget-content bg-midnight-bloom">
-            <div class="widget-content-wrapper text-white">
-                <div class="widget-content-left">
-                    <div class="widget-heading">Pengunguman</div>
-                </div>
-                <div class="widget-content-right">
-                    <div class="widget-numbers text-white"><span></span></div>
-                </div>
+        @foreach($announcements as $announce)
+        <div class="card mb-2">
+            <h5 class="card-header">{{$announce->title}}</h5>
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"><?php echo html_entity_decode($announce->description); ?></p>
             </div>
         </div>
+        @endforeach
     </div>
 </div>
 @endif

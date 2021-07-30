@@ -31,7 +31,9 @@ class HomeController extends Controller
             $users = DB::table('users')->get();
             $totalRegister = DB::table('t_registration')->count();
             $totalUserActive = DB::table('users')->where('is_active', 1)->count();
-            return view('home', compact('users', 'totalRegister', 'totalUserActive'));
+
+            $announcements  = DB::table('t_announcement')->where('status', 1)->orderBy('created_at', 'DESC')->get();
+            return view('home', compact('users', 'totalRegister', 'totalUserActive', 'announcements'));
         }
         
         return view('home');

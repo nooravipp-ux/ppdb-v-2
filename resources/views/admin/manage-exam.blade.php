@@ -32,7 +32,9 @@
                             <th class="text-left ">Ujian</th>
                             <th class="text-left ">Deskripsi</th>
                             <th class="text-left ">Waktu Ujian</th>
-                            <th class="text-left ">Batas Pembuatan Soal</th>
+                            <th class="text-left ">Tanggal Ujian</th>
+                            <th class="text-left ">Jam Mulai</th>
+                            <th class="text-left ">Jam Berakhir</th>    
                             <th class="text-center" width="20%">Aksi</th>
                         </tr>
 
@@ -44,7 +46,9 @@
                             <td>{{$exm->course_id}}</td>
                             <td>{{$exm->description}}</td>
                             <td>{{$exm->time_limit}}</td>
-                            <td>{{$exm->question_limit_display}}</td>
+                            <td>{{$exm->date}}</td>
+                            <td>{{$exm->start_time}}</td>
+                            <td>{{$exm->end_time}}</td>
                             <td class="text-center">
                                 <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-primary btn-sm">Manage Questions</a>
                                 <button type="button" id="deleteExam" data-id='<?php echo $exm->title; ?>' class="btn btn-danger btn-sm">Delete</button>

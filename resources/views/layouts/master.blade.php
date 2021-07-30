@@ -12,6 +12,7 @@
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
     <link href="{{asset('admin-panel/main.css')}}" rel="stylesheet">
+    <link href="{{asset('admin-panel/editor.css')}}" type="text/css" rel="stylesheet"/>
 
     @yield('css')
 </head>
@@ -178,7 +179,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{url('/announcement')}}">
                                     <i class="metismenu-icon pe-7s-volume"></i>
                                     Setting Annaouncement
                                 </a>
@@ -227,6 +228,11 @@
     <script type="text/javascript" src="{{asset('admin-panel/js/ajax.js')}}"></script>
     <script type="text/javascript" src="{{asset('admin-panel/js/sweetalert.js')}}"></script>
     <script type="text/javascript" src="{{asset('admin-panel/js/facebox.js')}}"></script>
+    <script type="text/javascript" src="{{asset('admin-panel/js/ckeditor/ckeditor.js')}}"></script>
+
+    @yield('custom_js')
+
+    
 
 
 </body>

@@ -32,7 +32,10 @@ class ManageExamController extends Controller
         $exam = Exam::updateOrCreate(
             ['course_id' => $req->course_id, 
             'title' => $req->title,
-            'time_limit' => $req->timeLimit, 
+            'time_limit' => $req->timeLimit,
+            'date' => $req->date,
+            'start_time' => $req->startTime,
+            'end_time' => $req->endTime, 
             'question_limit_display' => $req->examQuestDipLimit,
             'description' => $req->description]
         );

@@ -97,6 +97,18 @@
                                 <option value="90">90 Menit</option>
                             </select>
                         </div>
+                        <div class="form-group">
+                            <label>Tanggal Ujian</label>
+                            <input type="date" class="form-control" name="date" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Jam Mulai</label>
+                            <input type="time" class="form-control" name="startTime" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Jam Berakhir</label>
+                            <input type="time" class="form-control" name="endTime" required="">
+                        </div>
 
                         <div class="form-group">
                             <label>Batas Pertanyaan</label>
@@ -241,6 +253,49 @@
                                 <input type="" name="correctAnswer" id="correct_answer" class="form-control" placeholder="Input correct answer" autocomplete="off">
                             </div>
                         </fieldset>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Add Now</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal For Add Announcement -->
+<div class="modal fade" id="modalForAddAnnouncement" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Pengumuman <br></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form class="refreshFrm" method="post" id="addAnnouncementFrm">
+
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" name="title" id="title" class="form-control" placeholder="" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea type="text" name="description" id="description" class="form-control" autocomplete="off"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select name="status" id="status" class="form-control">
+                                <option value="">-</option>
+                                <option value="1">Aktif</option>
+                                <option value="0">Non Aktif</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">

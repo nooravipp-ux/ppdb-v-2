@@ -382,6 +382,38 @@ $(document).on("submit", "#updateExamineeFrm", function() {
     return false;
 });
 
+// add announcement
+$(document).on("submit", "#addAnnouncementFrm", $(this).serialize(), function(e) {
+    e.preventDefault();
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var formData = $(this).serialize()
+    $.ajax({
+        type: "post",
+        url: "/announcement/add-announcement",
+        dataType: "json",
+        data: formData,
+        success: function(data) {
+            if (data.status == "success") {
+                Swal.fire(
+                    'Success',
+                    data.data.title + '<br>Successfully Added',
+                    'success'
+                )
+                $('#addQuestionFrm')[0].reset();
+                refreshDiv();
+            }
+        },
+        error: function(xhr, ErrorStatus, error) {
+            console.log(status.error);
+        }
+
+    });
+    return false;
+});
 
 function refreshDiv() {
     $('#tableList').load(document.URL + ' #tableList');
