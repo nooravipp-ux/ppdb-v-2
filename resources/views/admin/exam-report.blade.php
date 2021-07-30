@@ -32,6 +32,7 @@
                 <table class="align-middle mb-0 table table-borderless table-striped table-hover">
                     <thead>
                         <tr>
+                            <th>#</th>
                             <th>Nama Lengkap</th>
                             <th>Nama Ujian</th>
                             <th class="text-center">Persentase</th>
@@ -40,8 +41,10 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <?php $i = 1; ?>;
                         @foreach($reportExam as $re)
                         <tr>
+                            <td>{{$i++}}</td>
                             <td>{{$re->nama_lengkap}}</td>
                             <td>{{$re->title}}</td>
                             <td class="text-center">{{$re->score}} %</td>

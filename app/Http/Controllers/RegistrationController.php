@@ -79,7 +79,7 @@ class RegistrationController extends Controller
             'student_id' => $student->id
         ]);
 
-        return redirect('/');
+        return view('registsuccess');
     }
 
     public function getDetailRegister($id){
