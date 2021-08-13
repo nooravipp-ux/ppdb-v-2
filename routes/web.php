@@ -45,7 +45,9 @@ Route::get('/register', [App\Http\Controllers\RegistrationController::class, 'in
 Route::get('/register/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'getDetailRegister'])->name('detail.id');
 Route::get('/register/confirm/{id}', [App\Http\Controllers\RegistrationController::class, 'confirmRegister'])->name('confirm.id');
 Route::get('/student-registration', [App\Http\Controllers\RegistrationController::class, 'registrationStudent']);
-Route::get('/student-registration/save', [App\Http\Controllers\RegistrationController::class, 'save']);
+Route::post('/student-registration/save', [App\Http\Controllers\RegistrationController::class, 'save']);
+
+Route::get('/register/download/{filename}', [App\Http\Controllers\RegistrationController::class, 'downloadFile'])->name('download');
 
 
 //biodata

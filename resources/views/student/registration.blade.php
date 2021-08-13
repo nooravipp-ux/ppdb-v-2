@@ -1,410 +1,349 @@
 @extends('layouts.app')
-
 @section('content')
-<div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-    <div class="container card">
-        <form id="form-register" role="form" method="get" action="/student-registration/save">
-                <div class="alert alert-primary sf-viw text-center">
-                    <strong>Biodata Siswa</strong>
+<div class="container">
+    <div class="row border rounded">
+        <div class="container emp-profile">
+            <form id="form-register" method="post" action="{{url('/student-registration/save')}}" enctype="multipart/form-data">
+                @csrf
+                <div class="form-group row">
+                    <h4>Data Diri</h4>
                 </div>
-
-            <div class="row d-flex flex-column align-content-center">
-                    <div class="form-group">
-                        <label>Nama Lengkap:</label>
-                        <input type="text" name="nama_lengkap" class="form-control" placeholder="Masukan Nama Lengkap">
+                <hr>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama_lengkap">
                     </div>
-
-                    <div class="form-group">
-                        <label>Nomor Induk Keluarga (NIK):</label>
-                        <input type="text" name="nik_siswa" class="form-control" placeholder="Masukan Nomor NIK">
-                    </div>
-            
-                    <div class="form-group">
-                        <label>Tempat Lahir:</label>
-                        <input type="text" name="tempat_lahir" class="form-control" placeholder="Masukan Tempat Lahir">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Tanggal Lahir:</label>
-                        <input type="date" name="tanggal_lahir" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label>No. Registrasi Akta Lahir:</label>
-                        <input type="text" name="no_registrasi_akta_lahir" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Anak Ke:</label>
-                        <input type="number" name="anak_ke" class="form-control">
-                    </div>
-                
-                    <div class="form-group">
-                        <label>Jumlah Saudara Kandung:</label>
-                        <input type="number" name="jumlah_saudara_kandung" class="form-control">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Agama:</label>
-                        <select class="form-control" name="agama">
-                            <option>Pilih</option>
-                            <option value="Islam">Islam</option>
-                            <option value="Kristen">Kristen</option>
-                            <option value="Katolik">Katolik</option>
-                            <option value="Hindu">Hindu</option>
-                            <option value="Budha">Budha</option>
-                            <option value="Lainnya">Lainnya</option>
-                        </select>
-                    </div>
-                
-                    <div class="form-group">
-                        <label>Email:</label>
-                        <input type="email" name="email" class="form-control" placeholder="Masukan Email">
-                    </div>
-                
-                    <div class="form-group">
-                        <label>No Telp:</label>
-                        <input type="text" name="no_telp" class="form-control" placeholder="Masukan No Telp">
-                    </div>
-
-                <div class="alert alert-primary">
-                    <strong>Data Alamat Asal</strong>
                 </div>
-        
-                    <div class="form-group">
-                        <label>Alamat:</label>
-                        <textarea class="form-control" name="alamat" rows="2"></textarea>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">NIK</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nik_siswa">
                     </div>
-        
-                    <div class="form-group">
-                        <label>Kode Pos:</label>
-                        <input type="text" name="kode_pos" class="form-control" placeholder="Kode Pos">
+                </div>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Alamat</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" name="alamat"></textarea>
                     </div>
-
-                    <div class="form-group">
-                        <label>Provinsi:</label>
-                        <input type="text" name="provinsi" class="form-control" placeholder="Provinsi">
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="kode_pos">
                     </div>
-
-                    <div class="form-group">
-                        <label>Kabupaten:</label>
-                        <input type="text" name="kabupaten" class="form-control" placeholder="kabupaten">
-
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="tempat_lahir">
                     </div>
-            
-                    <div class="form-group">
-                        <label>Kecamatan:</label>
-                        <input type="text" name="kecamatan" class="form-control" placeholder="kecamatan">
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-3">
+                        <input type="date" class="form-control" name="tanggal_lahir">
                     </div>
-            </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Registrasi Akta Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_registrasi_akta_lahir">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" value="L" checked>
+                            <label class="form-check-label">
+                                Laki - Laki
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="jenis_kelamin" value="P">
+                            <label class="form-check-label">
+                                Perempuan
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Anak Ke</label>
+                    <div class="col-sm-1">
+                        <input type="text" class="form-control" name="anak_ke">
+                    </div>
+                    <label class="col-sm-3 col-form-label">Jumlah Saudara Kandung</label>
+                    <div class="col-sm-1">
+                        <input type="text" class="form-control" name="jumlah_saudara_kandung">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Agama</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="agama">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Telp</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_telp">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <h4 class="mt-2">Data Pendidikan</h4>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Nama Asal Sekolah</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama_sekolah_asal">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Alamat</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" name="alamat_sekolah"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Induk Siswa Nasioanl (NISN)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_induk_siswa_nasional">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Peserta Ujian Nasional (SMP / MTs)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_peserta_ujian_nasional">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Upload Ijazah</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control-file" name="file_ijazah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Seri Ijazah</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_seri_ijazah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tahun Ijazah</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="tahun_ijazah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Upload SKHUN</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control-file" name="file_skhun">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Seri SKHUN</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_seri_skhun">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <h4 class="mt-2">Biodata Orang Tua / Wali</h4>
+                </div>
+                <hr>
+                <!-- Biodata Ibu -->
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Nama Ayah Kandung</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama_ayah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Induk Keluaraga (NIK)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nik_ayah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="tempat_lahir_ayah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-3">
+                        <input type="date" class="form-control" name="tanggal_lahir_ayah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Pendidikan Terakhir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="pendidikan_ayah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="pekerjaan_ayah">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Penghasilan Perbulan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="penghasilan_ayah">
+                    </div>
+                </div>
+                <!-- Biodata Ibu -->
+                <hr>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Nama Ibu Kandung</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama_ibu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Induk Keluaraga (NIK)</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nik_ibu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="tempat_lahir_ibu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-3">
+                        <input type="date" class="form-control" name="tanggal_lahir_ibu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Pendidikan Terakhir</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="pendidikan_ibu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="pekerjaan_ibu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Penghasilan Perbulan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="penghasilan_ibu">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Alamat Orang Tua</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" name="alamat_ortu"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="kode_pos_ortu">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">No. Telp Orang Tua</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="no_telp_ortu">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Nama Wali</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="nama_wali">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="pekerjaan_wali">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Penghasilan Perbulan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="penghasilan_wali">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Alamat Wali</label>
+                    <div class="col-sm-10">
+                        <textarea type="text" class="form-control" name="alamat_wali"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
+                    <div class="col-sm-2">
+                        <input type="text" class="form-control" name="kode_pos_wali">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Hub Dengan Peserta Didik</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="hub_dengan_peserta_didik">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <h4 class="mt-2">Lain - Lain</h4>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Jarak Rumah Ke Sekolah</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Transportasi</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Berat Badan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="berat_badan">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tinggi Badan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="tinggi_badan">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Riwayat Penyakit</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="riwayat_penyakit">
+                    </div>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <button type="submit" class="btn btn-primary">Simpan</button>
+                    </div>
+                </div>
+                
+            </form>
         </div>
-            <div class="alert alert-primary">
-                <strong>Data Pendidikan</strong>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Nama Sekolah / Madrasah:</label>
-                        <input type="text" name="nama_sekolah_asal" class="form-control" placeholder="Masukan Nama Sekolah">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Alamat</label>
-                        <textarea class="form-control" name="alamat_sekolah" rows="2"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>No Induk Siswa Nasional (NISN)</label>
-                        <input type="number" name="no_induk_siswa_nasional" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>No Peserta Ujian Nasional (SMP/MTs)</label>
-                        <input type="number" name="no_peserta_ujian_nasional" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Tahun Ijazah</label>
-                        <input type="number" name="tahun_ijazah" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>No. Seri Ijazah</label>
-                        <input type="text" name="no_seri_ijazah" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>No. Seri SKHUN</label>
-                        <input type="text" name="no_seri_skhun" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="alert alert-primary">
-                <strong>Biodata Orang Tua / Wali</strong>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Nama Ayah Kandung</label>
-                        <input type="text" name="nama_ayah" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Nomor Induk Keluarga (NIK)</label>
-                        <input type="number" name="nik_ayah" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Tempat Lahir:</label>
-                        <input type="text" name="tempat_lahir_ayah" class="form-control" placeholder="Masukan Tempat Lahir">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Tanggal Lahir:</label>
-                        <input type="date" name="tanggal_lahir_ayah" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Pendidikan Terakhir</label>
-                        <input type="text" name="pendidikan_ayah" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Pekerjaan</label>
-                        <input type="text" name="pekerjaan_ayah" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Penghasilan Perbulan</label>
-                        <input type="text" name="penghasilan_ayah" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Nama Ibu Kandung</label>
-                        <input type="text" name="nama_ibu" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Nomor Induk Keluarga (NIK)</label>
-                        <input type="number" name="nik_ibu" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Tempat Lahir:</label>
-                        <input type="text" name="tempat_lahir_ibu" class="form-control" placeholder="Masukan Tempat Lahir">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Tanggal Lahir:</label>
-                        <input type="date" name="tanggal_lahir_ibu" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Pendidikan Terakhir</label>
-                        <input type="text" name="pendidikan_ibu" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Pekerjaan</label>
-                        <input type="text" name="pekerjaan_ibu" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Penghasilan Perbulan</label>
-                        <input type="text" name="penghasilan_ibu" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Alamat Orang Tua</label>
-                        <textarea class="form-control" name="alamat_ortu" rows="2"></textarea>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="form-group">
-                        <label>Kode Pos:</label>
-                        <input type="text" name="kode_pos_ortu" class="form-control" placeholder="Kode Pos">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Provinsi:</label>
-                        <input type="text" name="provinsi_ortu" class="form-control" placeholder="provinsi">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Kabupaten:</label>
-                        <input type="text" name="kabupaten_ortu" class="form-control" placeholder="kabupaten">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Kecamatan:</label>
-                        <input type="text" name="kecamatan_ortu" class="form-control" placeholder="kecamatan">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>No Telp:</label>
-                        <input type="text" name="no_telp_ortu" class="form-control" placeholder="Masukan No Telp">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Nama Wali</label>
-                        <input type="text" name="nama_wali" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Pekerjaan</label>
-                        <input type="text" name="pekerjaan_wali" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Penghasilan Perbulan</label>
-                        <input type="text" name="penghasilan_wali" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Alamat </label>
-                        <textarea class="form-control" name="alamat_wali" rows="2"></textarea>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="form-group">
-                        <label>Kode Pos:</label>
-                        <input type="text" name="kode_pos_wali" class="form-control" placeholder="Kode Pos">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Provinsi:</label>
-                        <input type="text" name="provinsi_wali" class="form-control" placeholder="provinsi">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Kabupaten:</label>
-                        <input type="text" name="kabupaten_wali" class="form-control" placeholder="kabupaten">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Kecamatan:</label>
-                        <input type="text" name="kecamatan_wali" class="form-control" placeholder="kecamatan">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Hubungan Dengan Peserta Didik</label>
-                        <input type="text" name="hub_dengan_peserta_didik" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="alert alert-primary">
-                <strong>Lain - Lain</strong>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Jarak Rumah Kesekolah</label>
-                        <input type="text" name="jarak_rumah_ke_sekolah" class="form-control" placeholder="Jarak Rumah ke Sekolah">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Transportasi</label>
-                        <input type="text" name="transportasi_ke_sekolah" class="form-control" placeholder="Transportasi ke Sekolah">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Berat Badan</label>
-                        <input type="text" name="berat_badan" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Tinggi Badan</label>
-                        <input type="text" name="tinggi_badan" class="form-control">
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="form-group">
-                        <label>Riwayat Penyakit</label>
-                        <input type="text" name="riwayat_penyakit" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex flex-column align-content-center">
-                <div class="col-sm-4">
-                    <button type="submit" id="Submit" class="btn btn-primary">Daftar</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
-                </div>
-            </div>
-        </form>
     </div>
 </div>
-
 @endsection

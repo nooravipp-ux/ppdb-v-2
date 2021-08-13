@@ -9,7 +9,7 @@ class Registration extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id','student_id','date', 'status'];
+    protected $fillable = ['id','no_pendaftaran','student_id','date', 'status'];
 
     protected $table = 't_registration';
     public $timestamps = false;

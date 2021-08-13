@@ -120,174 +120,348 @@
 @section('content')
 <div class="row">
     <div class="container emp-profile">
-        <form method="post">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="profile-img">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt="" />
-                        <div class="file btn btn-lg btn-primary">
-                            Change Photo
-                            <input type="file" name="file" />
-                        </div>
-                    </div>
-                    @if($register->status == 0)
-                    <div class="text-center"><a href="{{route('confirm.id', ['id' => $register->id])}}" class="btn btn-success btn-sm">Confirm</a></div>
-                    @endif
-                
+        <form>
+            <div class="form-group row">
+                <h4>Data Calon Siswa</h4>
+                @if($register->status == 0)
+                <div class="text-center"><a href="{{route('confirm.id', ['id' => $register->id])}}" class="btn btn-success btn-sm">Confirm</a></div>
+                @endif
+            </div>
+            <hr>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">No Pendaftaran</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="">
                 </div>
-                <div class="col-md-8">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="data-pendidikan-tab" data-toggle="tab" href="#data-pendidikan" role="tab" aria-controls="data-pendidikan" aria-selected="true">Data Pendidikan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="data-orang-tua-tab" data-toggle="tab" href="#data-orang-tua" role="tab" aria-controls="data-orang-tua" aria-selected="false">Data Orang tua</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="lain-lain-tab" data-toggle="tab" href="#lain-lain" role="tab" aria-controls="profile" aria-selected="false">Lain - Lain</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="kelengkapan-berkas-tab" data-toggle="tab" href="#kelengkapan-berkas" role="tab" aria-controls="profile" aria-selected="false">Kelengkapan Berkas</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content profile-tab" id="myTabContent">
-                        <div class="tab-pane fade show active" id="data-pendidikan" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Nama Sekolah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control" >
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Alamat</label>
-                                <div class="col-sm-10">
-                                    <textarea type="text" class="form-control"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">NISN</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">NPUN</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Tahun Ijazah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">No. Seri Ijazah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">No. Seri SKHUN</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="data-orang-tua" role="tabpanel" aria-labelledby="data-orang-tua">
-                            <div class="form-group row">
-                                <label for="staticEmail" class="col-sm-2 col-form-label">Nama Ayah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir Ayah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir Ayah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan Ayah</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-                                <div class="col-sm-10">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="lain-lain" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Experience</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Expert</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Hourly Rate</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>10$/hr</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Total Projects</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>230</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>English Level</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>Expert</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label>Availability</label>
-                                </div>
-                                <div class="col-md-6">
-                                    <p>6 months</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label>Your Bio</label><br />
-                                    <p>Your detail description</p>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nama_lengkap}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">NIK</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nik_siswa}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" value="{{$register->alamat}}">{{$register->alamat}}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" value="{{$register->kode_pos}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->tempat_lahir}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" value="{{$register->tanggal_lahir}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Registrasi Akta Lahir</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_registrasi_akta_lahir}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Jenis Kelamin</label>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="L" <?php if ($register->jenis_kelamin == 'L') echo 'checked'; ?>>
+                        <label class="form-check-label">
+                            Laki - Laki
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="P" <?php if ($register->jenis_kelamin == 'P') echo 'checked'; ?>>
+                        <label class="form-check-label">
+                            Perempuan
+                        </label>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="profile-work">
-
-                    </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Anak Ke</label>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="{{$register->anak_ke}}">
+                </div>
+                <label class="col-sm-3 col-form-label">Jumlah Saudara Kandung</label>
+                <div class="col-sm-1">
+                    <input type="text" class="form-control" value="{{$register->jumlah_saudara_kandung}}">
                 </div>
             </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Agama</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->agama}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->email}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Telp</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_telp}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <h4 class="mt-2">Data Pendidikan</h4>
+            </div>
+            <hr>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nama Asal Sekolah</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nama_sekolah_asal}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Alamat</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" value="{{$register->alamat_sekolah}}">{{$register->alamat_sekolah}}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Induk Siswa Nasioanl (NISN)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_induk_siswa_nasional}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Peserta Ujian Nasional (SMP / MTs)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_peserta_ujian_nasional}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">File Ijazah</label>
+                <div class="col-sm-10">
+                    <a href="{{route('download', ['filename' => $register->file_ijazah])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_ijazah}}</a>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Seri Ijazah</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_seri_ijazah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tahun Ijazah</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->tahun_ijazah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">File SKHUN</label>
+                <div class="col-sm-10">
+                    <a href="{{route('download', ['filename' => $register->file_skhun])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_skhun}}</a>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Seri SKHUN</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_seri_skhun}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <h4 class="mt-2">Biodata Orang Tua / Wali</h4>
+            </div>
+            <hr>
+            <!-- Biodata Ibu -->
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nama Ayah Kandung</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nama_ayah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Induk Keluaraga (NIK)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nik_ayah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->tempat_lahir_ayah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" value="{{$register->tanggal_lahir_ayah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Pendidikan Terakhir</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->pendidikan_ayah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->pekerjaan_ayah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Penghasilan Perbulan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->penghasilan_ayah}}">
+                </div>
+            </div>
+            <!-- Biodata Ibu -->
+            <hr>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nama Ibu Kandung</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nama_ibu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Induk Keluaraga (NIK)</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nik_ibu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tempat Lahir</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->tempat_lahir_ibu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                <div class="col-sm-3">
+                    <input type="date" class="form-control" value="{{$register->tanggal_lahir_ibu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Pendidikan Terakhir</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->pendidikan_ibu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->pekerjaan_ibu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Penghasilan Perbulan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->penghasilan_ibu}}">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Alamat Orang Tua</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" value="{{$register->alamat_ortu}}">{{$register->alamat_ortu}}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" value="{{$register->kode_pos_ortu}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">No. Telp Orang Tua</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->no_telp_ortu}}">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Nama Wali</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->nama_wali}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Pekerjaan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->pekerjaan_wali}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Penghasilan Perbulan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->penghasilan_wali}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Alamat Wali</label>
+                <div class="col-sm-10">
+                    <textarea type="text" class="form-control" value="{{$register->alamat_wali}}">{{$register->alamat_wali}}</textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" value="{{$register->kode_pos_wali}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Hub Dengan Peserta Didik</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->hub_dengan_peserta_didik}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <h4 class="mt-2">Lain - Lain</h4>
+            </div>
+            <hr>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Jarak Rumah Ke Sekolah</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->jarak_rumah_ke_sekolah}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Transportasi</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->transportasi}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Berat Badan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->berat_badan}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Tinggi Badan</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->tinggi_badan}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Riwayat Penyakit</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" value="{{$register->riwayat_penyakit}}">
+                </div>
+            </div>
+            
         </form>
     </div>
 </div>
-
-
 @endsection

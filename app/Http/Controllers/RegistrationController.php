@@ -27,6 +27,18 @@ class RegistrationController extends Controller
 
     public function save(Request $req){
         // dd($req->all());
+        // $validatedData = $req->validate([
+        //     'file_ijazah' => 'required|csv,txt,xlx,xls,pdf|max:2048',
+        //     'file_skhun' => 'required|csv,txt,xlx,xls,pdf|max:2048'
+        // ]);
+
+        $file_ijazah = $req->file('file_ijazah')->getClientOriginalName();
+        $file_skhun = $req->file('file_skhun')->getClientOriginalName();
+            
+        $req->file('file_ijazah')->move('uploads', $req->file('file_ijazah')->getClientOriginalName());
+        $req->file('file_skhun')->move('uploads', $req->file('file_skhun')->getClientOriginalName());
+        
+
         $student = Student::create(
             ['nama_lengkap' => $req->nama_lengkap,
             'nik_siswa' => $req->nik_siswa,
@@ -35,6 +47,7 @@ class RegistrationController extends Controller
             'no_registrasi_akta_lahir' => $req->no_registrasi_akta_lahir,
             'anak_ke' => $req->anak_ke,
             'jumlah_saudara_kandung' => $req->jumlah_saudara_kandung,
+            'jenis_kelamin' => $req->jenis_kelamin,
             'agama' => $req->agama,
             'email' => $req->email,
             'no_telp' => $req->no_telp,
@@ -70,9 +83,14 @@ class RegistrationController extends Controller
             'alamat_wali' => $req->alamat_wali,
             'kode_pos_wali' => $req->kode_pos_wali,
             'hub_dengan_peserta_didik' => $req->hub_dengan_peserta_didik,
+            'jarak_rumah_ke_sekolah' => $req->jarak_rumah_ke_sekolah,
+            'transportasi' => $req->transportasi,
             'berat_badan' => $req->berat_badan,
             'tinggi_badan' => $req->tinggi_badan,
-            'riwayat_penyakit' => $req->riwayat_penyakit]
+            'riwayat_penyakit' => $req->riwayat_penyakit,
+            'file_ijazah' => $file_ijazah,
+            'file_skhun' => $file_skhun
+            ]
         );
 
         Registration::create([
@@ -106,7 +124,8 @@ class RegistrationController extends Controller
         return $this->index();
     }
 
-    public function detailRegister(){
-
+    public function downloadFile($filename){
+        $filePath = public_path('uploads/'.$filename);
+    	return response()->download($filePath);
     }
 }
