@@ -7,6 +7,9 @@ use App\Models\Announcement;
 
 class AnnouncementController extends Controller
 {
+    public function __construct(){
+      $this->middleware('auth');
+    }
     public function index(){
         $announceData = Announcement::all();
         return view('admin.announcement', compact('announceData'));

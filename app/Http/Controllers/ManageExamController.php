@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\DB;
 
 class ManageExamController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     public function listExam(){
         $listExam = Exam::all();
         return view('student.exam-list', compact('listExam'));

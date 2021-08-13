@@ -123,7 +123,7 @@
         <form action="" method="POST" enctype="multipart/form-data">
             <div class="form-group row">
                 <h4>Data Diri</h4>
-                
+
             </div>
             <hr>
             <div class="form-group row">
@@ -172,13 +172,13 @@
                 <label for="inputPassword" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                 <div class="col-sm-10">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="L" <?php if($biodata->jenis_kelamin == 'L') echo 'checked';?>>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="L" <?php if ($biodata->jenis_kelamin == 'L') echo 'checked'; ?>>
                         <label class="form-check-label">
                             Laki - Laki
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="P" <?php if($biodata->jenis_kelamin == 'P') echo 'checked';?>>
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="P" <?php if ($biodata->jenis_kelamin == 'P') echo 'checked'; ?>>
                         <label class="form-check-label">
                             Perempuan
                         </label>
@@ -243,9 +243,15 @@
             </div>
             <div class="form-group row">
                 <label for="inputPassword" class="col-sm-2 col-form-label">Upload Ijazah</label>
+                @if($biodata->file_ijazah)
                 <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    <a href="{{route('download', ['filename' => $biodata->file_ijazah])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$biodata->file_ijazah}}</a>
                 </div>
+                @else
+                <div class="col-sm-10">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file_ijazah">
+                </div>
+                @endif
             </div>
             <div class="form-group row">
                 <label for="inputPassword" class="col-sm-2 col-form-label">No. Seri Ijazah</label>
@@ -261,9 +267,15 @@
             </div>
             <div class="form-group row">
                 <label for="inputPassword" class="col-sm-2 col-form-label">Upload SKHUN</label>
+                @if($biodata->file_skhun)
                 <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <a href="{{route('download', ['filename' => $biodata->file_skhun])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$biodata->file_skhun}}</a>
                 </div>
+                @else
+                <div class="col-sm-10">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="file_skhun">
+                </div>
+                @endif
             </div>
             <div class="form-group row">
                 <label for="inputPassword" class="col-sm-2 col-form-label">No. Seri SKHUN</label>
@@ -275,7 +287,7 @@
                 <h4 class="mt-2">Biodata Orang Tua / Wali</h4>
             </div>
             <hr>
-             <!-- Biodata Ibu -->
+            <!-- Biodata Ibu -->
             <div class="form-group row">
                 <label for="inputPassword" class="col-sm-2 col-form-label">Nama Ayah Kandung</label>
                 <div class="col-sm-10">
@@ -452,10 +464,10 @@
                     <input type="text" class="form-control" value="{{$biodata->riwayat_penyakit}}">
                 </div>
             </div>
-            <div class="form-group row">
-                <h4 class="mt-2">Kelengkapan Dokumen</h4>
+            <div class="form-group row text-center">
+                <button type="submit" class="btn btn-primary">Update Data</button>
             </div>
-            <hr>
+
         </form>
     </div>
 </div>
