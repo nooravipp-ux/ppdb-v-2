@@ -6,9 +6,8 @@
             <form id="form-register" method="post" action="{{url('/student-registration/save')}}" enctype="multipart/form-data">
                 @csrf
 
-                <!--Body-->
                     <div class="card border-primary rounded-0">
-                        
+                        <!--Body-->
                         <div class="card-header p-0">
                             <div class="bg-info text-white py-2">
                                     <h4 class=" pl-5">Data Diri</h4>
@@ -392,83 +391,61 @@
                                     <input type="text" class="form-control" name="penghasilan_wali">
                                 </div>
                             </div>
-                            <div class="form-group row input-group">
+                            <div class="form-group row">
                                 <label for="staticEmail" class="col-sm-2 col-form-label">Alamat Wali</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
+                                <div class="col-sm-10">
                                     <textarea type="text" class="form-control" name="alamat_wali"></textarea>
                                 </div>
                             </div>
-                            <div class="form-group row input-group">
+                            <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
+                                <div class="col-sm-2">
                                     <input type="text" class="form-control" name="kode_pos_wali">
                                 </div>
                             </div>
-                            <div class="form-group row input-group">
+                            <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Hub Dengan Peserta Didik</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
+                                <div class="col-sm-10">
                                     <input type="text" class="form-control" name="hub_dengan_peserta_didik">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <br>
-                    <hr>
 
-                    <div class="card border-primary rounded-0">
-                        
-                        <div class="card-header p-0">
-                            <div class="bg-info text-white py-2">
-                                    <h4 class=" pl-5">Lain - lain</h4>
-                            </div>
-                        </div>
-                        <hr>
-
-                        <div class="card-body p-3">
-                            <div class="form-group row input-group">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Jarak Rumah Ke Sekolah</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="form-group row input-group">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Transportasi</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="form-group row input-group">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Berat Badan</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
-                                    <input type="text" class="form-control" name="berat_badan">
-                                </div>
-                            </div>
-                            <div class="form-group row input-group">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Tinggi Badan</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
-                                    <input type="text" class="form-control" name="tinggi_badan">
-                                </div>
-                            </div>
-                            <div class="form-group row input-group">
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Riwayat Penyakit</label>
-                                <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
-                                    <input type="text" class="form-control" name="riwayat_penyakit">
-                                </div>
-                            </div>
-                        </div>
+                <div class="form-group row">
+                    <h4 class="mt-2">Lain - Lain</h4>
+                </div>
+                <hr>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Jarak Rumah Ke Sekolah</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
                     </div>
-
-
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Transportasi</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Berat Badan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="berat_badan">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Tinggi Badan</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="tinggi_badan">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Riwayat Penyakit</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="riwayat_penyakit">
+                    </div>
+                </div>
                 <hr>
                 <div class="form-group row">
                     <div class="col-sm-12">

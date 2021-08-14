@@ -6,9 +6,8 @@
             <form id="form-register" method="post" action="{{url('/student-registration/save')}}" enctype="multipart/form-data">
                 @csrf
 
-                <!--Body-->
                     <div class="card border-primary rounded-0">
-                        
+                        <!--Body-->
                         <div class="card-header p-0">
                             <div class="bg-info text-white py-2">
                                     <h4 class=" pl-5">Data Diri</h4>

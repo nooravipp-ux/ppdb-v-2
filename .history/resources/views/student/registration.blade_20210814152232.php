@@ -8,7 +8,6 @@
 
                 <!--Body-->
                     <div class="card border-primary rounded-0">
-                        
                         <div class="card-header p-0">
                             <div class="bg-info text-white py-2">
                                     <h4 class=" pl-5">Data Diri</h4>

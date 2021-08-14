@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-    <div class="row border rounded">
+    <div class="row rounded">
         <div class="container emp-profile">
             <form id="form-register" method="post" action="{{url('/student-registration/save')}}" enctype="multipart/form-data">
                 @csrf
 
                 <!--Body-->
-                    <div class="card border-primary rounded-0">
+                    <div class="card border rounded-0">
                         
                         <div class="card-header p-0">
                             <div class="bg-info text-white py-2">

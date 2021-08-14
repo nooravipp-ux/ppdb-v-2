@@ -1,0 +1,22 @@
+{
+    "sourceFile": "artisan",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1628893657514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1628893675789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n | loading of any of our classes manually. It's great to relax.\r\n |\r\n */\r\n \r\n-// require __DIR__.'/vendor/autoload.php';\r\n+require __DIR__.'/vendor/autoload.php';\r\n \r\n $app = require_once __DIR__.'/bootstrap/app.php';\r\n \r\n /*\r\n"
+                }
+            ],
+            "date": 1628893657514,
+            "name": "Commit-0",
+            "content": "#!/usr/bin/env php\r\n<?php\r\n\r\ndefine('LARAVEL_START', microtime(true));\r\n\r\n/*\r\n|--------------------------------------------------------------------------\r\n| Register The Auto Loader\r\n|--------------------------------------------------------------------------\r\n|\r\n| Composer provides a convenient, automatically generated class loader\r\n| for our application. We just need to utilize it! We'll require it\r\n| into the script here so that we do not have to worry about the\r\n| loading of any of our classes manually. It's great to relax.\r\n|\r\n*/\r\n\r\n// require __DIR__.'/vendor/autoload.php';\r\n\r\n$app = require_once __DIR__.'/bootstrap/app.php';\r\n\r\n/*\r\n|--------------------------------------------------------------------------\r\n| Run The Artisan Application\r\n|--------------------------------------------------------------------------\r\n|\r\n| When we run the console application, the current CLI command will be\r\n| executed in this console and the response sent back to a terminal\r\n| or another output device for the developers. Here goes nothing!\r\n|\r\n*/\r\n\r\n$kernel = $app->make(Illuminate\\Contracts\\Console\\Kernel::class);\r\n\r\n$status = $kernel->handle(\r\n    $input = new Symfony\\Component\\Console\\Input\\ArgvInput,\r\n    new Symfony\\Component\\Console\\Output\\ConsoleOutput\r\n);\r\n\r\n/*\r\n|--------------------------------------------------------------------------\r\n| Shutdown The Application\r\n|--------------------------------------------------------------------------\r\n|\r\n| Once Artisan has finished running, we will fire off the shutdown events\r\n| so that any final work may be done by the application before we shut\r\n| down the process. This is the last thing to happen to the request.\r\n|\r\n*/\r\n\r\n$kernel->terminate($input, $status);\r\n\r\nexit($status);\r\n"
+        }
+    ]
+}

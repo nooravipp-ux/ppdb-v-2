@@ -7,7 +7,7 @@
                 @csrf
 
                 <!--Body-->
-                    <div class="card border-primary rounded-0">
+                    <div class="card">
                         
                         <div class="card-header p-0">
                             <div class="bg-info text-white py-2">
