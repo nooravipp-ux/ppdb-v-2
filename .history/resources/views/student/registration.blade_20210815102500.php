@@ -460,21 +460,21 @@
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Berat Badan</label>
                                 <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-pie-chart text-info"> </i></div>
+                                    <div class="input-group-text"> <i class="fa fa-line-chart text-info"> </i></div>
                                     <input type="text" class="form-control" name="berat_badan">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Tinggi Badan</label>
                                 <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-line-chart text-info"> </i></div>
+                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
                                     <input type="text" class="form-control" name="tinggi_badan">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-2 col-form-label">Riwayat Penyakit</label>
                                 <div class="col-sm-10 input-group-prepend">
-                                    <div class="input-group-text"> <i class="fa fa-eraser text-info"> </i></div>
+                                    <div class="input-group-text"> <i class="fa fa-envelope text-info"> </i></div>
                                     <input type="text" class="form-control" name="riwayat_penyakit">
                                 </div>
                             </div>
