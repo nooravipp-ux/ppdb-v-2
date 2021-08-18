@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1629006920669,
@@ -76,6 +76,26 @@
                 {
                     "date": 1629007189053,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n                                 </a>\r\n                                 <ul>\r\n                                     <li>\r\n                                         <a href=\"\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddCourse\">\r\n-                                            <i class=\"\"></i>\r\n+                                            <i class=\"metismenu-icon\"></i>\r\n                                             Kelola Nama Ujian\r\n                                         </a>\r\n                                     </li>\r\n                                     <li>\r\n"
+                },
+                {
+                    "date": 1629272122035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,8 +12,12 @@\n     <meta name=\"description\" content=\"This is an example dashboard created using build-in elements and components.\">\r\n     <meta name=\"msapplication-tap-highlight\" content=\"no\">\r\n     <link href=\"{{asset('admin-panel/main.css')}}\" rel=\"stylesheet\">\r\n     <link href=\"{{asset('admin-panel/editor.css')}}\" type=\"text/css\" rel=\"stylesheet\"/>\r\n+    \r\n+\t<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\r\n+\t<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"></script>\r\n+\t<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\r\n \r\n     @yield('css')\r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1629273813886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,9 +169,9 @@\n                             </li>\r\n                             <li>\r\n                                 <a href=\"\">\r\n                                     <i class=\"metismenu-icon pe-7s-ribbon\"></i>\r\n-                                    Registration\r\n+                                    Data Pendaftar\r\n                                     <i class=\"metismenu-state-icon pe-7s-angle-down caret-left\"></i>\r\n                                 </a>\r\n                                 <ul>\r\n                                     <li>\r\n"
+                },
+                {
+                    "date": 1629273829839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -169,16 +169,16 @@\n                             </li>\r\n                             <li>\r\n                                 <a href=\"\">\r\n                                     <i class=\"metismenu-icon pe-7s-ribbon\"></i>\r\n-                                    Data Pendaftar\r\n+                                    Pendaftaran\r\n                                     <i class=\"metismenu-state-icon pe-7s-angle-down caret-left\"></i>\r\n                                 </a>\r\n                                 <ul>\r\n                                     <li>\r\n                                         <a href=\"{{url('/register')}}\">\r\n                                             <i class=\"metismenu-icon\">\r\n-                                            </i>Register Data\r\n+                                            </i>Data Pendaftar\r\n                                         </a>\r\n                                     </li>\r\n                                 </ul>\r\n                             </li>\r\n"
+                },
+                {
+                    "date": 1629273858272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,9 +184,9 @@\n                             </li>\r\n                             <li>\r\n                                 <a href=\"{{url('/announcement')}}\">\r\n                                     <i class=\"metismenu-icon pe-7s-volume\"></i>\r\n-                                    Setting Annaouncement\r\n+                                    Pengaturan Pengumuman\r\n                                 </a>\r\n \r\n                             </li>\r\n                             @else\r\n"
+                },
+                {
+                    "date": 1629274237902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,11 @@\n     <meta name=\"msapplication-tap-highlight\" content=\"no\">\r\n     <link href=\"{{asset('admin-panel/main.css')}}\" rel=\"stylesheet\">\r\n     <link href=\"{{asset('admin-panel/editor.css')}}\" type=\"text/css\" rel=\"stylesheet\"/>\r\n     \r\n-\t<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\r\n+\t{{-- <link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\r\n \t<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"></script>\r\n-\t<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\r\n+\t<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script> --}}\r\n \r\n     @yield('css')\r\n </head>\r\n \r\n"
                 }
             ],
             "date": 1629006920669,

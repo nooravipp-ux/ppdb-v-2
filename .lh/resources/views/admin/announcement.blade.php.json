@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1629007765168,
@@ -16,6 +16,62 @@
                 {
                     "date": 1629007838476,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n-                <table class=\"align-middle mb-0 table table-bordered table-hover\" id=\"tableList\">\r\n+                <table class=\"align-middle mb-0 table table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Title</th>\r\n"
+                },
+                {
+                    "date": 1629273881796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n                 <table class=\"align-middle mb-0 table table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n-                            <th class=\"text-left pl-4\">Title</th>\r\n+                            <th class=\"text-left pl-4\">Perihal</th>\r\n                             <th class=\"text-left \">Description</th>\r\n                             <th class=\"text-center \">Status</th>\r\n                             <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n                         </tr>\r\n"
+                },
+                {
+                    "date": 1629273911933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Perihal</th>\r\n-                            <th class=\"text-left \">Description</th>\r\n+                            <th class=\"text-left \">Deskripsi</th>\r\n                             <th class=\"text-center \">Status</th>\r\n                             <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n                         </tr>\r\n \r\n@@ -40,9 +40,9 @@\n                         <tr>\r\n                             <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n                             <td><?php echo html_entity_decode($data->description); ?></td>\r\n                             <td class=\"text-center\">{{$data->status}}</td>\r\n-                            <td class=\"text-center\">Edit</td>\r\n+                            <td class=\"text-center btn btn-warning\">Edit</td>\r\n                         </tr>\r\n                         @endforeach\r\n                     </tbody>\r\n                 </table>\r\n"
+                },
+                {
+                    "date": 1629273921656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n                         <tr>\r\n                             <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n                             <td><?php echo html_entity_decode($data->description); ?></td>\r\n                             <td class=\"text-center\">{{$data->status}}</td>\r\n-                            <td class=\"text-center btn btn-warning\">Edit</td>\r\n+                            <td class=\" btn btn-warning\">Edit</td>\r\n                         </tr>\r\n                         @endforeach\r\n                     </tbody>\r\n                 </table>\r\n"
+                },
+                {
+                    "date": 1629273934283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n-            <div class=\"table-responsive\">\r\n+            <div class=\"table\">\r\n                 <table class=\"align-middle mb-0 table table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n"
+                },
+                {
+                    "date": 1629273942394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"table\">\r\n-                <table class=\"align-middle mb-0 table table-bordered table-striped\" id=\"tableList\">\r\n+                <table class=\"align-middle table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629273949426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"table\">\r\n-                <table class=\"align-middle table-bordered table-striped\" id=\"tableList\">\r\n+                <table class=\" table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629274044447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,12 @@\n                         <tr>\r\n                             <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n                             <td><?php echo html_entity_decode($data->description); ?></td>\r\n                             <td class=\"text-center\">{{$data->status}}</td>\r\n-                            <td class=\" btn btn-warning\">Edit</td>\r\n+                            <td class=\"\">\r\n+                                <a href=\"\"> Edit</a>\r\n+                               \r\n+                            </td>\r\n                         </tr>\r\n                         @endforeach\r\n                     </tbody>\r\n                 </table>\r\n"
+                },
+                {
+                    "date": 1629274063039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,10 +40,11 @@\n                         <tr>\r\n                             <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n                             <td><?php echo html_entity_decode($data->description); ?></td>\r\n                             <td class=\"text-center\">{{$data->status}}</td>\r\n-                            <td class=\"\">\r\n-                                <a href=\"\"> Edit</a>\r\n+                            <td class=\" text-center\">\r\n+                                <a href=\"\" class=\"btn btn-warning\"> Edit</a>\r\n+                                <a href=\"\" class=\"btn btn-danger\"> Hapus</a>\r\n                                \r\n                             </td>\r\n                         </tr>\r\n                         @endforeach\r\n"
+                },
+                {
+                    "date": 1629274118428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3 card\">\r\n+        <div class=\"main-card mb-3 card shadow rounded p-3\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
+                },
+                {
+                    "date": 1629274126646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3 card shadow rounded p-3\">\r\n+        <div class=\"main-card mb-3 card shadow rounded\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
+                },
+                {
+                    "date": 1629274140758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3 card shadow rounded\">\r\n+        <div class=\"main-card mb-3\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
+                },
+                {
+                    "date": 1629274149891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3\">\r\n+        <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
+                },
+                {
+                    "date": 1629274170635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3 card\">\r\n+        <div class=\"main-card card\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
+                },
+                {
+                    "date": 1629274179351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card card\">\r\n+        <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
                 }
             ],
             "date": 1629007765168,

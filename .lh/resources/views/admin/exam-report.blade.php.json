@@ -1,0 +1,18 @@
+{
+    "sourceFile": "resources/views/admin/exam-report.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1629271022786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1629271022786,
+            "name": "Commit-0",
+            "content": "@extends('layouts.master')\r\n@section('title', 'PPDB - Report Exam')\r\n@section('content')\r\n<div class=\"app-page-title\">\r\n    <div class=\"page-title-wrapper\">\r\n        <div class=\"page-title-heading\">\r\n            <div class=\"page-title-icon\">\r\n                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n                </i>\r\n            </div>\r\n            <div>\r\n                <div class=\"page-title-subheading\">Master Data Hasil Test\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"page-title-actions\">\r\n            <button type=\"button\" data-toggle=\"tooltip\" title=\"Example Tooltip\" data-placement=\"bottom\" class=\"btn-shadow mr-3 btn btn-dark\">\r\n                <i class=\"fa fa-star\"></i>\r\n            </button>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        <div class=\"main-card mb-3 card\">\r\n            <div class=\"card-header\">Hasil Test\r\n                <div class=\"btn-actions-pane-right\">\r\n                </div>\r\n            </div>\r\n            <div class=\"table-responsive\">\r\n                <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                    <thead>\r\n                        <tr>\r\n                            <th>#</th>\r\n                            <th>Nama Lengkap</th>\r\n                            <th>Nama Ujian</th>\r\n                            <th class=\"text-center\">Persentase</th>\r\n                            <th class=\"text-center\">Tanggal Ujian</th>\r\n                            <th class=\"text-center\">Aksi</th>\r\n                        </tr>\r\n                    </thead>\r\n                    <tbody>\r\n                        <?php $i = 1; ?>\r\n                        @foreach($reportExam as $re)\r\n                        <tr>\r\n                            <td>{{$i++}}</td>\r\n                            <td>{{$re->nama_lengkap}}</td>\r\n                            <td>{{$re->title}}</td>\r\n                            <td class=\"text-center\">{{$re->score}} %</td>\r\n                            <td class=\"text-center\">{{date('d/m/Y', strtotime($re->date))}}</td>\r\n                            <td></td>\r\n                        </tr>\r\n                        @endforeach\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n@endsection"
+        }
+    ]
+}

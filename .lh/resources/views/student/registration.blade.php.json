@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 485,
+            "activePatchIndex": 486,
             "patches": [
                 {
                     "date": 1628914012712,
@@ -1948,6 +1948,10 @@
                 {
                     "date": 1629265551340,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -475,17 +475,14 @@\n                             <hr>\r\n                         </div>\r\n                     </div>\r\n                      <hr>\r\n-                    <div class=\"card shadow p-2 rounded\" >\r\n-                        <div class=\"card-body p-3\">\r\n+\r\n                             <div class=\"form-group row\">\r\n                                 <div class=\"col-sm-10\">\r\n                                     <button type=\"submit\" class=\"btn btn-primary\">Simpan</button>\r\n                                 </div>\r\n                             </div>\r\n-                        </div>\r\n-                    </div>\r\n \r\n                 \r\n             </form>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1629272495828,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -474,9 +474,9 @@\n                             </div>\r\n                             <hr>\r\n                         </div>\r\n                     </div>\r\n-                     <hr>\r\n+                    <hr>\r\n \r\n                             <div class=\"form-group row\">\r\n                                 <div class=\"col-sm-10\">\r\n                                     <button type=\"submit\" class=\"btn btn-primary\">Simpan</button>\r\n"
                 }
             ],
             "date": 1628914012712,
