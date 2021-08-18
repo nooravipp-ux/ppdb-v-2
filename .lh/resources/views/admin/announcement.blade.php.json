@@ -1,0 +1,26 @@
+{
+    "sourceFile": "resources/views/admin/announcement.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1629007765168,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629007811098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n-                <table class=\"align-middle mb-0 table table-bordered\" id=\"tableList\">\r\n+                <table class=\"align-middle mb-0 table table-bordered table-hover\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Title</th>\r\n"
+                },
+                {
+                    "date": 1629007838476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n-                <table class=\"align-middle mb-0 table table-bordered table-hover\" id=\"tableList\">\r\n+                <table class=\"align-middle mb-0 table table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Title</th>\r\n"
+                }
+            ],
+            "date": 1629007765168,
+            "name": "Commit-0",
+            "content": "@extends('layouts.master')\r\n@section('title', 'PPDB - Setting Announcement')\r\n@section('content')\r\n<div class=\"app-page-title\">\r\n    <div class=\"page-title-wrapper\">\r\n        <div class=\"page-title-heading\">\r\n            <div class=\"page-title-icon\">\r\n                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n                </i>\r\n            </div>\r\n            <div class=\"container\">Kelola Pengumuman\r\n                <div class=\"page-title-subheading\">\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<div class=\"row\">\r\n    <div class=\"col-md-12\">\r\n        <div class=\"main-card mb-3 card\">\r\n            <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                    <i class=\"metismenu-icon\"></i>\r\n                    Tambah Pengumuman\r\n                </a>\r\n            </div>\r\n            <div class=\"table-responsive\">\r\n                <table class=\"align-middle mb-0 table table-bordered\" id=\"tableList\">\r\n                    <thead>\r\n\r\n                        <tr>\r\n                            <th class=\"text-left pl-4\">Title</th>\r\n                            <th class=\"text-left \">Description</th>\r\n                            <th class=\"text-center \">Status</th>\r\n                            <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n                        </tr>\r\n\r\n                    </thead>\r\n                    <tbody>\r\n                        @foreach($announceData as $data)\r\n                        <tr>\r\n                            <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n                            <td><?php echo html_entity_decode($data->description); ?></td>\r\n                            <td class=\"text-center\">{{$data->status}}</td>\r\n                            <td class=\"text-center\">Edit</td>\r\n                        </tr>\r\n                        @endforeach\r\n                    </tbody>\r\n                </table>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n@endsection\r\n@section('custom_js')\r\n<script type=\"text/javascript\">\r\n    CKEDITOR.replace('description');\r\n</script>\r\n\r\n@endsection"
+        }
+    ]
+}
