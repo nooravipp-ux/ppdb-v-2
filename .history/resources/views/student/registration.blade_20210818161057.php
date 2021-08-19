@@ -12,7 +12,7 @@
       </ul>
     <form class="form-inline my-2 my-lg-0">
         <li class="nav-item active pr-sm-5">
-          <a class=" btn btn-warning" href="http://127.0.0.1:8000/"> Kembali<span class="sr-only">(current)</span></a>
+          <a class=" btn btn-warning" href="#"> Kembali<span class="sr-only">(current)</span></a>
         </li>
       </form>
     </div>
@@ -134,16 +134,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Agama</label>
                                 <div class="col-sm-9 input-group-append">
                                     <div class="input-group-text"> <i class="fa fa-list text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="agama" placeholder="Masukkan Agama"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Islam</option>
-                                        <option value="">Kristen</option>
-                                        <option value="">Katholik</option>
-                                        <option value="">Hindu</option>
-                                        <option value="">Buddha</option>
-                                        <option value="">Konghucu</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="agama" placeholder="Masukkan Agama">
                                 </div>
                             </div>
 
@@ -156,7 +147,7 @@
                             </div>
 
                             <div class="form-group row input-group">
-                                <label for="inputPassword" class="col-sm-3 col-form-label">No. Telp / Hp</label>
+                                <label for="inputPassword" class="col-sm-3 col-form-label">No. Telp</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-th text-info"> </i></div>
                                     <input type="text" class="form-control" name="no_telp" placeholder="Masukkan No Telepon">
@@ -290,52 +281,21 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pendidikan Terakhir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-area-chart text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pendidikan_ayah" placeholder="Masukkan Pendidikan Terakhir Ayah"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="" >Tidak Sekolah</option>
-                                        <option value="" >SD / Sederajat</option>
-                                        <option value="" >SMP / Sederajat</option>
-                                        <option value="" >SMA / Sederajat</option>
-                                        <option value="" >D1</option>
-                                        <option value="" >D2</option>
-                                        <option value="" >D3</option>
-                                        <option value="" >D4</option>
-                                        <option value="" >S1</option>
-                                        <option value="" >S2</option>
-                                        <option value="" >S3</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pendidikan_ayah" placeholder="Masukkan Pendidikan Terakhir Ayah">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pekerjaan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pekerjaan_ayah" placeholder="Masukkan Pekerjaan Ayah"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lain - lain</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pekerjaan_ayah" placeholder="Masukkan Pekerjaan Ayah">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_ayah"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="penghasilan_ayah">
                                 </div>
                             </div>
                             
@@ -373,52 +333,21 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pendidikan Terakhir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-area-chart text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pendidikan_ibu" placeholder="Masukkan Pendidikan Terakhir Ibu"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="" >Tidak Sekolah</option>
-                                        <option value="" >SD / Sederajat</option>
-                                        <option value="" >SMP / Sederajat</option>
-                                        <option value="" >SMA / Sederajat</option>
-                                        <option value="" >D1</option>
-                                        <option value="" >D2</option>
-                                        <option value="" >D3</option>
-                                        <option value="" >D4</option>
-                                        <option value="" >S1</option>
-                                        <option value="" >S2</option>
-                                        <option value="" >S3</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pendidikan_ibu" placeholder="Masukkan Pendidikan Terakhir Ibu">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pekerjaan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pekerjaan_ibu" placeholder="Masukkan Pekerjaan Ibu"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lain - lain</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pekerjaan_ibu" placeholder="Masukkan Pekerjaan Ibu">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_ibu"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="penghasilan_ibu">
                                 </div>
                             </div>
                             
@@ -458,31 +387,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pekerjaan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pekerjaan_wali" placeholder="Masukkan Pekerjaan Wali"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lain - lain</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pekerjaan_wali" placeholder="Masukkan Pekerjaan Wali">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_wali"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="penghasilan_wali">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
@@ -522,30 +434,18 @@
                             <hr>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Jarak Rumah Ke Sekolah</label>
-                                <div class="col-sm-9 input-group-prepend">
+                                <div class="col-sm-8 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-long-arrow-right text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">< 1 Km</option>
-                                        <option value="">> 1 Km - 2 Km</option>
-                                        <option value="">> 3 Km</option>
-                                    </select>
+                                    <input type="text" class="form-control">
                                 </div>
+                                <label for="inputPassword" class="col-sm-1 col-form-label">KM</label>
                             </div>
 
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Transportasi</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-car text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Mobil</option>
-                                        <option value="">Motor</option>
-                                        <option value="">Ojek</option>
-                                        <option value="">Jalan Kaki</option>
-                                    </select>
+                                    <input type="text" class="form-control">
                                 </div>
                             </div>
 

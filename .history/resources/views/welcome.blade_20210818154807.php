@@ -40,10 +40,8 @@
         
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top ">
-                <div class="container d-flex align-items-center pl-5">
-                    <h1 class="logo me-auto"> 
-                        {{-- <img src="{{asset('landing-page/assets/img/smkwd.png')}}" class="img-fluid" alt=""> --}}
-                    <a href="index.html"> PPDB SMK</a></h1>
+                <div class="container d-flex align-items-center">
+                    <h1 class="logo me-auto"> <img src="{{asset('landing-page/assets/img/smkwd.png')}}" class="img-fluid" alt=""><a href="index.html"> PPDB SMK</a></h1>
 
                     <nav id="navbar" class="navbar">
                         <ul>
@@ -565,16 +563,16 @@
                             
                             <h3><strong>KONTAK</strong></h3>
                                 <hr>
-                            <strong class="bi bi-map"> Lokasi : </strong> <br>
+                            <strong>Lokasi : </strong> <br>
                             <p>
                                 Jl. Bojong Raya No.114 A, Cibuntu, Kec. Bandung Kulon, Kota Bandung, Jawa Barat 40212 
                             </p> <br>
 
-                            <strong class="bi bi-envelope"> Email : </strong>
+                            <strong>Email : </strong>
                             <p>
                                 widyadirgantara@gmail.com
                             </p>  <br>
-                            <strong class="bi bi-phone"> Telepon : </strong>
+                            <strong>Telepon : </strong>
                             <p>(022)6081617 </p> 
 
                             {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63372.30176221881!2d107.5725558!3d-6.9182135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5f8d625f92d%3A0x71599464193dc021!2sSMK%20Widya%20Dirgantara!5e0!3m2!1sen!2sid!4v1626405130058!5m2!1sen!2sid" framborder="0" style="border: 0" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe> --}}
@@ -609,9 +607,10 @@
                         <h4>Sosial Media</h4>
                         <p>Jangan lupa Follow, Like, Comment dan juga Subscribe keaktifan kami di social media</p>
                         <div class="" style="display: block">
-                            <p><a href="#" class=" bi bi-instagram">  smkwidyadirgantara_official </a> </p>
-                            <p><a href="#" class="bi bi-youtube"> SMK Widya Dirgantara </a></p>
-                             <p><a href="#" class=" bi bi-cloud-arrow-up"> widyadirgantara.sch.id </a></p>
+                            <p> 
+                                <a href="#" class="instagram bi bi-alarm"></a>smkwidyadirgantara_official </p>
+                            <a href="#" class="youtube"></a> <p>SMK Widya Dirgantara</p>
+                            <a href="#" class="dribbble"></a> <p>widyadirgantara.sch.id</p>
                         </div>
                     </div>
                 </div>

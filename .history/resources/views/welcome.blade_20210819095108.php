@@ -40,10 +40,8 @@
         
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top ">
-                <div class="container d-flex align-items-center pl-5">
-                    <h1 class="logo me-auto"> 
-                        {{-- <img src="{{asset('landing-page/assets/img/smkwd.png')}}" class="img-fluid" alt=""> --}}
-                    <a href="index.html"> PPDB SMK</a></h1>
+                <div class="container d-flex align-items-center">
+                    <h1 class="logo me-auto"> <img src="{{asset('landing-page/assets/img/smkwd.png')}}" class="img-fluid" alt=""><a href="index.html"> PPDB SMK</a></h1>
 
                     <nav id="navbar" class="navbar">
                         <ul>
@@ -618,7 +616,7 @@
 
                 <div class="row ">
                      <div class="col-12 footer-contact">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63372.30176221881!2d107.5725558!3d-6.9182135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5f8d625f92d%3A0x71599464193dc021!2sSMK%20Widya%20Dirgantara!5e0!3m2!1sen!2sid!4v1626405130058!5m2!1sen!2sid" framborder="0" style="border: 0" class=" shadow p-1" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63372.30176221881!2d107.5725558!3d-6.9182135!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e5f8d625f92d%3A0x71599464193dc021!2sSMK%20Widya%20Dirgantara!5e0!3m2!1sen!2sid!4v1626405130058!5m2!1sen!2sid" framborder="0" style="border: 0" class=" card shadow p-1" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

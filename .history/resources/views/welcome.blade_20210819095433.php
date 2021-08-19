@@ -40,7 +40,7 @@
         
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top ">
-                <div class="container d-flex align-items-center pl-5">
+                <div class="container d-flex align-items-center">
                     <h1 class="logo me-auto"> 
                         {{-- <img src="{{asset('landing-page/assets/img/smkwd.png')}}" class="img-fluid" alt=""> --}}
                     <a href="index.html"> PPDB SMK</a></h1>

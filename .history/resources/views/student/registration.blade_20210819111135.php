@@ -333,7 +333,7 @@
                                         <option value="">< 250.000</option>
                                         <option value="">250.000 - 500.000</option>
                                         <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
+                                        <option value="">100.000 - 2.000.000</option>
                                         <option value="">> 2.000.000</option>
                                     </select>
                                 </div>
@@ -394,31 +394,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pekerjaan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pekerjaan_ibu" placeholder="Masukkan Pekerjaan Ibu"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lain - lain</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pekerjaan_ibu" placeholder="Masukkan Pekerjaan Ibu">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_ibu"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="penghasilan_ibu">
                                 </div>
                             </div>
                             
@@ -458,31 +441,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pekerjaan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pekerjaan_wali" placeholder="Masukkan Pekerjaan Wali"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lain - lain</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="pekerjaan_wali" placeholder="Masukkan Pekerjaan Wali">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_wali"> --}}
-                                    <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
-                                    </select>
+                                    <input type="text" class="form-control" name="penghasilan_wali">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
