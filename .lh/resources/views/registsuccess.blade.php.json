@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1628868946036,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629572413794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,26 +44,8 @@\n                     <li><a class=\"nav-link scrollto active\" href=\"#hero\">Home</a></li>\r\n                     <li><a class=\"nav-link scrollto\" href=\"#informasi\">Informasi</a></li>\r\n                     <li><a class=\"nav-link scrollto\" href=\"#jurusan\">Jurusan</a></li>\r\n                     <li><a class=\"nav-link   scrollto\" href=\"#galeri\">Galeri</a></li>\r\n-                    {{-- <li><a class=\"nav-link scrollto\" href=\"#team\">Team</a></li> --}}\r\n-                    {{-- <li class=\"dropdown\"><a href=\"#\"><span>Drop Down</span> <i class=\"bi bi-chevron-down\"></i></a>\r\n-                        <ul>\r\n-                            <li><a href=\"#\">Drop Down 1</a></li>\r\n-                            <li class=\"dropdown\"><a href=\"#\"><span>Deep Drop Down</span> <i class=\"bi bi-chevron-right\"></i></a>\r\n-                                <ul>\r\n-                                    <li><a href=\"#\">Deep Drop Down 1</a></li>\r\n-                                    <li><a href=\"#\">Deep Drop Down 2</a></li>\r\n-                                    <li><a href=\"#\">Deep Drop Down 3</a></li>\r\n-                                    <li><a href=\"#\">Deep Drop Down 4</a></li>\r\n-                                    <li><a href=\"#\">Deep Drop Down 5</a></li>\r\n-                                </ul>\r\n-                            </li>\r\n-                            <li><a href=\"#\">Drop Down 2</a></li>\r\n-                            <li><a href=\"#\">Dr\r\n-                            <li><a href=\"#\">Drop Down 4</a></li>\r\n-                        </ul>\r\n-                    </li> --}}\r\n                     <li><a class=\"nav-link scrollto\" href=\"#kontak\">Kontak</a></li>\r\n                     <li><a class=\"getstarted scrollto\" href=\"{{url('/login')}}\">Login</a></li>\r\n                 </ul>\r\n                 <i class=\"bi bi-list mobile-nav-toggle\"></i>\r\n"
                 }
             ],
             "date": 1628868946036,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 22,
+            "activePatchIndex": 27,
             "patches": [
                 {
                     "date": 1629006920669,
@@ -96,6 +96,26 @@
                 {
                     "date": 1629274237902,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,11 @@\n     <meta name=\"msapplication-tap-highlight\" content=\"no\">\r\n     <link href=\"{{asset('admin-panel/main.css')}}\" rel=\"stylesheet\">\r\n     <link href=\"{{asset('admin-panel/editor.css')}}\" type=\"text/css\" rel=\"stylesheet\"/>\r\n     \r\n-\t<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\r\n+\t{{-- <link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\r\n \t<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"></script>\r\n-\t<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\r\n+\t<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script> --}}\r\n \r\n     @yield('css')\r\n </head>\r\n \r\n"
+                },
+                {
+                    "date": 1629572454241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -208,9 +208,9 @@\n                             </li>\r\n                             <li>\r\n                                 <a href=\"{{route('list-exam')}}\">\r\n                                     <i class=\"metismenu-icon pe-7s-pen\"></i>\r\n-                                    Examination\r\n+                                    Ujian/Tes\r\n                                 </a>\r\n                             </li>\r\n                             @endif\r\n                         </ul>\r\n"
+                },
+                {
+                    "date": 1629572568713,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -190,9 +190,16 @@\n \r\n                             </li>\r\n                             @else\r\n                             <li class=\"app-sidebar__heading\">Student Menu</li>\r\n+                            <li class=\"app-sidebar__heading\">Dashboard</li>\r\n                             <li>\r\n+                                <a href=\"{{url('/home')}}\" class=\"mm-active\">\r\n+                                    <i class=\"metismenu-icon pe-7s-home\"></i>\r\n+                                    Dashboard\r\n+                                </a>\r\n+                            </li>\r\n+                            <li>\r\n                                 <a href=\"#\">\r\n                                     <i class=\"metismenu-icon pe-7s-id\"></i>\r\n                                     Biodata\r\n                                     <i class=\"metismenu-state-icon pe-7s-angle-down caret-left\"></i>\r\n"
+                },
+                {
+                    "date": 1629572583925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -189,16 +189,17 @@\n                                 </a>\r\n \r\n                             </li>\r\n                             @else\r\n-                            <li class=\"app-sidebar__heading\">Student Menu</li>\r\n                             <li class=\"app-sidebar__heading\">Dashboard</li>\r\n                             <li>\r\n                                 <a href=\"{{url('/home')}}\" class=\"mm-active\">\r\n                                     <i class=\"metismenu-icon pe-7s-home\"></i>\r\n                                     Dashboard\r\n                                 </a>\r\n                             </li>\r\n+                            <li class=\"app-sidebar__heading\">Student Menu</li>\r\n+                            \r\n                             <li>\r\n                                 <a href=\"#\">\r\n                                     <i class=\"metismenu-icon pe-7s-id\"></i>\r\n                                     Biodata\r\n"
+                },
+                {
+                    "date": 1629572614317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -197,9 +197,8 @@\n                                     Dashboard\r\n                                 </a>\r\n                             </li>\r\n                             <li class=\"app-sidebar__heading\">Student Menu</li>\r\n-                            \r\n                             <li>\r\n                                 <a href=\"#\">\r\n                                     <i class=\"metismenu-icon pe-7s-id\"></i>\r\n                                     Biodata\r\n"
+                },
+                {
+                    "date": 1629572629021,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,9 +191,9 @@\n                             </li>\r\n                             @else\r\n                             <li class=\"app-sidebar__heading\">Dashboard</li>\r\n                             <li>\r\n-                                <a href=\"{{url('/home')}}\" class=\"mm-active\">\r\n+                                <a href=\"{{url('/home')}}\" class=\"mm\">\r\n                                     <i class=\"metismenu-icon pe-7s-home\"></i>\r\n                                     Dashboard\r\n                                 </a>\r\n                             </li>\r\n"
                 }
             ],
             "date": 1629006920669,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 57,
+            "activePatchIndex": 58,
             "patches": [
                 {
                     "date": 1629271916773,
@@ -236,6 +236,10 @@
                 {
                     "date": 1629274358156,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form>\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Siswa</h4>\r\n+                <h4>Data Calon Peserta Didik</h4>\r\n             </div>\r\n             <div class=\"form-group row\">\r\n                 @if($register->status == 0)\r\n                     <div class=\" container\"><a href=\"{{route('confirm.id', ['id' => $register->id])}}\" class=\"btn btn-success btn-sm\">Confirm</a></div>\r\n"
+                },
+                {
+                    "date": 1629572183206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -131,8 +131,9 @@\n \r\n             </div>\r\n             <hr>\r\n \r\n+            {{-- Data Siswa --}}\r\n             <div class=\" container card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Biodata Siswa</h4>\r\n                 </div>\r\n@@ -236,9 +237,9 @@\n             </div>\r\n             <br>\r\n \r\n \r\n-\r\n+            {{-- Data Pendidikat --}}\r\n             <div class=\"container card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Data Pendidikan</h4>\r\n                 </div>\r\n@@ -302,8 +303,9 @@\n             </div>\r\n             <br>\r\n                 \r\n \r\n+            {{-- Data Ortu / Wali --}}\r\n             <div class=\"container card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Biodata Orang Tua / Wali</h4>\r\n                 </div>\r\n@@ -458,9 +460,9 @@\n             </div>\r\n             <br>\r\n \r\n \r\n-\r\n+            {{-- Lainnya --}}\r\n             <div class=\"container card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Lain - lain </h4>\r\n                 </div>\r\n"
                 }
             ],
             "date": 1629271916773,
