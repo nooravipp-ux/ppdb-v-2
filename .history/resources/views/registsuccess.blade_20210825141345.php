@@ -34,40 +34,54 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
+            {{-- <h1 class="logo me-auto"> 
+                    <img src="{{asset('landing-page/assets/img/clients/smkwd.png')}}" class="img-fluid" alt="">
+                    <a href="index.html"> PPDB SMK WD</a></h1> --}}
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto"><img src="{{asset('landing-page/assets/img/smkwd2.png')}} alt="" class="img-fluid"></a>-->
 
-            <h1 class="logo me-auto"> <img src="{{asset('landing-page/assets/img/clients/smkwd.png')}}" class="img-fluid" alt=""><a href="index.html"> PPDB SMK WD</a></h1>
-
+            <nav id="navbar" class="navbar">
+                {{-- <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#informasi">Informasi</a></li>
+                    <li><a class="nav-link scrollto" href="#jurusan">Jurusan</a></li>
+                    <li><a class="nav-link   scrollto" href="#galeri">Galeri</a></li>
+                    <li><a class="nav-link scrollto" href="#kontak">Kontak</a></li>
+                    <li><a class="getstarted scrollto" href="{{url('/login')}}">Login</a></li> --}}
+                {{-- </ul> --}}
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
 
         </div>
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class=" footer-newsletter d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center">
 
-        <div class="container justify-content-center">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
                     <img src="{{asset('landing-page/assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
                 </div>
-                <div class="col-sm-3"></div>
             </div>
             <div class="row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-7 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
                     <h1>PENDAFTARAN BERHASIL DISIMPAN</h1>
-                    <h2>Segera Lakukan Verifikasi Data Anda Dengan Datang Ke Sekolah</h2>
-                    <a href="{{url('/')}}" class="btn btn-danger scrollto ">Kembali Ke Halaman Utama</a>   
-                    <a href="{{url('/')}}" class="btn btn-info scrollto ">Download / Print Out Formulir</a>
+                    <h2>Silahkan Segera Lakukan Verifikasi Data Anda Dengan Datang Ke Sekolah</h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="{{url('/')}}" class="btn-get-started scrollto">Kembali Ke Halaman Utama</a> 
+                        
+                    </div>
+                        <a href="{{url('/')}}" class="btn-get-started scrollto">Download / Print Out Formulir</a>
                 </div>
-                <div class="col-sm-2"></div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- End Hero -->
 
-    {{-- <main id="main">
+            </div>
+            
+        </div>
+
+    </section><!-- End Hero -->
+
+    <main id="main">
 
         <!-- ======= Cliens Section ======= -->
         <section id="cliens" class="cliens section-bg">
@@ -91,8 +105,7 @@
 
             </div>
         </section><!-- End Cliens Section -->
-    </main> --}}
-    <!-- End #main -->
+    </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
     {{-- <footer id="footer">
@@ -183,6 +196,9 @@
         </div>
     </footer> --}}
     <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="{{asset('landing-page/assets/vendor/aos/aos.js')}}"></script>

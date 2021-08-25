@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1629008280964,
@@ -12,6 +12,14 @@
                 {
                     "date": 1629008296652,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n-                            <td class=\"text-center bg-danger\">Applying</td>\r\n+                            <td class=\"text-center\">Applying</td>\r\n                             @elseif($r->status == 1)\r\n                             <td class=\"text-center bg-warning\">Terkonfirmasi</td>\r\n                             @else\r\n                             <td class=\"text-center bg-success\">Terdaftar</td>\r\n"
+                },
+                {
+                    "date": 1629877469583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n                             <th class=\"text-center\">Nama Lengkap</th>\r\n+                            <th class=\"text-center\">Jurusan</th>\r\n                             <th>Alamat</th>\r\n                             <th class=\"text-center\">Asal Sekolah</th>\r\n                             <th class=\"text-center\">Status</th>\r\n                             <th class=\"text-center\">Aksi</th>\r\n@@ -45,9 +46,9 @@\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n-                            <td class=\"text-center\">Applying</td>\r\n+                            <td class=\"text-center bg-primary\">Applying</td>\r\n                             @elseif($r->status == 1)\r\n                             <td class=\"text-center bg-warning\">Terkonfirmasi</td>\r\n                             @else\r\n                             <td class=\"text-center bg-success\">Terdaftar</td>\r\n"
+                },
+                {
+                    "date": 1629877496963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n                     <tbody>\r\n                         @foreach($register as $r)\r\n                         <tr>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n+                            <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n                             <td class=\"text-center bg-primary\">Applying</td>\r\n"
                 }
             ],
             "date": 1629008280964,

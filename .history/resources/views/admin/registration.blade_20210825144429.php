@@ -44,7 +44,6 @@
                         @foreach($register as $r)
                         <tr>
                             <td class="text-center">{{$r->nama_lengkap}}</td>
-                            <td class="text-center">{{$r->nama_lengkap}}</td>
                             <td>{{$r->alamat}}</td>
                             <td class="text-center">{{$r->nama_sekolah_asal}}</td>
                             @if($r->status == 0)

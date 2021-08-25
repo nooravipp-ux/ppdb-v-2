@@ -518,7 +518,7 @@
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="penghasilan_wali"> --}}
                                     <select name="" id="" class=" form-control">
-                                        <option value="" selected>Pilih Penghasilan</option>
+                                        <option value="" selected>Pilih</option>
                                         <option value="">< 250.000</option>
                                         <option value="">250.000 - 500.000</option>
                                         <option value="">500.000 - 1.000.000</option>

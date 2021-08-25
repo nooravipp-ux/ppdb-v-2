@@ -42,7 +42,7 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class=" footer-newsletter d-flex align-items-center">
+    <section id=" " class=" footer-newsletter d-flex align-items-center">
 
         <div class="container justify-content-center">
             <div class="row">

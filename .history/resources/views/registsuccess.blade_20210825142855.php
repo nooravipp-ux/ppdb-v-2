@@ -42,23 +42,19 @@
     </header><!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class=" footer-newsletter d-flex align-items-center">
+    <section id="hero" class="d-flex align-items-center">
 
-        <div class="container justify-content-center">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="200">
+                {{-- <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
                     <img src="{{asset('landing-page/assets/img/hero-img.png')}}" class="img-fluid animated" alt="">
-                </div>
-                <div class="col-sm-3"></div>
-            </div>
-            <div class="row">
+                </div> --}}
                 <div class="col-sm-2"></div>
-                <div class="col-sm-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-8 justify-content-center" data-aos="fade-up" data-aos-delay="200">
                     <h1>PENDAFTARAN BERHASIL DISIMPAN</h1>
-                    <h2>Segera Lakukan Verifikasi Data Anda Dengan Datang Ke Sekolah</h2>
-                    <a href="{{url('/')}}" class="btn btn-danger scrollto ">Kembali Ke Halaman Utama</a>   
-                    <a href="{{url('/')}}" class="btn btn-info scrollto ">Download / Print Out Formulir</a>
+                    <h2>Silahkan Segera Lakukan Verifikasi Data Anda Dengan Datang Ke Sekolah</h2>
+                        <a href="{{url('/')}}" class="btn-get-started scrollto">Kembali Ke Halaman Utama</a>   
+                        <a href="{{url('/')}}" class="btn-get-started scrollto">Download / Print Out Formulir</a>
                 </div>
                 <div class="col-sm-2"></div>
                 
@@ -183,6 +179,9 @@
         </div>
     </footer> --}}
     <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="{{asset('landing-page/assets/vendor/aos/aos.js')}}"></script>
