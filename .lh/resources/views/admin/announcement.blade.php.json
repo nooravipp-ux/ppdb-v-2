@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 61,
             "patches": [
                 {
                     "date": 1629007765168,
@@ -72,6 +72,186 @@
                 {
                     "date": 1629274179351,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card card\">\r\n+        <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n"
+                },
+                {
+                    "date": 1629900461375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,16 +16,16 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3 card\">\r\n+        <div class=\"main-card mb-3 card shadow\">\r\n             <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"table\">\r\n-                <table class=\" table-bordered table-striped\" id=\"tableList\">\r\n+                <table class=\" table table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629900467853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n-            <div class=\"table\">\r\n+            <div class=\"\">\r\n                 <table class=\" table table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n"
+                },
+                {
+                    "date": 1629900473181,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n             <div class=\"\">\r\n-                <table class=\" table table-bordered table-striped\" id=\"tableList\">\r\n+                <table class=\" table-bordered table-striped\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629900496705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,10 +22,10 @@\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n-            <div class=\"\">\r\n-                <table class=\" table-bordered table-striped\" id=\"tableList\">\r\n+            <div class=\" table table-bordered\">\r\n+                <table class=\"\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629900507796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n-            <div class=\" table table-bordered\">\r\n+            <div class=\" table table-bordered mb-3\">\r\n                 <table class=\"\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n"
+                },
+                {
+                    "date": 1629900513971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n-            <div class=\" table table-bordered mb-3\">\r\n+            <div class=\" table table-bordered\">\r\n                 <table class=\"\" id=\"tableList\">\r\n                     <thead>\r\n \r\n                         <tr>\r\n"
+                },
+                {
+                    "date": 1629900543775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,35 +22,37 @@\n                     <i class=\"metismenu-icon\"></i>\r\n                     Tambah Pengumuman\r\n                 </a>\r\n             </div>\r\n-            <div class=\" table table-bordered\">\r\n-                <table class=\"\" id=\"tableList\">\r\n-                    <thead>\r\n+            <div class=\"container\">\r\n+                <div class=\"table table-bordered\">\r\n+                    <table class=\"\" id=\"tableList\">\r\n+                        <thead>\r\n \r\n-                        <tr>\r\n-                            <th class=\"text-left pl-4\">Perihal</th>\r\n-                            <th class=\"text-left \">Deskripsi</th>\r\n-                            <th class=\"text-center \">Status</th>\r\n-                            <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n-                        </tr>\r\n+                            <tr>\r\n+                                <th class=\"text-left pl-4\">Perihal</th>\r\n+                                <th class=\"text-left \">Deskripsi</th>\r\n+                                <th class=\"text-center \">Status</th>\r\n+                                <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n+                            </tr>\r\n \r\n-                    </thead>\r\n-                    <tbody>\r\n-                        @foreach($announceData as $data)\r\n-                        <tr>\r\n-                            <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n-                            <td><?php echo html_entity_decode($data->description); ?></td>\r\n-                            <td class=\"text-center\">{{$data->status}}</td>\r\n-                            <td class=\" text-center\">\r\n-                                <a href=\"\" class=\"btn btn-warning\"> Edit</a>\r\n-                                <a href=\"\" class=\"btn btn-danger\"> Hapus</a>\r\n-                               \r\n-                            </td>\r\n-                        </tr>\r\n-                        @endforeach\r\n-                    </tbody>\r\n-                </table>\r\n+                        </thead>\r\n+                        <tbody>\r\n+                            @foreach($announceData as $data)\r\n+                            <tr>\r\n+                                <td class=\"text-left pl-4\">{{$data->title}}</td>\r\n+                                <td><?php echo html_entity_decode($data->description); ?></td>\r\n+                                <td class=\"text-center\">{{$data->status}}</td>\r\n+                                <td class=\" text-center\">\r\n+                                    <a href=\"\" class=\"btn btn-warning\"> Edit</a>\r\n+                                    <a href=\"\" class=\"btn btn-danger\"> Hapus</a>\r\n+                                \r\n+                                </td>\r\n+                            </tr>\r\n+                            @endforeach\r\n+                        </tbody>\r\n+                    </table>\r\n+                </div>\r\n             </div>\r\n         </div>\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1629900579537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,12 +17,10 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card shadow\">\r\n-            <div class=\"card-header\"><a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">\r\n-                    <i class=\"metismenu-icon\"></i>\r\n-                    Tambah Pengumuman\r\n-                </a>\r\n+            <div class=\"card-header\">\r\n+                <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\"container\">\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n"
+                },
+                {
+                    "date": 1629900596593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card shadow\">\r\n-            <div class=\"card-header\">\r\n+            <div class=\"card\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\"container\">\r\n                 <div class=\"table table-bordered\">\r\n"
+                },
+                {
+                    "date": 1629900602344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card shadow\">\r\n-            <div class=\"card\">\r\n+            <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\"container\">\r\n                 <div class=\"table table-bordered\">\r\n"
+                },
+                {
+                    "date": 1629900630209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n         <div class=\"main-card mb-3 card shadow\">\r\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n+        </div> \r\n             <div class=\"container\">\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n@@ -50,9 +51,8 @@\n                         </tbody>\r\n                     </table>\r\n                 </div>\r\n             </div>\r\n-        </div>\r\n     </div>\r\n </div>\r\n @endsection\r\n @section('custom_js')\r\n"
+                },
+                {
+                    "date": 1629900650233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n         </div> \r\n-            <div class=\"container\">\r\n+            <div class=\" card container\">\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n"
+                },
+                {
+                    "date": 1629900659388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n         </div> \r\n-            <div class=\" card container\">\r\n+            <div class=\" container\">\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n"
+                },
+                {
+                    "date": 1629900667311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n         </div> \r\n             <div class=\" container\">\r\n-                <div class=\"table table-bordered\">\r\n+                <div class=\"table table-bordered table-striped\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629900706729,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n         <div class=\"main-card mb-3 card shadow\">\r\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n-        </div> \r\n             <div class=\" container\">\r\n                 <div class=\"table table-bordered table-striped\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n@@ -51,8 +50,9 @@\n                         </tbody>\r\n                     </table>\r\n                 </div>\r\n             </div>\r\n+        </div> \r\n     </div>\r\n </div>\r\n @endsection\r\n @section('custom_js')\r\n"
+                },
+                {
+                    "date": 1629900719259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n-                <div class=\"table table-bordered table-striped\">\r\n+                <div class=\"table table-borderless\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629900749203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n-                <div class=\"table table-borderless\">\r\n+                <div class=\"table table-borderless table-striped\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629900769933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <div class=\"card-header\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n-                <div class=\"table table-borderless table-striped\">\r\n+                <div class=\"table table-borderless table-hover\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629900795274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card shadow\">\r\n-            <div class=\"card-header\">\r\n+            <div class=\"card\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n"
+                },
+                {
+                    "date": 1629900802587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card shadow\">\r\n-            <div class=\"card\">\r\n+            <div class=\"\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n"
+                },
+                {
+                    "date": 1629900820215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"main-card mb-3 card shadow\">\r\n+        <div class=\"mb-3\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n"
+                },
+                {
+                    "date": 1629900835807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"mb-3\">\r\n             <div class=\"\">\r\n-                <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n+                <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n                     <table class=\"\" id=\"tableList\">\r\n"
+                },
+                {
+                    "date": 1629900845886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"mb-3\">\r\n+        <div class=\"\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n             <div class=\" container\">\r\n"
+                },
+                {
+                    "date": 1629900853473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         <div class=\"\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>\r\n-            <div class=\" container\">\r\n+            <div class=\"\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n"
+                },
+                {
+                    "date": 1629900866985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n-            </div>\r\n+            </div> <br> <hr>\r\n             <div class=\"\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n"
+                },
+                {
+                    "date": 1629900878783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n-            </div> <br> <hr>\r\n+            </div>  <hr> <br>\r\n             <div class=\"\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n"
+                },
+                {
+                    "date": 1629900900605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,8 @@\n         <div class=\"\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>  <hr> <br>\r\n-            <div class=\"\">\r\n                 <div class=\"table table-borderless table-hover\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n@@ -49,9 +48,8 @@\n                             @endforeach\r\n                         </tbody>\r\n                     </table>\r\n                 </div>\r\n-            </div>\r\n         </div> \r\n     </div>\r\n </div>\r\n @endsection\r\n"
+                },
+                {
+                    "date": 1629900907365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n         <div class=\"\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>  <hr> <br>\r\n-                <div class=\"table table-borderless table-hover\">\r\n+                <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629900917119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"\">\r\n+        <div class=\" card\">\r\n             <div class=\"\">\r\n                 <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n             </div>  <hr> <br>\r\n                 <div class=\"table table-bordered\">\r\n"
+                },
+                {
+                    "date": 1629900945216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,12 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n+        <div class=\"\">\r\n+            <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n+        </div>  <hr> <br>\r\n         <div class=\" card\">\r\n-            <div class=\"\">\r\n-                <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n-            </div>  <hr> <br>\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n"
+                },
+                {
+                    "date": 1629901023250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,10 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <div class=\"\">\r\n-            <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n-        </div>  <hr> <br>\r\n-        <div class=\" card\">\r\n+        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n+        <div class=\" card mb-5 \">\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n"
+                },
+                {
+                    "date": 1629901038600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a>\r\n+        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n                 <div class=\"table table-bordered\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n"
+                },
+                {
+                    "date": 1629901077162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n-                <div class=\"table table-bordered\">\r\n+                <div class=\"table table-bordered thead-dark\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629901085684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n-                <div class=\"table table-bordered thead-dark\">\r\n+                <div class=\"table thead-dark\">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629901101757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n-                <div class=\"table thead-dark\">\r\n-                    <table class=\"\" id=\"tableList\">\r\n+                <div class=\"table table-bordered \">\r\n+                    <table class=\"thead-dark\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629901126741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n                 <div class=\"table table-bordered \">\r\n-                    <table class=\"thead-dark\" id=\"tableList\">\r\n+                    <table class=\" table-striped tabs-animated\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629901146007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n-                <div class=\"table table-bordered \">\r\n+                <div class=\"table table-bordered container \">\r\n                     <table class=\" table-striped tabs-animated\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1629901166690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \">\r\n-                <div class=\"table table-bordered container \">\r\n-                    <table class=\" table-striped tabs-animated\" id=\"tableList\">\r\n+                <div class=\"table container \">\r\n+                    <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629901174471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n-        <div class=\" card mb-5 \">\r\n+        <div class=\" card mb-5 \"> <br>\r\n                 <div class=\"table container \">\r\n                     <table class=\"\" id=\"tableList\">\r\n                         <thead>\r\n \r\n"
+                },
+                {
+                    "date": 1629901185525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \"> <br>\r\n                 <div class=\"table container \">\r\n-                    <table class=\"\" id=\"tableList\">\r\n+                    <table class=\" table-striped\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629901193701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n     <div class=\"col-md-12\">\r\n         <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \"> <br>\r\n                 <div class=\"table container \">\r\n-                    <table class=\" table-striped\" id=\"tableList\">\r\n+                    <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1629901217220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n+        <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \"> <br>\r\n                 <div class=\"table container \">\r\n                     <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n"
+                },
+                {
+                    "date": 1629901224873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <a class=\"btn btn-sm btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n+        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n         <div class=\" card mb-5 \"> <br>\r\n                 <div class=\"table container \">\r\n                     <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n"
+                },
+                {
+                    "date": 1629901232215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr> <br>\r\n+        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n         <div class=\" card mb-5 \"> <br>\r\n                 <div class=\"table container \">\r\n                     <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n"
+                },
+                {
+                    "date": 1629901279604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n+                <i class=\" pe-7s-note icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div class=\"container\">Kelola Pengumuman\r\n                 <div class=\"page-title-subheading\">\r\n"
                 }
             ],
             "date": 1629007765168,

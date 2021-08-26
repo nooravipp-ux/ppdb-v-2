@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 21,
+            "activePatchIndex": 61,
             "patches": [
                 {
                     "date": 1629513922282,
@@ -92,6 +92,166 @@
                 {
                     "date": 1629516186774,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -510,10 +510,10 @@\n                 </div>\r\n             </div>\r\n             <hr>\r\n             <br>\r\n-\r\n-            <div class=\"form-group row text-center\">\r\n+            \r\n+            <div class=\" container form-group row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1629938095867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,9 @@\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n                 <h4>Data Calon Peserta Didik</h4>\r\n+                <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n             <div class=\" container card shadow p-2 rounded\">\r\n"
+                },
+                {
+                    "date": 1629938102963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Peserta Didik</h4>\r\n+                <h4>Data Calon Peserta Didik</h4> <br>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938111365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Peserta Didik</h4> <br>\r\n+                <h4>Data Calon Peserta Didik</h4>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938116770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,11 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Peserta Didik</h4>\r\n+                <h4>Data Calon Peserta Didik</h4> \r\n+                <br>\r\n+                <hr>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938128060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,10 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Peserta Didik</h4> \r\n-                <br>\r\n+                <h4>Data Calon Peserta Didik</h4>\r\n                 <hr>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n"
+                },
+                {
+                    "date": 1629938136648,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,10 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Peserta Didik</h4>\r\n-                <hr>\r\n+                <h4>Data Calon Peserta Didik</h4> <hr>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938161000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,9 +126,9 @@\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n-            <div class=\" container card shadow p-2 rounded\">\r\n+            <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Biodata Saya</h4>\r\n                 </div>\r\n                 <hr>\r\n"
+                },
+                {
+                    "date": 1629938166733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -127,9 +127,9 @@\n             </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n-                <div class=\" container card\" style=\"background: #37517e\">\r\n+                <div class=\"card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Biodata Saya</h4>\r\n                 </div>\r\n                 <hr>\r\n                 \r\n"
+                },
+                {
+                    "date": 1629938210480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -234,9 +234,9 @@\n             </div>\r\n             <hr>\r\n             <br>\r\n \r\n-           <div class=\" container card shadow p-2 rounded\">\r\n+           <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Data Pendidikan</h4>\r\n                 </div>\r\n             <hr>\r\n@@ -312,9 +312,9 @@\n            </div>\r\n             <hr>\r\n             <br>\r\n \r\n-            <div class=\" container card shadow p-2 rounded\">\r\n+            <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Data Pendidikan</h4>\r\n                 </div>\r\n             <hr>\r\n@@ -470,9 +470,9 @@\n             <hr>\r\n             <br>\r\n \r\n \r\n-            <div class=\" container card shadow p-2 rounded\">\r\n+            <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\" container card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Lain - lain</h4>\r\n                 </div>\r\n             <hr>\r\n@@ -512,9 +512,9 @@\n             </div>\r\n             <hr>\r\n             <br>\r\n             \r\n-            <div class=\" container form-group row text-center\">\r\n+            <div class=\"form-group row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1629938283578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,9 +512,9 @@\n             </div>\r\n             <hr>\r\n             <br>\r\n             \r\n-            <div class=\"form-group row text-center\">\r\n+            <div class=\" container form-group row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1629938303372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n-                <h4>Data Calon Peserta Didik</h4> <hr>\r\n+                <h4 class=\" container\">Data Calon Peserta Didik</h4> <hr>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938315474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,10 +122,10 @@\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n                 <h4 class=\" container\">Data Calon Peserta Didik</h4> <hr>\r\n-                <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n+            <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n"
+                },
+                {
+                    "date": 1629938335680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,12 +120,12 @@\n @section('content')\r\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n-            <div class=\"form-group row container\">\r\n+            <div class=\"form-group row d-flex container\">\r\n                 <h4 class=\" container\">Data Calon Peserta Didik</h4> <hr>\r\n+                <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n-            <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n"
+                },
+                {
+                    "date": 1629938341811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row d-flex container\">\r\n-                <h4 class=\" container\">Data Calon Peserta Didik</h4> <hr>\r\n+                <h4 class=\"\">Data Calon Peserta Didik</h4> <hr>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938349727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row d-flex container\">\r\n-                <h4 class=\"\">Data Calon Peserta Didik</h4> <hr>\r\n+                <h2 class=\"\">Data Calon Peserta Didik</h4> <hr>\r\n                 <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938360230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row d-flex container\">\r\n-                <h2 class=\"\">Data Calon Peserta Didik</h4> <hr>\r\n-                <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n+                <h2 class=\"\">Data Calon Peserta Didik</h2> <hr>\r\n             </div>\r\n+            <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n"
+                },
+                {
+                    "date": 1629938526684,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,11 +121,11 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row d-flex container\">\r\n-                <h2 class=\"\">Data Calon Peserta Didik</h2> <hr>\r\n+                <h2 class=\" p-2\">Data Calon Peserta Didik</h2> <hr>\r\n+                <a href=\"\" class=\"btn btn-primary mr-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n-            <a href=\"\" class=\"btn btn-primary\">Download / Print Out Formulir</a>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n"
+                },
+                {
+                    "date": 1629938538982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row d-flex container\">\r\n-                <h2 class=\" p-2\">Data Calon Peserta Didik</h2> <hr>\r\n+                <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"btn btn-primary mr-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938554564,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n-                <a href=\"\" class=\"btn btn-primary mr-auto p-2\">Download / Print Out Formulir</a>\r\n+                <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n"
+                },
+                {
+                    "date": 1629938564148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n @section('content')\r\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n-            <div class=\"form-group row d-flex container\">\r\n+            <div class=\"form-group row d-flex\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n"
+                },
+                {
+                    "date": 1629938573902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n @section('content')\r\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n-            <div class=\"form-group row d-flex\">\r\n+            <div class=\"row d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n"
+                },
+                {
+                    "date": 1629938581079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n </style>\r\n @endsection\r\n @section('content')\r\n <div class=\"row\">\r\n-    <div class=\"container emp-profile\">\r\n+    <div class=\"emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n"
+                },
+                {
+                    "date": 1629938587963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n </style>\r\n @endsection\r\n @section('content')\r\n <div class=\"row\">\r\n-    <div class=\"emp-profile\">\r\n+    <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n"
+                },
+                {
+                    "date": 1629938601464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n-                <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n+                <h3 class=\" p-2\">Data Calon Peserta Didik</h3>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938612415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n-                <h3 class=\" p-2\">Data Calon Peserta Didik</h3>\r\n+                <h4 class=\" p-2\">Data Calon Peserta Didik</h4>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938620753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,9 +121,9 @@\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n-                <h4 class=\" p-2\">Data Calon Peserta Didik</h4>\r\n+                <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n"
+                },
+                {
+                    "date": 1629938646925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n-                <a href=\"\" class=\"btn btn-primary ml-auto p-2\">Download / Print Out Formulir</a>\r\n+                <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"></button> Download / Print Out Formulir</a>\r\n             </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n"
+                },
+                {
+                    "date": 1629938653300,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"row d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n-                <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"></button> Download / Print Out Formulir</a>\r\n+                <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n"
+                },
+                {
+                    "date": 1629938674820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n @section('content')\r\n <div class=\"row\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n-            <div class=\"row d-flex container\">\r\n+            <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n             <hr>\r\n"
+                },
+                {
+                    "date": 1629938693146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n     }\r\n </style>\r\n @endsection\r\n @section('content')\r\n-<div class=\"row\">\r\n+<div class=\"row container\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n"
+                },
+                {
+                    "date": 1629938706840,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n     }\r\n </style>\r\n @endsection\r\n @section('content')\r\n-<div class=\"row container\">\r\n+<div class=\"container\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n"
+                },
+                {
+                    "date": 1629938711984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n     }\r\n </style>\r\n @endsection\r\n @section('content')\r\n-<div class=\"container\">\r\n+<div class=\"\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n"
+                },
+                {
+                    "date": 1629938727418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,16 +117,15 @@\n     }\r\n </style>\r\n @endsection\r\n @section('content')\r\n-<div class=\"\">\r\n+<div class=\"container\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n-            <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Biodata Saya</h4>\r\n"
+                },
+                {
+                    "date": 1629938732927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,8 +124,9 @@\n             <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n                 <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n+            <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n                     <h4 class=\" text-white text-center pt-1 pb-1\" >Biodata Saya</h4>\r\n"
+                },
+                {
+                    "date": 1629938750223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"d-flex container\">\r\n                 <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n-                <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n+\r\n             </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n@@ -514,8 +514,9 @@\n             <br>\r\n             \r\n             <div class=\" container form-group row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button>\r\n+                <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n \r\n         </form>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1629938773385,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -514,9 +514,9 @@\n             <br>\r\n             \r\n             <div class=\" container form-group row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button>\r\n-                <a href=\"\" class=\"ml-auto p-2\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n+                <a href=\"\" class=\"\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n \r\n         </form>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1629938779494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -513,9 +513,9 @@\n             <hr>\r\n             <br>\r\n             \r\n             <div class=\" container form-group row text-center\">\r\n-                <button type=\"submit\" class=\"btn btn-primary\">Update Data</button>\r\n+                <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <br>\r\n                 <a href=\"\" class=\"\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1629938788405,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,9 +512,9 @@\n             </div>\r\n             <hr>\r\n             <br>\r\n             \r\n-            <div class=\" container form-group row text-center\">\r\n+            <div class=\" container row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <br>\r\n                 <a href=\"\" class=\"\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n \r\n"
+                },
+                {
+                    "date": 1629938795419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -513,9 +513,9 @@\n             <hr>\r\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n-                <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <br>\r\n+                <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <hr>\r\n                 <a href=\"\" class=\"\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1629938849081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -514,9 +514,9 @@\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <hr>\r\n-                <a href=\"\" class=\"\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n+                <button class=\"btn btn-primary\"> Download / Print Out Formulir</button><\r\n             </div>\r\n \r\n         </form>\r\n     </div>\r\n"
                 }
             ],
             "date": 1629513922282,

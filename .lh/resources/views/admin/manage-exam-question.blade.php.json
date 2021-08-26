@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 2,
             "patches": [
                 {
                     "date": 1629008014212,
@@ -12,6 +12,10 @@
                 {
                     "date": 1629008059967,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n                                                         @endif\r\n \r\n                                                     </td>\r\n                                                     <td class=\"text-center\">\r\n-                                                        <a rel=\"facebox\" href=\"facebox_modal/updateQuestion.php?id=\" class=\"btn btn-sm btn-primary\">Edit</a>\r\n+                                                        <a rel=\"facebox\" href=\"facebox_modal/updateQuestion.php?id=\" class=\"btn btn-sm btn-warning\">Edit</a>\r\n                                                         <button type=\"button\" id=\"deleteQuestion\" data-id='' class=\"btn btn-danger btn-sm\">Hapus</button>\r\n                                                     </td>\r\n                                                 </tr>\r\n                                                 @endforeach\r\n"
+                },
+                {
+                    "date": 1629901640950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n+                <i class=\" pe-7s-notebook icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>Kelola Soal Ujian\r\n                 <div class=\"page-title-subheading\">Tambah Soal\r\n"
                 }
             ],
             "date": 1629008014212,

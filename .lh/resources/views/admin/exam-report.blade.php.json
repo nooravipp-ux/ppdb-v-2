@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1629271022786,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1629901704823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n+                <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\">Master Data Hasil Test\r\n"
                 }
             ],
             "date": 1629271022786,

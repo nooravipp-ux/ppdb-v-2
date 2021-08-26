@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 27,
+            "activePatchIndex": 33,
             "patches": [
                 {
                     "date": 1629006920669,
@@ -116,6 +116,30 @@
                 {
                     "date": 1629572629021,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,9 +191,9 @@\n                             </li>\r\n                             @else\r\n                             <li class=\"app-sidebar__heading\">Dashboard</li>\r\n                             <li>\r\n-                                <a href=\"{{url('/home')}}\" class=\"mm-active\">\r\n+                                <a href=\"{{url('/home')}}\" class=\"mm\">\r\n                                     <i class=\"metismenu-icon pe-7s-home\"></i>\r\n                                     Dashboard\r\n                                 </a>\r\n                             </li>\r\n"
+                },
+                {
+                    "date": 1629937738950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,15 +55,15 @@\n                 </span>\r\n             </div>\r\n             <div class=\"app-header__content\">\r\n                 <div class=\"app-header-left\">\r\n-                    <div class=\"search-wrapper\">\r\n+                    {{-- <div class=\"search-wrapper\">\r\n                         <div class=\"input-holder\">\r\n                             <input type=\"text\" class=\"search-input\" placeholder=\"Type to search\">\r\n                             <button class=\"search-icon\"><span></span></button>\r\n                         </div>\r\n                         <button class=\"close\"></button>\r\n-                    </div>\r\n+                    </div> --}}\r\n                 </div>\r\n                 <div class=\"app-header-right\">\r\n                     <div class=\"header-btn-lg pr-0\">\r\n                         <div class=\"widget-content p-0\">\r\n"
+                },
+                {
+                    "date": 1629937843309,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n <body>\r\n     <div class=\"app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header\">\r\n         <div class=\"app-header header-shadow\">\r\n             <div class=\"app-header__logo\">\r\n-                <div class=\"logo\"><img src=\"{{asset('admin-panel/assets/images/logo-inverse.png')}}\" alt=\"\" width=\"50\"></div>\r\n+                <div class=\"logo\"><img src=\"{{asset('admin-panel/assets/images/smkwd.png')}}\" alt=\"\" width=\"50\"></div>\r\n                 <div class=\"header__pane ml-auto\">\r\n                     <div>\r\n                         <button type=\"button\" class=\"hamburger close-sidebar-btn hamburger--elastic\" data-class=\"closed-sidebar\">\r\n                             <span class=\"hamburger-box\">\r\n"
+                },
+                {
+                    "date": 1629937871506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n <body>\r\n     <div class=\"app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header\">\r\n         <div class=\"app-header header-shadow\">\r\n             <div class=\"app-header__logo\">\r\n-                <div class=\"logo\"><img src=\"{{asset('admin-panel/assets/images/smkwd.png')}}\" alt=\"\" width=\"50\"></div>\r\n+                <div class=\"logo\"><img src=\"{{asset('landing-page/assets/img/smkwd.png')}}\" alt=\"\" width=\"50\"></div>\r\n                 <div class=\"header__pane ml-auto\">\r\n                     <div>\r\n                         <button type=\"button\" class=\"hamburger close-sidebar-btn hamburger--elastic\" data-class=\"closed-sidebar\">\r\n                             <span class=\"hamburger-box\">\r\n"
+                },
+                {
+                    "date": 1629937881250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n                 <div class=\"header__pane ml-auto\">\r\n                     <div>\r\n                         <button type=\"button\" class=\"hamburger close-sidebar-btn hamburger--elastic\" data-class=\"closed-sidebar\">\r\n                             <span class=\"hamburger-box\">\r\n-                                <span class=\"hamburger-inner\"></span>\r\n+                                <span class=\"hamburger-inner\">SMK</span>\r\n                             </span>\r\n                         </button>\r\n                     </div>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1629937894378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,14 +24,16 @@\n <body>\r\n     <div class=\"app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header\">\r\n         <div class=\"app-header header-shadow\">\r\n             <div class=\"app-header__logo\">\r\n-                <div class=\"logo\"><img src=\"{{asset('landing-page/assets/img/smkwd.png')}}\" alt=\"\" width=\"50\"></div>\r\n+                <div class=\"logo\"><img src=\"{{asset('landing-page/assets/img/smkwd.png')}}\" alt=\"\" width=\"50\">\r\n+                    <P>SMK</P>\r\n+                </div>\r\n                 <div class=\"header__pane ml-auto\">\r\n                     <div>\r\n                         <button type=\"button\" class=\"hamburger close-sidebar-btn hamburger--elastic\" data-class=\"closed-sidebar\">\r\n                             <span class=\"hamburger-box\">\r\n-                                <span class=\"hamburger-inner\">SMK</span>\r\n+                                <span class=\"hamburger-inner\"></span>\r\n                             </span>\r\n                         </button>\r\n                     </div>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1629937899481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n     <div class=\"app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header\">\r\n         <div class=\"app-header header-shadow\">\r\n             <div class=\"app-header__logo\">\r\n                 <div class=\"logo\"><img src=\"{{asset('landing-page/assets/img/smkwd.png')}}\" alt=\"\" width=\"50\">\r\n-                    <P>SMK</P>\r\n                 </div>\r\n                 <div class=\"header__pane ml-auto\">\r\n                     <div>\r\n                         <button type=\"button\" class=\"hamburger close-sidebar-btn hamburger--elastic\" data-class=\"closed-sidebar\">\r\n"
                 }
             ],
             "date": 1629006920669,
