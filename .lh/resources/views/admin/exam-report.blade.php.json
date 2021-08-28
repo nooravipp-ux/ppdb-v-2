@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1629271022786,
@@ -12,6 +12,30 @@
                 {
                     "date": 1629901704823,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n+                <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\">Master Data Hasil Test\r\n"
+                },
+                {
+                    "date": 1630047421278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,12 @@\n                 <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>\r\n-                <div class=\"page-title-subheading\">Master Data Hasil Test\r\n+                <div class=\"page-title-subheading\"> \r\n+                    <h4>\r\n+                        Data Hasil Test\r\n+                    </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n"
+                },
+                {
+                    "date": 1630047487795,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        Data Hasil Test\r\n+                        Data Hasil Ujian / Tes\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1630048210537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n-                            <th>#</th>\r\n+                            <th>No</th>\r\n                             <th>Nama Lengkap</th>\r\n                             <th>Nama Ujian</th>\r\n                             <th class=\"text-center\">Persentase</th>\r\n                             <th class=\"text-center\">Tanggal Ujian</th>\r\n"
+                },
+                {
+                    "date": 1630048449057,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,11 @@\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n             <button type=\"button\" data-toggle=\"tooltip\" title=\"Example Tooltip\" data-placement=\"bottom\" class=\"btn-shadow mr-3 btn btn-dark\">\r\n-                <i class=\"fa fa-star\"></i>\r\n+                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n+                <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n+                {{-- <i class=\"fa fa-star\"></i> --}}\r\n             </button>\r\n         </div>\r\n     </div>\r\n </div>\r\n"
+                },
+                {
+                    "date": 1630048500966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,13 +16,12 @@\n                 </div>\r\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n-            <button type=\"button\" data-toggle=\"tooltip\" title=\"Example Tooltip\" data-placement=\"bottom\" class=\"btn-shadow mr-3 btn btn-dark\">\r\n+            <form class=\"form-inline\">\r\n                 <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n                 <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n-                {{-- <i class=\"fa fa-star\"></i> --}}\r\n-            </button>\r\n+              </form>\r\n         </div>\r\n     </div>\r\n </div>\r\n \r\n"
+                },
+                {
+                    "date": 1630048563308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n             <form class=\"form-inline\">\r\n-                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n+                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Nama\" aria-label=\"Search\">\r\n                 <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n               </form>\r\n         </div>\r\n     </div>\r\n"
                 }
             ],
             "date": 1629271022786,

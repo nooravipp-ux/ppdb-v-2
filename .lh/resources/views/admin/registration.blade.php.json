@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 18,
+            "activePatchIndex": 30,
             "patches": [
                 {
                     "date": 1629008280964,
@@ -80,6 +80,54 @@
                 {
                     "date": 1629901816841,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         </div>\r\n         <div class=\"page-title-actions\">\r\n             <nav class=\"bg-light\">\r\n                 <form class=\"form-inline\">\r\n-                  <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Cari Data Pendaftar\">\r\n+                  <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n                   <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n                 </form>\r\n               </nav>\r\n             {{-- <button type=\"button\" data-toggle=\"tooltip\" title=\"Example Tooltip\" data-placement=\"bottom\" class=\"btn-shadow mr-3 btn btn-dark\">\r\n"
+                },
+                {
+                    "date": 1630047517692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,12 @@\n                 <i class=\"pe-7s-note2 icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>\r\n-                <div class=\"page-title-subheading\">Data Pendaftar\r\n+                <div class=\"page-title-subheading\">\r\n+                    <h4>\r\n+                        Data Pendaftar\r\n+                    </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n"
+                },
+                {
+                    "date": 1630047538297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,9 +33,12 @@\n \r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n-            <div class=\"card-header\">Daftar Peserta DidiK\r\n+            <div class=\"card-header\">\r\n+                <h5>\r\n+                    Daftar Peserta DidiK\r\n+                </h5>\r\n                 <div class=\"btn-actions-pane-right\">\r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n"
+                },
+                {
+                    "date": 1630047547878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -33,12 +33,9 @@\n \r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n-            <div class=\"card-header\">\r\n-                <h5>\r\n-                    Daftar Peserta DidiK\r\n-                </h5>\r\n+            <div class=\"card-header\">Daftar Peserta DidiK\r\n                 <div class=\"btn-actions-pane-right\">\r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n"
+                },
+                {
+                    "date": 1630047569572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n+                            <th class=\" text-center\">No.</th>\r\n                             <th class=\"text-center\">Nama Lengkap</th>\r\n                             <th class=\"text-center\">Jurusan</th>\r\n                             <th>Alamat</th>\r\n                             <th class=\"text-center\">Asal Sekolah</th>\r\n"
+                },
+                {
+                    "date": 1630047767489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n                     </thead>\r\n                     <tbody>\r\n                         @foreach($register as $r)\r\n                         <tr>\r\n+                            {{-- <td class=\"text-center\">{{$r->nama_lengkap}}</td> --}}\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n"
+                },
+                {
+                    "date": 1630047778040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                     </thead>\r\n                     <tbody>\r\n                         @foreach($register as $r)\r\n                         <tr>\r\n-                            {{-- <td class=\"text-center\">{{$r->nama_lengkap}}</td> --}}\r\n+                            <td class=\"text-center\">1</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n"
+                },
+                {
+                    "date": 1630048271156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,12 @@\n                         </tr>\r\n                     </thead>\r\n                     <tbody>\r\n                         @foreach($register as $r)\r\n+                        <?php $i = 1; ?>\r\n+                        @foreach($reportExam as $re)\r\n                         <tr>\r\n-                            <td class=\"text-center\">1</td>\r\n+                            <td>{{$i++}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n"
+                },
+                {
+                    "date": 1630048284040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,12 +52,10 @@\n                         </tr>\r\n                     </thead>\r\n                     <tbody>\r\n                         @foreach($register as $r)\r\n-                        <?php $i = 1; ?>\r\n-                        @foreach($reportExam as $re)\r\n                         <tr>\r\n-                            <td>{{$i++}}</td>\r\n+                            <td class=\"text-center\">1</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n"
+                },
+                {
+                    "date": 1630048344855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,10 @@\n                             <th class=\"text-center\">Aksi</th>\r\n                         </tr>\r\n                     </thead>\r\n                     <tbody>\r\n+                        <?php $i = 1; ?>\r\n+                        @foreach($reportExam as $re)\r\n                         @foreach($register as $r)\r\n                         <tr>\r\n                             <td class=\"text-center\">1</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n"
+                },
+                {
+                    "date": 1630048365027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,10 +51,9 @@\n                             <th class=\"text-center\">Aksi</th>\r\n                         </tr>\r\n                     </thead>\r\n                     <tbody>\r\n-                        <?php $i = 1; ?>\r\n-                        @foreach($reportExam as $re)\r\n+                        \r\n                         @foreach($register as $r)\r\n                         <tr>\r\n                             <td class=\"text-center\">1</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n"
+                },
+                {
+                    "date": 1630048380788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n-                            <th class=\" text-center\">No.</th>\r\n+                            <th class=\" text-center\">No</th>\r\n                             <th class=\"text-center\">Nama Lengkap</th>\r\n                             <th class=\"text-center\">Jurusan</th>\r\n                             <th>Alamat</th>\r\n                             <th class=\"text-center\">Asal Sekolah</th>\r\n"
+                },
+                {
+                    "date": 1630048480955,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,12 @@\n                 </div>\r\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n-            <nav class=\"bg-light\">\r\n                 <form class=\"form-inline\">\r\n                   <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n                   <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n                 </form>\r\n-              </nav>\r\n             {{-- <button type=\"button\" data-toggle=\"tooltip\" title=\"Example Tooltip\" data-placement=\"bottom\" class=\"btn-shadow mr-3 btn btn-dark\">\r\n                 <i class=\"fa fa-star\"></i>\r\n             </button> --}}\r\n \r\n"
                 }
             ],
             "date": 1629008280964,

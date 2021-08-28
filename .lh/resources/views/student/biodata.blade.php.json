@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 61,
+            "activePatchIndex": 69,
             "patches": [
                 {
                     "date": 1629513922282,
@@ -252,6 +252,38 @@
                 {
                     "date": 1629938849081,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -514,9 +514,9 @@\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <hr>\r\n-                <a href=\"\" class=\"\"> <button class=\"btn btn-primary\"> Download / Print Out Formulir</button></a>\r\n+                <button class=\"btn btn-primary\"> Download / Print Out Formulir</button><\r\n             </div>\r\n \r\n         </form>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1630033526847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -514,9 +514,9 @@\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <hr>\r\n-                <button class=\"btn btn-primary\"> Download / Print Out Formulir</button><\r\n+                <button class=\"btn btn-primary\"> Download / Print Out Formulir</button>\r\n             </div>\r\n \r\n         </form>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1630033574531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,12 +120,25 @@\n @section('content')\r\n <div class=\"container\">\r\n     <div class=\"container emp-profile\">\r\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n-            <div class=\"d-flex container\">\r\n-                <h2 class=\" p-2\">Data Calon Peserta Didik</h2>\r\n-\r\n+            <div class=\"form-group row container\">\r\n+                <h1>Data Calon Peserta Didik</h1>\r\n             </div>\r\n+            <div class=\" form-group row container\">\r\n+                @if($register->status == 0)\r\n+                    <div class=\"container\">\r\n+                        <a href=\"{{route('confirm.id', ['id' => $register->id])}}\" class=\"btn btn-success btn-sm\">Confirm</a>\r\n+                        @endif\r\n+                        \r\n+                        {{-- <a href=\"{{route('confirm.id', ['id' => $register->id])}}\" class=\"btn btn-success btn-sm\">Confirm</a> --}}\r\n+                    <button type=\"button\" class=\" btn btn-info ml-3\">\r\n+                        Cetak Bukti Pendaftaran\r\n+                    </button>\r\n+                    <button type=\"button\" class=\"btn btn-danger ml-3\">\r\n+                        Update\r\n+                    </button>\r\n+            </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n"
+                },
+                {
+                    "date": 1630033589731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -124,14 +124,8 @@\n             <div class=\"form-group row container\">\r\n                 <h1>Data Calon Peserta Didik</h1>\r\n             </div>\r\n             <div class=\" form-group row container\">\r\n-                @if($register->status == 0)\r\n-                    <div class=\"container\">\r\n-                        <a href=\"{{route('confirm.id', ['id' => $register->id])}}\" class=\"btn btn-success btn-sm\">Confirm</a>\r\n-                        @endif\r\n-                        \r\n-                        {{-- <a href=\"{{route('confirm.id', ['id' => $register->id])}}\" class=\"btn btn-success btn-sm\">Confirm</a> --}}\r\n                     <button type=\"button\" class=\" btn btn-info ml-3\">\r\n                         Cetak Bukti Pendaftaran\r\n                     </button>\r\n                     <button type=\"button\" class=\"btn btn-danger ml-3\">\r\n"
+                },
+                {
+                    "date": 1630033600416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,9 +123,9 @@\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n                 <h1>Data Calon Peserta Didik</h1>\r\n             </div>\r\n-            <div class=\" form-group row container\">\r\n+            <div class=\" form-group row\">\r\n                     <button type=\"button\" class=\" btn btn-info ml-3\">\r\n                         Cetak Bukti Pendaftaran\r\n                     </button>\r\n                     <button type=\"button\" class=\"btn btn-danger ml-3\">\r\n"
+                },
+                {
+                    "date": 1630033625949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,16 +123,8 @@\n         <form action=\"\" method=\"POST\" enctype=\"multipart/form-data\">\r\n             <div class=\"form-group row container\">\r\n                 <h1>Data Calon Peserta Didik</h1>\r\n             </div>\r\n-            <div class=\" form-group row\">\r\n-                    <button type=\"button\" class=\" btn btn-info ml-3\">\r\n-                        Cetak Bukti Pendaftaran\r\n-                    </button>\r\n-                    <button type=\"button\" class=\"btn btn-danger ml-3\">\r\n-                        Update\r\n-                    </button>\r\n-            </div>\r\n             <hr>\r\n             \r\n             <div class=\"card shadow p-2 rounded\">\r\n                 <div class=\"card\" style=\"background: #37517e\">\r\n"
+                },
+                {
+                    "date": 1630033664654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,9 +512,9 @@\n             <hr>\r\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n-                <button type=\"submit\" class=\"btn btn-primary\">Update Data</button> <hr>\r\n+                <button type=\"submit\" class=\"btn btn-warning\">Update Data</button> <hr>\r\n                 <button class=\"btn btn-primary\"> Download / Print Out Formulir</button>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1630033670133,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -512,9 +512,9 @@\n             <hr>\r\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n-                <button type=\"submit\" class=\"btn btn-warning\">Update Data</button> <hr>\r\n+                <button type=\"submit\" class=\"btn btn-info\">Update Data</button> <hr>\r\n                 <button class=\"btn btn-primary\"> Download / Print Out Formulir</button>\r\n             </div>\r\n \r\n         </form>\r\n"
+                },
+                {
+                    "date": 1630033677233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -513,9 +513,9 @@\n             <br>\r\n             \r\n             <div class=\" container row text-center\">\r\n                 <button type=\"submit\" class=\"btn btn-info\">Update Data</button> <hr>\r\n-                <button class=\"btn btn-primary\"> Download / Print Out Formulir</button>\r\n+                <button class=\"btn btn-success\"> Download / Print Out Formulir</button>\r\n             </div>\r\n \r\n         </form>\r\n     </div>\r\n"
                 }
             ],
             "date": 1629513922282,
