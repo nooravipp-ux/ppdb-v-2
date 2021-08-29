@@ -47,6 +47,10 @@ Route::get('/register/confirm/{id}', [App\Http\Controllers\RegistrationControlle
 Route::get('/student-registration', [App\Http\Controllers\RegistrationController::class, 'registrationStudent']);
 Route::post('/student-registration/save', [App\Http\Controllers\RegistrationController::class, 'save']);
 
+Route::get('/registration-success/{param}', [App\Http\Controllers\RegistrationController::class, 'registrationSuccess'])->name('success');
+Route::get('/registration-success/download-formulir/{param}', [App\Http\Controllers\RegistrationController::class, 'downloadFormulir'])->name('download.formulir');
+
+
 Route::get('/register/download/{filename}', [App\Http\Controllers\RegistrationController::class, 'downloadFile'])->name('download');
 
 

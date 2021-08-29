@@ -53,7 +53,7 @@
                         <a href="{{url('/')}}" class=" btn btn-warning">Kembali</a> 
                     </div> <br>
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="{{url('/')}}" class=" btn btn-success"><span>Download / Print Out Formulir</span></a>
+                        <a href="{{route('download.formulir', ['param'=>$nisn])}}" class=" btn btn-success"><span>Download / Print Out Formulir</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">

@@ -48,13 +48,12 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pilih Jurusan</label>
                                 <div class="col-sm-9 input-group-append">
                                     <div class="input-group-text"> <i class="fa fa-list text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="jurusan" placeholder="Masukkan Agama"> --}}
-                                    <select name="jurusan" id="" class=" form-control">
+                                    <select name="pilihan_jurusan" id="" class=" form-control">
                                         <option value="" selected>Pilih Jurusan</option>
-                                        <option value="">Teknik Bisnis dan Sepeda Motor</option>
-                                        <option value="">Teknik Komputer dan Jaringan</option>
-                                        <option value="">Teknik Kendaraan Ringan</option>
-                                        <option value="">Teknik Pemesinan</option>
+                                        <option value="Teknik Bisnis dan Sepeda Motor">Teknik Bisnis dan Sepeda Motor</option>
+                                        <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
+                                        <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan</option>
+                                        <option value="eknik Pemesinan">Teknik Pemesinan</option>
                                     </select>
                                 </div>
                             </div>
@@ -111,14 +110,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Kartu Keluarga</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-address-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="" placeholder="Masukkan No. KK">
+                                    <input type="text" class="form-control" name="no_kk" placeholder="Masukkan No. KK">
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload Kartu Keluarga</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="">
+                                    <input type="file" class="form-control-file" name="file_kk" required>
                                 </div>
                             </div>
 
@@ -177,15 +176,15 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Agama</label>
                                 <div class="col-sm-9 input-group-append">
                                     <div class="input-group-text"> <i class="fa fa-list text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="agama" placeholder="Masukkan Agama"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <!-- {{-- <input type="text" class="form-control" name="agama" placeholder="Masukkan Agama"> --}} -->
+                                    <select name="agama" id="" class=" form-control">
                                         <option value="" selected>Pilih Agama</option>
-                                        <option value="">Islam</option>
-                                        <option value="">Kristen</option>
-                                        <option value="">Katholik</option>
-                                        <option value="">Hindu</option>
-                                        <option value="">Buddha</option>
-                                        <option value="">Konghucu</option>
+                                        <option value="Islam">Islam</option>
+                                        <option value="Kristen">Kristen</option>
+                                        <option value="Katholik">Katholik</option>
+                                        <option value="Hindu">Hindu</option>
+                                        <option value="Buddha">Buddha</option>
+                                        <option value="Konghucu">Konghucu</option>
                                     </select>
                                 </div>
                             </div>
@@ -254,7 +253,7 @@
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload Surat Kelulusan</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="file_kelulusan">
+                                    <input type="file" class="form-control-file" name="file_surat_kelulusan">
                                 </div>
                             </div>
                             
@@ -343,19 +342,19 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-area-chart text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="pendidikan_ayah" placeholder="Masukkan Pendidikan Terakhir Ayah"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="pendidikan_ayah" id="" class=" form-control">
                                         <option value="" selected>Pilih Pendidikan Terakhir</option>
-                                        <option value="" >Tidak Sekolah</option>
-                                        <option value="" >SD / Sederajat</option>
-                                        <option value="" >SMP / Sederajat</option>
-                                        <option value="" >SMA / Sederajat</option>
-                                        <option value="" >D1</option>
-                                        <option value="" >D2</option>
-                                        <option value="" >D3</option>
-                                        <option value="" >D4</option>
-                                        <option value="" >S1</option>
-                                        <option value="" >S2</option>
-                                        <option value="" >S3</option>
+                                        <option value="Tidak Sekolah" >Tidak Sekolah</option>
+                                        <option value="SD / Sederajat" >SD / Sederajat</option>
+                                        <option value="SMP / Sederajat" >SMP / Sederajat</option>
+                                        <option value="SMA / Sederajat" >SMA / Sederajat</option>
+                                        <option value="D1" >D1</option>
+                                        <option value="D2" >D2</option>
+                                        <option value="D3" >D3</option>
+                                        <option value="D4" >D4</option>
+                                        <option value="S1" >S1</option>
+                                        <option value="S2" >S2</option>
+                                        <option value="S3" >S3</option>
                                     </select>
                                 </div>
                             </div>
@@ -364,14 +363,14 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="pekerjaan_ayah" placeholder="Masukkan Pekerjaan Ayah"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="pekerjaan_ayah" id="" class=" form-control">
                                         <option value="" selected>Pilih Pekerjaan</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lainnya</option>
+                                        <option value="Wiraswasta">Wiraswasta</option>
+                                        <option value="Buruh">Buruh</option>
+                                        <option value="Guru">Guru</option>
+                                        <option value="TNI">TNI</option>
+                                        <option value="POLRI">POLRI</option>
+                                        <option value="Lainnya">Lainnya</option>
                                     </select>
                                 </div>
                             </div>
@@ -380,13 +379,13 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="penghasilan_ayah"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="penghasilan_ayah" id="" class=" form-control">
                                         <option value="" selected>Pilih Penghasilan</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
+                                        <option value="< 250.000">< 250.000</option>
+                                        <option value="250.000 - 500.000">250.000 - 500.000</option>
+                                        <option value="500.000 - 1.000.000">500.000 - 1.000.000</option>
+                                        <option value="1.000.000 - 2.000.000">1.000.000 - 2.000.000</option>
+                                        <option value="> 2.000.000">> 2.000.000</option>
                                     </select>
                                 </div>
                             </div>
@@ -426,19 +425,19 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-area-chart text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="pendidikan_ibu" placeholder="Masukkan Pendidikan Terakhir Ibu"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="pendidikan_ibu" id="" class=" form-control">
                                         <option value="" selected>Pilih Pendidikan Terakhir</option>
-                                        <option value="" >Tidak Sekolah</option>
-                                        <option value="" >SD / Sederajat</option>
-                                        <option value="" >SMP / Sederajat</option>
-                                        <option value="" >SMA / Sederajat</option>
-                                        <option value="" >D1</option>
-                                        <option value="" >D2</option>
-                                        <option value="" >D3</option>
-                                        <option value="" >D4</option>
-                                        <option value="" >S1</option>
-                                        <option value="" >S2</option>
-                                        <option value="" >S3</option>
+                                        <option value="Tidak Sekolah" >Tidak Sekolah</option>
+                                        <option value="SD / Sederajat" >SD / Sederajat</option>
+                                        <option value="SMP / Sederajat" >SMP / Sederajat</option>
+                                        <option value="SMA / Sederajat" >SMA / Sederajat</option>
+                                        <option value="D1" >D1</option>
+                                        <option value="D1" >D1</option>
+                                        <option value="D3" >D3</option>
+                                        <option value="D4" >D4</option>
+                                        <option value="S1" >S1</option>
+                                        <option value="S2" >S2</option>
+                                        <option value="S3" >S3</option>
                                     </select>
                                 </div>
                             </div>
@@ -447,14 +446,14 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="pekerjaan_ibu" placeholder="Masukkan Pekerjaan Ibu"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="pekerjaan_ibu" id="" class=" form-control">
                                         <option value="" selected>Pilih Pekerjaan Terakhir</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lainnya</option>
+                                        <option value="Wiraswasta">Wiraswasta</option>
+                                        <option value="Buruh">Buruh</option>
+                                        <option value="Guru">Guru</option>
+                                        <option value="TNI">TNI</option>
+                                        <option value="POLRI">POLRI</option>
+                                        <option value="Lainnya">Lainnya</option>
                                     </select>
                                 </div>
                             </div>
@@ -462,14 +461,13 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_ibu"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="penghasilan_ibu" id="" class=" form-control">
                                         <option value="" selected>Pilih Penghasilan</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
+                                        <option value="< 250.000">< 250.000</option>
+                                        <option value="250.000 - 500.000">250.000 - 500.000</option>
+                                        <option value="500.000 - 1.000.000">500.000 - 1.000.000</option>
+                                        <option value="1.000.000 - 2.000.000">1.000.000 - 2.000.000</option>
+                                        <option value="> 2.000.000">> 2.000.000</option>
                                     </select>
                                 </div>
                             </div>
@@ -497,7 +495,7 @@
                                 </div>
                             </div>
                             
-                            {{-- Wali --}}
+                            <!-- {{-- Wali --}} -->
                             <hr>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Nama Wali</label>
@@ -510,15 +508,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Pekerjaan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-google-wallet text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="pekerjaan_wali" placeholder="Masukkan Pekerjaan Wali"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="pekerjaan_wali" id="" class=" form-control">
                                         <option value="" selected>Pilih Pekerjaan</option>
-                                        <option value="">Wiraswasta</option>
-                                        <option value="">Buruh</option>
-                                        <option value="">Guru</option>
-                                        <option value="">TNI</option>
-                                        <option value="">POLRI</option>
-                                        <option value="">Lainnya</option>
+                                        <option value="Wiraswasta">Wiraswasta</option>
+                                        <option value="Buruh">Buruh</option>
+                                        <option value="Guru">Guru</option>
+                                        <option value="TNI">TNI</option>
+                                        <option value="POLRI">POLRI</option>
+                                        <option value="Lainnya">Lainnya</option>
                                     </select>
                                 </div>
                             </div>
@@ -526,14 +523,13 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Penghasilan Perbulan</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-money text-info"> </i></div>
-                                    {{-- <input type="text" class="form-control" name="penghasilan_wali"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="penghasilan_wali" id="" class=" form-control">
                                         <option value="" selected>Pilih Penghasilan</option>
-                                        <option value="">< 250.000</option>
-                                        <option value="">250.000 - 500.000</option>
-                                        <option value="">500.000 - 1.000.000</option>
-                                        <option value="">1.000.000 - 2.000.000</option>
-                                        <option value="">> 2.000.000</option>
+                                        <option value="< 250.000">< 250.000</option>
+                                        <option value="250.000 - 500.000">250.000 - 500.000</option>
+                                        <option value="500.000 - 1.000.000">500.000 - 1.000.000</option>
+                                        <option value="1.000.000 - 2.000.000">1.000.000 - 2.000.000</option>
+                                        <option value="> 2.000.000">> 2.000.000</option>
                                     </select>
                                 </div>
                             </div>
@@ -578,12 +574,12 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-long-arrow-right text-info"> </i></div>
                                     {{-- <input type="text" class="form-control"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="jarak_rumah_ke_sekolah" id="" class=" form-control">
                                         <option value="" selected>Pilih Jarak</option>
-                                        <option value="">0 - 1 Km</option>
-                                        <option value="">1 - 3 Km</option>
-                                        <option value="">3 - 5 Km</option>
-                                        <option value="">5 - 10 Km </option>
+                                        <option value="0 - 1 Km">0 - 1 Km</option>
+                                        <option value="1 - 3 Km">1 - 3 Km</option>
+                                        <option value="3 - 5 Km">3 - 5 Km</option>
+                                        <option value="> 5 Km">> 5 Km </option>
                                     </select>
                                 </div>
                             </div>
@@ -593,14 +589,14 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-car text-info"> </i></div>
                                     {{-- <input type="text" class="form-control"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="transportasi" id="" class=" form-control">
                                         <option value="" selected>Pilih Transportasi</option>
-                                        <option value="">Jalan Kaki</option>
-                                        <option value="">Sepeda</option>
-                                        <option value="">Mobil Pribadi</option>
-                                        <option value="">Motor</option>
-                                        <option value="">Antar Jemput</option>
-                                        <option value="">Angkutan Umum</option>
+                                        <option value="Jalan Kaki">Jalan Kaki</option>
+                                        <option value="Sepeda">Sepeda</option>
+                                        <option value="Mobil Pribadi">Mobil Pribadi</option>
+                                        <option value="Motor">Motor</option>
+                                        <option value="Antar Jemput">Antar Jemput</option>
+                                        <option value="Angkutan Umum">Angkutan Umum</option>
                                     </select>
                                 </div>
                             </div>
@@ -628,12 +624,12 @@
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-thermometer text-info"> </i></div>
                                     {{-- <input type="text" class="form-control" name="gol_darah"> --}}
-                                    <select name="" id="" class=" form-control">
+                                    <select name="gol_darah" id="" class=" form-control">
                                         <option value="" selected>Pilih Golongan Darah</option>
-                                        <option value="">A</option>
-                                        <option value="">B</option>
-                                        <option value="">AB</option>
-                                        <option value="">O</option>
+                                        <option value="A">A</option>
+                                        <option value="B">B</option>
+                                        <option value="AB">AB</option>
+                                        <option value="O">O</option>
                                     </select>
                                 </div>
                             </div>

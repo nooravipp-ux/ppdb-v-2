@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Registration;
 use App\Models\Student;
 use App\Models\User;
+use Barryvdh\DomPDF\Facade as PDF;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use App\Mail\RegistrationMailNotif;
@@ -34,9 +35,16 @@ class RegistrationController extends Controller
 
         $file_ijazah = $req->file('file_ijazah')->getClientOriginalName();
         $file_skhun = $req->file('file_skhun')->getClientOriginalName();
+        $file_kk = $req->file('file_kk')->getClientOriginalName();
+        $file_akta = $req->file('file_akta')->getClientOriginalName();
+        $file_surat_kelulusan = $req->file('file_surat_kelulusan')->getClientOriginalName();
             
         $req->file('file_ijazah')->move('uploads', $req->file('file_ijazah')->getClientOriginalName());
         $req->file('file_skhun')->move('uploads', $req->file('file_skhun')->getClientOriginalName());
+
+        $req->file('file_kk')->move('uploads', $req->file('file_kk')->getClientOriginalName());
+        $req->file('file_akta')->move('uploads', $req->file('file_akta')->getClientOriginalName());
+        $req->file('file_surat_kelulusan')->move('uploads', $req->file('file_surat_kelulusan')->getClientOriginalName());
         
 
         $student = Student::create(
@@ -75,7 +83,7 @@ class RegistrationController extends Controller
             'pekerjaan_ibu' => $req->pekerjaan_ibu,
             'penghasilan_ibu' => $req->penghasilan_ibu,
             'alamat_ortu' => $req->alamat_ortu,
-            'kode_pos_ortu' => $req->kode_post_ortu,
+            'kode_pos_ortu' => $req->kode_pos_ortu,
             'no_telp_ortu' => $req->no_telp_ortu,
             'nama_wali' => $req->nama_wali,
             'pekerjaan_wali' => $req->pekerjaan_wali,
@@ -89,7 +97,13 @@ class RegistrationController extends Controller
             'tinggi_badan' => $req->tinggi_badan,
             'riwayat_penyakit' => $req->riwayat_penyakit,
             'file_ijazah' => $file_ijazah,
-            'file_skhun' => $file_skhun
+            'file_skhun' => $file_skhun,
+            'file_kk' => $file_kk,
+            'file_akta' => $file_akta,
+            'file_surat_kelulusan' => $file_surat_kelulusan,
+            'pilihan_jurusan' => $req->pilihan_jurusan,
+            'no_kk' => $req->no_kk,
+            'gol_darah' => $req->gol_darah
             ]
         );
 
@@ -97,7 +111,17 @@ class RegistrationController extends Controller
             'student_id' => $student->id
         ]);
 
-        return view('registsuccess');
+        return redirect()->route('success', ['param' => $req->no_induk_siswa_nasional]);
+    }
+
+    public function registrationSuccess($nisn){
+        return view('registsuccess', compact('nisn'));
+    }
+
+    public function downloadFormulir($param){
+        $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();
+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;
+        return $pdf->download('formulir-ppdb.pdf');
     }
 
     public function getDetailRegister($id){
