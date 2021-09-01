@@ -16,7 +16,7 @@ class RegistrationController extends Controller
 {
     public function index(){
         $register = DB::table('t_registration')
-                    ->select('t_student.id','t_student.nama_lengkap','t_student.alamat','t_student.no_telp','t_student.nama_sekolah_asal', 't_registration.status')
+                    ->select('t_student.id','t_student.nama_lengkap', 't_student.pilihan_jurusan', 't_student.alamat','t_student.no_telp','t_student.nama_sekolah_asal', 't_registration.status')
                     ->join('t_student', 't_student.id','=', 't_registration.student_id')
                     ->get();
         return view('admin.registration', compact('register'));

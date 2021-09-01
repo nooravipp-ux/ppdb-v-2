@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 30,
+            "activePatchIndex": 36,
             "patches": [
                 {
                     "date": 1629008280964,
@@ -128,6 +128,30 @@
                 {
                     "date": 1630048480955,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,14 +16,12 @@\n                 </div>\r\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n-            <nav class=\"bg-light\">\r\n                 <form class=\"form-inline\">\r\n                   <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n                   <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n                 </form>\r\n-              </nav>\r\n             {{-- <button type=\"button\" data-toggle=\"tooltip\" title=\"Example Tooltip\" data-placement=\"bottom\" class=\"btn-shadow mr-3 btn btn-dark\">\r\n                 <i class=\"fa fa-star\"></i>\r\n             </button> --}}\r\n \r\n"
+                },
+                {
+                    "date": 1630317412676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n                         @foreach($register as $r)\r\n                         <tr>\r\n                             <td class=\"text-center\">1</td>\r\n                             <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n-                            <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n+                            <td class=\"text-center\">{{$r->pilihan_jurusan}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n                             <td class=\"text-center bg-primary\">Applying</td>\r\n"
+                },
+                {
+                    "date": 1630396877638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n                         \r\n                         @foreach($register as $r)\r\n                         <tr>\r\n                             <td class=\"text-center\">1</td>\r\n-                            <td class=\"text-center\">{{$r->nama_lengkap}}</td>\r\n+                            <td class=\"\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"text-center\">{{$r->pilihan_jurusan}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n"
+                },
+                {
+                    "date": 1630396887820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n                         @foreach($register as $r)\r\n                         <tr>\r\n                             <td class=\"text-center\">1</td>\r\n                             <td class=\"\">{{$r->nama_lengkap}}</td>\r\n-                            <td class=\"text-center\">{{$r->pilihan_jurusan}}</td>\r\n+                            <td class=\"\">{{$r->pilihan_jurusan}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n                             <td class=\"text-center bg-primary\">Applying</td>\r\n"
+                },
+                {
+                    "date": 1630396893565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n                     <tbody>\r\n                         \r\n                         @foreach($register as $r)\r\n                         <tr>\r\n-                            <td class=\"text-center\">1</td>\r\n+                            <td class=\"\">1</td>\r\n                             <td class=\"\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"\">{{$r->pilihan_jurusan}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n                             <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n"
+                },
+                {
+                    "date": 1630396900145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,9 +56,9 @@\n                             <td class=\"\">1</td>\r\n                             <td class=\"\">{{$r->nama_lengkap}}</td>\r\n                             <td class=\"\">{{$r->pilihan_jurusan}}</td>\r\n                             <td>{{$r->alamat}}</td>\r\n-                            <td class=\"text-center\">{{$r->nama_sekolah_asal}}</td>\r\n+                            <td class=\"\">{{$r->nama_sekolah_asal}}</td>\r\n                             @if($r->status == 0)\r\n                             <td class=\"text-center bg-primary\">Applying</td>\r\n                             @elseif($r->status == 1)\r\n                             <td class=\"text-center bg-warning\">Terkonfirmasi</td>\r\n"
+                },
+                {
+                    "date": 1630396928365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,13 +39,13 @@\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n-                            <th class=\" text-center\">No</th>\r\n-                            <th class=\"text-center\">Nama Lengkap</th>\r\n-                            <th class=\"text-center\">Jurusan</th>\r\n+                            <th class=\"\">No</th>\r\n+                            <th class=\"\">Nama Lengkap</th>\r\n+                            <th class=\"\">Jurusan</th>\r\n                             <th>Alamat</th>\r\n-                            <th class=\"text-center\">Asal Sekolah</th>\r\n+                            <th class=\"\">Asal Sekolah</th>\r\n                             <th class=\"text-center\">Status</th>\r\n                             <th class=\"text-center\">Aksi</th>\r\n                         </tr>\r\n                     </thead>\r\n"
                 }
             ],
             "date": 1629008280964,
