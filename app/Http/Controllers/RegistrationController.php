@@ -121,7 +121,7 @@ class RegistrationController extends Controller
     public function downloadFormulir($param){
         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();
         $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;
-        return $pdf->download('formulir-ppdb.pdf');
+        return $pdf->stream('formulir-ppdb.pdf');
     }
 
     public function getDetailRegister($id){

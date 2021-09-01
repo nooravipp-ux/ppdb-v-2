@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Responsive Registaration Form</title>
+    <title>PPDB | lklDownload Formulir Pendaftaran</title>
     <link rel="stylesheet" href="./responsiveRegistration.css">
     <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
     <style type="text/css" media="all">
