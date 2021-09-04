@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1630314355623,
@@ -24,6 +24,130 @@
                 {
                     "date": 1630486804845,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n         $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n-        return $pdf->download('formulir-ppdb.pdf');\r\n+        return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n         $register = DB::table('t_registration')\r\n"
+                },
+                {
+                    "date": 1630774746033,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630774802650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isRemoteEnabled' => true]);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630774836328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isRemoteEnabled' => true]);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isRemoteEnabled' => true]);\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630774853338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isRemoteEnabled' => true]);\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630774943861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775065162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif',]);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775426895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif',]);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))x;;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775433084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))x;;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775473846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775506996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])->loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775512751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775536157,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true'defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775550552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true'defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->;;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775560180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->;;\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true,'defaultFont' => 'sans-serif'])loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630775591061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true,'defaultFont' => 'sans-serif'])loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776697701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions([set_option('enable_remote', TRUE);'defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776711527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions([set_option('enable_remote', TRUE);'defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))-'defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776720240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))-'defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions([''defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776726279,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions([''defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['','defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776735468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['','defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote','defaultFont' => 'sans-serif']);;\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776741491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote','defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote' =,'defaultFont' => 'sans-serif']);;. \r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776746884,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote' =,'defaultFont' => 'sans-serif']);;. \r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote','defaultFont' => 'sans-serif']);\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776754759,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote','defaultFont' => 'sans-serif']);\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote'=> true,'defaultFont' => 'sans-serif']);\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776763330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote'=> true,'defaultFont' => 'sans-serif']);\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote'=> TRUfaultFont' => 'sans-serif']);\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776769477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote'=> TRUfaultFont' => 'sans-serif']);\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote'=> TRUE,'defaultFont' => 'sans-serif']);\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776780424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['enable_remote'=> TRUE,'defaultFont' => 'sans-serif']);\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data');\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776787326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::loadView('student.download-formulir', compact('data');\r\n+        $pdf = PDF::->setOptions(['enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776793644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::->setOptions(['enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776946414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776955616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => TRUE,'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630776972011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => TRUE,'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true,'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
                 }
             ],
             "date": 1630314355623,
