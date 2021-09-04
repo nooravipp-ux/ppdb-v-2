@@ -123,7 +123,7 @@
         <a href="{{route('download.formulir', ['param'=>$biodata->no_induk_siswa_nasional])}}" class="btn btn-secondary ml-1">
             Cetak Formulir
         </a>
-        <a href="{{route('download.formulir', ['param'=>$biodata->no_induk_siswa_nasional])}}" class="btn btn-secondary ml-1">
+        <a href="{{route('download', ['filename' => 'bukti-daftar.doc'])}}" class="btn btn-secondary ml-1">
             Cetak Bukti Pendaftaran
         </a>
         <form action="{{route('biodata.id', ['id' => $biodata->id])}}" method="POST" enctype="multipart/form-data">

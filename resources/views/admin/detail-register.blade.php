@@ -134,7 +134,7 @@
                 <a href="{{route('download.formulir', ['param'=>$register->no_induk_siswa_nasional])}}" class="btn btn-secondary ml-1">
                     Cetak Formulir
                 </a>
-                <a href="{{route('download.formulir', ['param'=>$register->no_induk_siswa_nasional])}}" class="btn btn-secondary ml-1">
+                <a href="{{route('download', ['filename' => 'bukti-daftar.doc'])}}" class="btn btn-secondary ml-1">
                     Cetak Bukti Pendaftaran
                 </a>
                 @endif
