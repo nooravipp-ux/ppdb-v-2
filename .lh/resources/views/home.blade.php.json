@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 81,
+            "activePatchIndex": 83,
             "patches": [
                 {
                     "date": 1629007310619,
@@ -332,6 +332,14 @@
                 {
                     "date": 1630452801635,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n                     <i class=\"fa fa-calendar-alt\"></i> Calendar\r\n                 </div>\r\n                 <div class=\"card-tools\">\r\n                     <div class=\"btn-group\">\r\n-                        <button type=\"button\" class=\"btn btn-success btn-sm dropdown-toggle\" data-toggle=\" dropdown\" data-offset=\"-52\"></button>\r\n+                        <button type=\"button\" class=\"btn btn-success btn-sm dropdown-toggle\" data-toggle=\" dropdown\"></button>\r\n                     </div>\r\n                 </div>\r\n \r\n             </div>\r\n"
+                },
+                {
+                    "date": 1630721583345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,25 +111,8 @@\n                 </table>\r\n             </div>\r\n         </div>\r\n     </div>\r\n-    <div class=\"col-md-4\">\r\n-        <!-- Calendar -->\r\n-        <div class=\"card bg-success\">\r\n-            <div class=\"card-header border-0\">\r\n-                <div class=\"card-title\">\r\n-                    <i class=\"fa fa-calendar-alt\"></i> Calendar\r\n-                </div>\r\n-                <div class=\"card-tools\">\r\n-                    <div class=\"btn-group\">\r\n-                        <button type=\"button\" class=\"btn btn-success btn-sm dropdown-toggle\" data-toggle=\" dropdown\"></button>\r\n-                    </div>\r\n-                </div>\r\n-\r\n-            </div>\r\n-\r\n-        </div>\r\n-    </div>\r\n </div>\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1630721594685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n     </div> --}}\r\n </div>\r\n \r\n <div class=\"row\">\r\n-    <div class=\"col-md-8\">\r\n+    <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">User aktif\r\n                 <div class=\"btn-actions-panel-right\">\r\n                 </div>\r\n"
                 }
             ],
             "date": 1629007310619,

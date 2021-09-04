@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1630314355623,
@@ -20,6 +20,10 @@
                 {
                     "date": 1630318523845,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        // $pdf = ::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n+        $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n         return $pdf->download('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1630486804845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,9 +120,9 @@\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n         $pdf = PDF::loadView('student.download-formulir', compact('data'))->setOptions(['defaultFont' => 'sans-serif']);;\r\n-        return $pdf->download('formulir-ppdb.pdf');\r\n+        return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n         $register = DB::table('t_registration')\r\n"
                 }
             ],
             "date": 1630314355623,

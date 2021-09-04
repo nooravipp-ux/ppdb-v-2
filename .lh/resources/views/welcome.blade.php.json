@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 375,
+            "activePatchIndex": 377,
             "patches": [
                 {
                     "date": 1628893464831,
@@ -1508,6 +1508,14 @@
                 {
                     "date": 1630477327043,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n                         <a href=\"\" class=\"btn-get-started scrollto\"><span>Syarat & Panduan Pendaftaran</span></a>\r\n                     </div>\r\n                 </div>\r\n                 <div class=\"col-lg-6 order-1 order-lg-2 hero-img\" data-aos=\"zoom-in\" data-aos-delay=\"200\">\r\n-                    <img src=\"{{asset('landing-page/assets/img/kopwd.png')}}\" class=\"img-fluid animated\" alt=\"\">\r\n+                    <img src=\"{{asset('landing-page/assets/img/hero-img.png')}}\" class=\"img-fluid animated\" alt=\"\">\r\n                 </div>\r\n             </div>\r\n         </div>\r\n \r\n"
+                },
+                {
+                    "date": 1630554957786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n                         <a href=\"\" class=\"btn-get-started scrollto\"><span>Syarat & Panduan Pendaftaran</span></a>\r\n                     </div>\r\n                 </div>\r\n                 <div class=\"col-lg-6 order-1 order-lg-2 hero-img\" data-aos=\"zoom-in\" data-aos-delay=\"200\">\r\n-                    <img src=\"{{asset('landing-page/assets/img/hero-img.png')}}\" class=\"img-fluid animated\" alt=\"\">\r\n+                    <img src=\"{{asset('landing-page/assets/img/hero-img.png')}}\" class=\"img-fluid\" alt=\"\">\r\n                 </div>\r\n             </div>\r\n         </div>\r\n \r\n"
+                },
+                {
+                    "date": 1630554967231,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n                         <a href=\"\" class=\"btn-get-started scrollto\"><span>Syarat & Panduan Pendaftaran</span></a>\r\n                     </div>\r\n                 </div>\r\n                 <div class=\"col-lg-6 order-1 order-lg-2 hero-img\" data-aos=\"zoom-in\" data-aos-delay=\"200\">\r\n-                    <img src=\"{{asset('landing-page/assets/img/hero-img.png')}}\" class=\"img-fluid\" alt=\"\">\r\n+                    <img src=\"{{asset('landing-page/assets/img/hero-img.png')}}\" class=\"img-fluid animated\" alt=\"\">\r\n                 </div>\r\n             </div>\r\n         </div>\r\n \r\n"
                 }
             ],
             "date": 1628893464830,
