@@ -1,5 +1,10 @@
 @extends('layouts.master')
 @section('title', 'PPDB - Master List Register')
+
+@section('css')
+<link rel="stylesheet" type="text/css" href="{{asset('admin-panel/js/datatables/css/dataTables.dataTables.css')}}">
+@endsection
+
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -17,10 +22,10 @@
             </div>
         </div>
         <div class="page-title-actions">
-                <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Cari Data Pendaftar" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
-                </form>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Cari Data Pendaftar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
+            </form>
             {{-- <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
                 <i class="fa fa-star"></i>
             </button> --}}
@@ -39,7 +44,7 @@
             </div> <br>
             <div class="container">
                 <div class="table-responsive ">
-                    <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                    <table id="pendaftaran" class="align-middle mb-0 table table-borderless table-striped table-hover">
                         <thead>
                             <tr>
                                 <th class="">No</th>
@@ -52,7 +57,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            
+
                             @foreach($register as $r)
                             <tr>
                                 <td class="">1</td>
@@ -68,7 +73,7 @@
                                 <td class="text-center bg-success">Terdaftar</td>
                                 @endif
                                 <td class="text-center">
-                                    <a href="{{route('detail.id', ['id' => $r->id])}}" class="btn btn-info btn-sm">Detail</a> 
+                                    <a href="{{route('detail.id', ['id' => $r->id])}}" class="btn btn-info btn-sm">Detail</a>
                                 </td>
                             </tr>
                             @endforeach
@@ -79,4 +84,12 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('custom_js')
+<script>
+    $(document).ready(function() {
+        $('#pendaftaran').DataTable();
+    });
+</script>
 @endsection

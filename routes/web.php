@@ -37,9 +37,6 @@ Route::get('/examination-list', [App\Http\Controllers\ManageExamController::clas
 Route::post('/start-exam/submit-exam', [App\Http\Controllers\QuestionController::class, 'submitAnswer']);
 Route::get('/start-exam/submit-exam/result/{id}', [App\Http\Controllers\QuestionController::class, 'result'])->name('result.id');
 
-
-
-
 // Registration route
 Route::get('/register', [App\Http\Controllers\RegistrationController::class, 'index'])->name('registration');
 Route::get('/register/detail/{id}', [App\Http\Controllers\RegistrationController::class, 'getDetailRegister'])->name('detail.id');
@@ -50,12 +47,11 @@ Route::post('/student-registration/save', [App\Http\Controllers\RegistrationCont
 Route::get('/registration-success/{param}', [App\Http\Controllers\RegistrationController::class, 'registrationSuccess'])->name('success');
 Route::get('/registration-success/download-formulir/{param}', [App\Http\Controllers\RegistrationController::class, 'downloadFormulir'])->name('download.formulir');
 
-
 Route::get('/register/download/{filename}', [App\Http\Controllers\RegistrationController::class, 'downloadFile'])->name('download');
-
 
 //biodata
 Route::get('/home/biodata', [App\Http\Controllers\BiodataController::class, 'biodata'])->name('biodata');
+Route::post('/biodata/update/{id}', [App\Http\Controllers\BiodataController::class, 'updateBiodata'])->name('biodata.id');
 
 
 //pengumuman
