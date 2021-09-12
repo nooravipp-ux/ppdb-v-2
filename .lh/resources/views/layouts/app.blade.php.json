@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1628914346075,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1630911367027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,10 @@\n \t<link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('login-ui/vendor/daterangepicker/daterangepicker.css')}}\">\r\n \t<link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('login-ui/css/util.css')}}\">\r\n \t<link rel=\"stylesheet\" type=\"text/css\" href=\"{{asset('login-ui/css/main.css')}}\">\r\n \t<link href=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css\" rel=\"stylesheet\" id=\"bootstrap-css\">\r\n-<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"></script>\r\n-<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\r\n+\t<script src=\"//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js\"></script>\r\n+\t<script src=\"//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\r\n </head>\r\n <body>\r\n \t@yield('content')\r\n \t<script src=\"{{asset('login-ui/vendor/jquery/jquery-3.2.1.min.js')}}\"></script>\r\n"
                 }
             ],
             "date": 1628914346075,

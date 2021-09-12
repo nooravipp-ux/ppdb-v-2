@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 54,
+            "activePatchIndex": 66,
             "patches": [
                 {
                     "date": 1629516253326,
@@ -224,6 +224,54 @@
                 {
                     "date": 1629526277590,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n <div class=\"row\">\r\n     @foreach($listExam as $list)\r\n     <div class=\"col-md-4\">\r\n         <div class=\"container mt-3 mb-5 d-flex\">\r\n-            <div class=\"card p-4 mt-3\">\r\n+            <div class=\"card shadow p-4 mt-3\">\r\n                 <div class=\"first\">\r\n                     <h6 class=\"heading\">{{$list->title}}</h6>\r\n                     <hr class=\"line-color\">\r\n                     <div class=\"time d-flex flex-row align-items-center justify-content-between mt-3\">\r\n"
+                },
+                {
+                    "date": 1630923702658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,12 @@\n                 <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>\r\n-                <div class=\"page-title-subheading\">Daftar Ujian/Tes Potensi Akademik\r\n+                <div class=\"page-title-subheading\">\r\n+                    <h4>\r\n+                        Daftar Ujian/Tes Potensi Akademik\r\n+                    </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1630923757472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,12 +42,8 @@\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n-            <div class=\"page-title-icon\">\r\n-                <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n-                </i>\r\n-            </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\">\r\n                     <h4>\r\n                         Daftar Ujian/Tes Potensi Akademik\r\n"
+                },
+                {
+                    "date": 1630923765988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,10 +42,8 @@\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n-            <div>\r\n-                <div class=\"page-title-subheading\">\r\n                     <h4>\r\n                         Daftar Ujian/Tes Potensi Akademik\r\n                     </h4>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1630923777898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,14 @@\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n+            <div class=\"page-title-icon\">\r\n+                <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n+                </i>\r\n+            </div>\r\n+            <div>\r\n+                <div class=\"page-title-subheading\">\r\n                     <h4>\r\n                         Daftar Ujian/Tes Potensi Akademik\r\n                     </h4>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1630923785164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,10 +43,9 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n-                </i>\r\n+                \r\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\">\r\n                     <h4>\r\n"
+                },
+                {
+                    "date": 1630923794839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,10 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                \r\n+                <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n+                </i>\r\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\">\r\n                     <h4>\r\n"
+                },
+                {
+                    "date": 1630923907586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n                 <i class=\" pe-7s-news-paper icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div>\r\n-                <div class=\"page-title-subheading\">\r\n+                <div class=\"page-title\">\r\n                     <h4>\r\n                         Daftar Ujian/Tes Potensi Akademik\r\n                     </h4>\r\n                 </div>\r\n"
+                },
+                {
+                    "date": 1631266236397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - Examination')\r\n+@section('title', 'PPDB - Ujian')\r\n @section('css')\r\n <style>\r\n     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');\r\n \r\n"
+                },
+                {
+                    "date": 1631266945678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n         background-color: #eee;\r\n         font-family: 'Roboto', sans-serif\r\n     }\r\n \r\n-    .card {\r\n         background-color;\r\n         width: 350px;\r\n         border-radius: 10px\r\n     }\r\n"
+                },
+                {
+                    "date": 1631266953731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - Ujian')\r\n+@section('title', 'PPDB - ExamiUnation')\r\n @section('css')\r\n <style>\r\n     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');\r\n \r\n@@ -8,8 +8,9 @@\n         background-color: #eee;\r\n         font-family: 'Roboto', sans-serif\r\n     }\r\n \r\n+    .card {\r\n         background-color;\r\n         width: 350px;\r\n         border-radius: 10px\r\n     }\r\n"
+                },
+                {
+                    "date": 1631326845457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - ExamiUnation')\r\n+@section('title', 'PPDB - Ujian')\r\n @section('css')\r\n <style>\r\n     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');\r\n \r\n"
+                },
+                {
+                    "date": 1631345596131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,9 +78,9 @@\n                         <div class=\"d-flex align-items-center\">  <span class=\"hour ml-1\">Deskripsi : {{$list->description}} </span> </div>\r\n                     </div>\r\n                 </div>\r\n                 <hr class=\"line-color\">\r\n-                <div class=\"third mt-4\"> <a href=\"{{route('exam.id', ['id' => $list->id])}}\" class=\"btn btn-success btn-block\"><i class=\"fa fa-clock-o\"></i> Start Exam</a>\r\n+                <div class=\"third mt-4\"> <a href=\"{{route('exam.id', ['id' => $list->id])}}\" class=\"btn btn-success btn-block\"><i class=\"fa fa-clock-o\"></i> Mulai</a>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </div>\r\n"
                 }
             ],
             "date": 1629516253326,

@@ -1,0 +1,154 @@
+{
+    "sourceFile": "resources/views/mail/registrationMail.blade.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 34,
+            "patches": [
+                {
+                    "date": 1631330481050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631330493972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n <head>\r\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n-    <p>Terima Kasih karen telah mendaftar di sBerikut akun untuk login ke aplikasi PPDB : </p>\r\n+    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara Berikut akun untuk login ke aplikasi PPDB : </p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : Abcd1234</p>\r\n     <br><br>\r\n"
+                },
+                {
+                    "date": 1631330963667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n <head>\r\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n-    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara Berikut akun untuk login ke aplikasi PPDB : </p>\r\n+    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara \r\n+        Berikut akun untuk login ke aplikasi PPDB : </p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : Abcd1234</p>\r\n     <br><br>\r\n"
+                },
+                {
+                    "date": 1631330970022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n <head>\r\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n-    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara \r\n-        Berikut akun untuk login ke aplikasi PPDB : </p>\r\n+    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara Berikut akun untuk login ke aplikasi PPDB : </p>\r\n+    <p></p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : Abcd1234</p>\r\n     <br><br>\r\n"
+                },
+                {
+                    "date": 1631330993779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n <head>\r\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n-    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara Berikut akun untuk login ke aplikasi PPDB : </p>\r\n+    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara \r\n+        Berikut akun untuk login ke aplikasi PPDB : </p>\r\n     <p></p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : Abcd1234</p>\r\n"
+                },
+                {
+                    "date": 1631331000420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n <head>\r\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n-    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara \r\n-        Berikut akun untuk login ke aplikasi PPDB : </p>\r\n+    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara </p>\r\n+    Berikut akun untuk login ke aplikasi PPDB : \r\n     <p></p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : Abcd1234</p>\r\n"
+                },
+                {
+                    "date": 1631331033210,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,11 @@\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n     <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara </p>\r\n-    Berikut akun untuk login ke aplikasi PPDB : \r\n-    <p></p>\r\n+    <p>\r\n+        Berikut informasi akun untuk login ke aplikasi PPDB : \r\n+    </p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : Abcd1234</p>\r\n     <br><br>\r\n"
+                },
+                {
+                    "date": 1631331067135,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         Berikut informasi akun untuk login ke aplikasi PPDB : \r\n     </p>\r\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n-    <p>Password : Abcd1234</p>\r\n+    <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Selamat data anda sudah terdaftar, untuk melengkapi data - data silahkan login pada Aplikasi <a href=\"127.0.0.1:8000/login\">PPDB SMK Dirgantara</a></p>\r\n \r\n     <br><br><br>\r\n"
+                },
+                {
+                    "date": 1631331122110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n <head>\r\n     <title>Konfirmasi Akun PPDB</title>\r\n </head>\r\n <body>\r\n-    <p>Terima Kasih karen telah mendaftar di SMK Widya Dirgantara </p>\r\n+    <p>Terima Kasih karena telah mendaftar di SMK Widya Dirgantara </p>\r\n     <p>\r\n         Berikut informasi akun untuk login ke aplikasi PPDB : \r\n     </p>\r\n     <br><br>\r\n"
+                },
+                {
+                    "date": 1631331180549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Selamat data anda sudah terdaftar, untuk melengkapi data - data silahkan login pada Aplikasi <a href=\"127.0.0.1:8000/login\">PPDB SMK Dirgantara</a></p>\r\n+    <p></p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331212722,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p></p>\r\n+    <p>Perlu diingat </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331224483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat </p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar. </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331235482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah mendaftar. </p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar, anda wajib </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331247122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah mendaftar, anda wajib </p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar, anda wajib melakukan </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331260897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah mendaftar, anda wajib melakukan </p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331274017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti </p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331294634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi </p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi dan mendaftar ulang apabila anda dinyatakan lulus pada tahap ujian seleksi</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331553813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi dan mendaftar ulang apabila anda dinyatakan lulus pada tahap ujian seleksi</p>\r\n+    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi dan mendaftar ulang apabila anda dinyatakan lulus pada tahap ujian seleksi.</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331559200,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n+    <p></p>\r\n     <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi dan mendaftar ulang apabila anda dinyatakan lulus pada tahap ujian seleksi.</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n"
+                },
+                {
+                    "date": 1631331597430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p></p>\r\n-    <p>Perlu diingat bahwa setelah mendaftar, anda wajib mengikuti ujian seleksi dan mendaftar ulang apabila anda dinyatakan lulus pada tahap ujian seleksi.</p>\r\n+    <p>Perlu diingat bahwa setelah anda bisa login</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331605784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah anda bisa login</p>\r\n+    <p>Perlu diingat bahwa setelah login</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331624455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah login</p>\r\n+    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang akan </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331630933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang akan </p>\r\n+    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331637463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah </p>\r\n+    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331646365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,10 @@\n     <br><br>\r\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n-    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya</p>\r\n+    <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n+    <p>Bagi yang l</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331652380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n-    <p>Bagi yang l</p>\r\n+    <p>Bagi yang lolos tahap ujian seleksi, </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331665410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n     <p>Username : {{$data->email}}</p>\r\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n-    <p>Bagi yang lolos tahap ujian seleksi, </p>\r\n+    <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331671606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n+    <p>In</p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331678938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n-    <p>In</p>\r\n+    <p>Info seputar PPDB ada </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331685666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n+    <p><strong></strong></p>\r\n     <p>Info seputar PPDB ada </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n"
+                },
+                {
+                    "date": 1631331702142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,10 +13,10 @@\n     <p>Password : ppdbsmk21</p>\r\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n-    <p><strong></strong></p>\r\n-    <p>Info seputar PPDB ada </p>\r\n+    <p><strong>Keterangan</strong></p>\r\n+    <p>Info seputar kontak seputar PPDB </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331722203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <br><br>\r\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n     <p><strong>Keterangan</strong></p>\r\n-    <p>Info seputar kontak seputar PPDB </p>\r\n+    <p>Info seputar kontak seputar PPDB ada di nomor WhatsApp berikut : 089668060761 </p>\r\n \r\n     <br><br><br>\r\n     <b>Terima Kasih</b>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1631331771675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,6 @@\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n     <p><strong>Keterangan</strong></p>\r\n     <p>Info seputar kontak seputar PPDB ada di nomor WhatsApp berikut : 089668060761 </p>\r\n \r\n-    <br><br><br>\r\n-    <b>Terima Kasih</b>\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1631331795997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,7 +15,8 @@\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n     <p><strong>Keterangan</strong></p>\r\n     <p>Info seputar kontak seputar PPDB ada di nomor WhatsApp berikut : 089668060761 </p>\r\n+    <p>5SA (SAlam SAdulur SAdirgan SArehat SAlawasna)</p>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1631331816632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n     <p>Perlu diingat bahwa setelah login, anda wajib mengikuti tahap ujian seleksi yang telah ditentukan waktunya.</p>\r\n     <p>Bagi yang lolos tahap ujian seleksi, wajib melakukan pendaftaran ulang dengan datang ke sekolah</p>\r\n     <p><strong>Keterangan</strong></p>\r\n     <p>Info seputar kontak seputar PPDB ada di nomor WhatsApp berikut : 089668060761 </p>\r\n+    <br>\r\n+    <br>\r\n     <p>5SA (SAlam SAdulur SAdirgan SArehat SAlawasna)</p>\r\n \r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1631330481050,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Konfirmasi Akun PPDB</title>\r\n</head>\r\n<body>\r\n    <p>Terima Kasih karen telah mendaftar di sBerikut akun untuk login ke aplikasi PPDB : </p>\r\n    <br><br>\r\n    <p>Username : {{$data->email}}</p>\r\n    <p>Password : Abcd1234</p>\r\n    <br><br>\r\n    <p>Selamat data anda sudah terdaftar, untuk melengkapi data - data silahkan login pada Aplikasi <a href=\"127.0.0.1:8000/login\">PPDB SMK Dirgantara</a></p>\r\n\r\n    <br><br><br>\r\n    <b>Terima Kasih</b>\r\n</body>\r\n</html>"
+        }
+    ]
+}

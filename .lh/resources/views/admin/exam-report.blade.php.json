@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 28,
             "patches": [
                 {
                     "date": 1629271022786,
@@ -36,6 +36,90 @@
                 {
                     "date": 1630048563308,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             </div>\r\n         </div>\r\n         <div class=\"page-title-actions\">\r\n             <form class=\"form-inline\">\r\n-                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Data Pendaftar\" aria-label=\"Search\">\r\n+                <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Nama\" aria-label=\"Search\">\r\n                 <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n               </form>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1631257411354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        Data Hasil Ujian / Tes\r\n+                        DATA HASIL UJIAN\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631257422811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        DATA HASIL UJIAN\r\n+                        LAPORAN DATA HASIL UJIAN\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631257438281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        LAPORAN DATA HASIL UJIAN\r\n+                        LAPORAN HASIL UJIAN\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631265568786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n                             <th>Nama Lengkap</th>\r\n                             <th>Nama Ujian</th>\r\n                             <th class=\"text-center\">Persentase</th>\r\n                             <th class=\"text-center\">Tanggal Ujian</th>\r\n-                            <th class=\"text-center\">Aksi</th>\r\n+                            {{-- <th class=\"text-center\">Aksi</th> --}}\r\n                         </tr>\r\n                     </thead>\r\n                     <tbody>\r\n                         <?php $i = 1; ?>\r\n"
+                },
+                {
+                    "date": 1631265574964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n                             <th>Nama Lengkap</th>\r\n                             <th>Nama Ujian</th>\r\n                             <th class=\"text-center\">Persentase</th>\r\n                             <th class=\"text-center\">Tanggal Ujian</th>\r\n-                            {{-- <th class=\"text-center\">Aksi</th> --}}\r\n+                            <th class=\"text-center\">Aksi</th>\r\n                         </tr>\r\n                     </thead>\r\n                     <tbody>\r\n                         <?php $i = 1; ?>\r\n"
+                },
+                {
+                    "date": 1631265584841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n-        <div class=\"page-title-actions\">\r\n+        {{-- <div class=\"page-title-actions\">\r\n             <form class=\"form-inline\">\r\n                 <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Cari Nama\" aria-label=\"Search\">\r\n                 <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Cari</button>\r\n               </form>\r\n-        </div>\r\n+        </div> --}}\r\n     </div>\r\n </div>\r\n \r\n <div class=\"row\">\r\n"
+                },
+                {
+                    "date": 1631265607295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,8 +29,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">Hasil Test\r\n                 <div class=\"btn-actions-pane-right\">\r\n+                    \r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n"
+                },
+                {
+                    "date": 1631265622872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">Hasil Test\r\n                 <div class=\"btn-actions-pane-right\">\r\n-                    \r\n+                    <a href=\"\"></a>\r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n"
+                },
+                {
+                    "date": 1631265724321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">Hasil Test\r\n                 <div class=\"btn-actions-pane-right\">\r\n-                    <a href=\"\"></a>\r\n+                    <a href=\"\">Cetak Hasil </a>\r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n"
+                },
+                {
+                    "date": 1631265735883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">Hasil Test\r\n                 <div class=\"btn-actions-pane-right\">\r\n-                    <a href=\"\">Cetak Hasil </a>\r\n+                    <a href=\"\" class=\"btn btn\">Cetak Hasil Ujian</a>\r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n"
+                },
+                {
+                    "date": 1631265960374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">Hasil Test\r\n                 <div class=\"btn-actions-pane-right\">\r\n-                    <a href=\"\" class=\"btn btn\">Cetak Hasil Ujian</a>\r\n+                    <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n                 </div>\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n"
+                },
+                {
+                    "date": 1631266106076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - Report Exam')\r\n+@section('title', 'PPDB - ')\r\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n"
+                },
+                {
+                    "date": 1631332468205,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - ')\r\n+@section('title', 'PPDB - Laporan Ujian')\r\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n@@ -28,11 +28,11 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">Hasil Test\r\n-                <div class=\"btn-actions-pane-right\">\r\n+                {{-- <div class=\"btn-actions-pane-right\">\r\n                     <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n-                </div>\r\n+                </div> --}}\r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n"
+                },
+                {
+                    "date": 1631332474531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,10 @@\n \r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n-            <div class=\"card-header\">Hasil Test\r\n+            <div class=\"card-header\">\r\n+                Hasil Test\r\n                 {{-- <div class=\"btn-actions-pane-right\">\r\n                     <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n                 </div> --}}\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1631332480737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">\r\n-                Hasil Test\r\n+                p   Hasil Test\r\n                 {{-- <div class=\"btn-actions-pane-right\">\r\n                     <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n                 </div> --}}\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1631332485905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,10 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">\r\n-                p   Hasil Test\r\n+                <p>\r\n+                    </p> Hasil Test\r\n                 {{-- <div class=\"btn-actions-pane-right\">\r\n                     <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n                 </div> --}}\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1631332494602,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">\r\n-                <p>\r\n-                    </p> Hasil Test\r\n+                 Hasil Test\r\n                 {{-- <div class=\"btn-actions-pane-right\">\r\n                     <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n                 </div> --}}\r\n             </div>\r\n"
+                },
+                {
+                    "date": 1631332522905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,12 +28,10 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">\r\n-                 Hasil Test\r\n-                {{-- <div class=\"btn-actions-pane-right\">\r\n-                    <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n-                </div> --}}\r\n+                Hasil Test\r\n+                \r\n             </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n"
+                },
+                {
+                    "date": 1631332528159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,11 @@\n             <div class=\"card-header\">\r\n                 Hasil Test\r\n                 \r\n             </div>\r\n+            <div class=\"btn-actions-pane-right\">\r\n+                    <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n+                </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n"
+                },
+                {
+                    "date": 1631332537284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,13 +29,12 @@\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">\r\n                 Hasil Test\r\n-                \r\n+                {{-- <div class=\"btn-actions-pane-right\">\r\n+                    <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n+                </div> --}}\r\n             </div>\r\n-            <div class=\"btn-actions-pane-right\">\r\n-                    <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n-                </div>\r\n             <div class=\"table-responsive\">\r\n                 <table class=\"align-middle mb-0 table table-borderless table-striped table-hover\">\r\n                     <thead>\r\n                         <tr>\r\n"
+                },
+                {
+                    "date": 1631332550020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\"main-card mb-3 card\">\r\n             <div class=\"card-header\">\r\n-                Hasil Test\r\n+                NILAI UJIAN\r\n                 {{-- <div class=\"btn-actions-pane-right\">\r\n                     <a href=\"\" class=\"btn btn-success\">Cetak Hasil Ujian</a>\r\n                 </div> --}}\r\n             </div>\r\n"
                 }
             ],
             "date": 1629271022786,

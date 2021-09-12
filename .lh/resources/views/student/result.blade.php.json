@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1630033855343,
@@ -28,6 +28,10 @@
                 {
                     "date": 1630033951269,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n                 <div class=\"card mb-3 widget-content bg-night-fade\">\r\n                     <div class=\"widget-content-wrapper text-white\">\r\n                         <div class=\"widget-content-left\">\r\n                             <div class=\"widget-heading\">\r\n-                                <h5>Nilai</h5>\r\n+                                <h5>Jawaban Benar</h5>\r\n                             </div>\r\n                             <div class=\"widget-subheading\" style=\"color: transparent;\">/</div>\r\n                         </div>\r\n                         <div class=\"widget-content-right\">\r\n"
+                },
+                {
+                    "date": 1631345609293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n                         @foreach($result as $question_answer)\r\n                         <tr>\r\n                             <td>\r\n                                 <b>\r\n-                                    <p><?php echo $i++; ?> .) {{$question_answer->question}}</p>\r\n+                                    <p><?php echo $i++; ?>. {{$question_answer->question}}</p>\r\n                                 </b>\r\n                                 <label class=\"pl-4 text-success\">\r\n                                     Jawab :\r\n                                     @if($question_answer->answer != $question_answer->exam_answer)\r\n"
                 }
             ],
             "date": 1630033855343,

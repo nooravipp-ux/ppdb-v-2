@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 15,
             "patches": [
                 {
                     "date": 1629007929626,
@@ -36,6 +36,38 @@
                 {
                     "date": 1630047477812,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div class=\"container\">\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        Kelola Ujian\r\n+                        Kelola Ujian / Test\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631256982127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div class=\"container\">\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        Kelola Ujian / Test\r\n+                        Kelola Ujian / Tes\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n@@ -31,9 +31,9 @@\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Nama Ujian</th>\r\n-                            <th class=\"text-left \">Ujian</th>\r\n+                            {{-- <th class=\"text-left \">Ujian</th> --}}\r\n                             <th class=\"text-left \">Deskripsi</th>\r\n                             <th class=\"text-left \">Waktu Ujian</th>\r\n                             <th class=\"text-left \">Tanggal Ujian</th>\r\n                             <th class=\"text-left \">Jam Mulai</th>\r\n"
+                },
+                {
+                    "date": 1631257013928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,11 +45,11 @@\n                     <tbody>\r\n                         @foreach($exam as $exm)\r\n                         <tr>\r\n                             <td class=\"pl-4\">{{$exm->title}}</td>\r\n-                            <td>{{$exm->course_id}}</td>\r\n+                            {{-- <td>{{$exm->course_id}}</td> --}}\r\n                             <td>{{$exm->description}}</td>\r\n-                            <td>{{$exm->time_limit}}</td>\r\n+                            <td>{{$exm->time_limit}} menit</td>\r\n                             <td>{{$exm->date}}</td>\r\n                             <td>{{$exm->start_time}}</td>\r\n                             <td>{{$exm->end_time}}</td>\r\n                             <td class=\"text-center\">\r\n"
+                },
+                {
+                    "date": 1631257033614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n                             <th class=\"text-left \">Deskripsi</th>\r\n                             <th class=\"text-left \">Waktu Ujian</th>\r\n                             <th class=\"text-left \">Tanggal Ujian</th>\r\n                             <th class=\"text-left \">Jam Mulai</th>\r\n-                            <th class=\"text-left \">Jam Berakhir</th>    \r\n+                            {{-- <th class=\"text-left \">Jam Berakhir</th>     --}}\r\n                             <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n                         </tr>\r\n \r\n                     </thead>\r\n"
+                },
+                {
+                    "date": 1631257086549,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,12 +47,12 @@\n                         <tr>\r\n                             <td class=\"pl-4\">{{$exm->title}}</td>\r\n                             {{-- <td>{{$exm->course_id}}</td> --}}\r\n                             <td>{{$exm->description}}</td>\r\n-                            <td>{{$exm->time_limit}} menit</td>\r\n+                            <td>{{$exm->time_limit}} Menit</td>\r\n                             <td>{{$exm->date}}</td>\r\n                             <td>{{$exm->start_time}}</td>\r\n-                            <td>{{$exm->end_time}}</td>\r\n+                            {{-- <td>{{$exm->end_time}}</td> --}}\r\n                             <td class=\"text-center\">\r\n                                 <a href=\"{{route('manage-exam-question.id', ['id' => $exm->id])}}\" type=\"button\" class=\"btn btn-warning btn-sm\">Edit Soal</a>\r\n                                 <button type=\"button\" id=\"deleteExam\" data-id='<?php echo $exm->title; ?>' class=\"btn btn-danger btn-sm\">Hapus</button>\r\n                             </td>\r\n"
+                },
+                {
+                    "date": 1631257380702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div class=\"container\">\r\n                 <div class=\"page-title-subheading\"> \r\n                     <h4>\r\n-                        Kelola Ujian / Tes\r\n+                        KELOLA DATA UJIAN\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631265243255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Nama Ujian</th>\r\n-                            {{-- <th class=\"text-left \">Ujian</th> --}}\r\n+                            <th class=\"text-left \">Ujian</th>\r\n                             <th class=\"text-left \">Deskripsi</th>\r\n                             <th class=\"text-left \">Waktu Ujian</th>\r\n                             <th class=\"text-left \">Tanggal Ujian</th>\r\n                             <th class=\"text-left \">Jam Mulai</th>\r\n"
+                },
+                {
+                    "date": 1631265250304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,9 @@\n                     <thead>\r\n \r\n                         <tr>\r\n                             <th class=\"text-left pl-4\">Nama Ujian</th>\r\n-                            <th class=\"text-left \">Ujian</th>\r\n+                            <th class=\"text-left \">Soal Ujian</th>\r\n                             <th class=\"text-left \">Deskripsi</th>\r\n                             <th class=\"text-left \">Waktu Ujian</th>\r\n                             <th class=\"text-left \">Tanggal Ujian</th>\r\n                             <th class=\"text-left \">Jam Mulai</th>\r\n@@ -45,9 +45,9 @@\n                     <tbody>\r\n                         @foreach($exam as $exm)\r\n                         <tr>\r\n                             <td class=\"pl-4\">{{$exm->title}}</td>\r\n-                            {{-- <td>{{$exm->course_id}}</td> --}}\r\n+                            <td>{{$exm->course_id}}</td>\r\n                             <td>{{$exm->description}}</td>\r\n                             <td>{{$exm->time_limit}} Menit</td>\r\n                             <td>{{$exm->date}}</td>\r\n                             <td>{{$exm->start_time}}</td>\r\n"
+                },
+                {
+                    "date": 1631266080241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - Manage Exam')\r\n+@section('title', 'PPDB - Data Ujian')\r\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n"
                 }
             ],
             "date": 1629007929626,

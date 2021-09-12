@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 61,
+            "activePatchIndex": 70,
             "patches": [
                 {
                     "date": 1629007765168,
@@ -252,6 +252,42 @@
                 {
                     "date": 1629901279604,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n             <div class=\"page-title-icon\">\r\n-                <i class=\"pe-7s-car icon-gradient bg-mean-fruit\">\r\n+                <i class=\" pe-7s-note icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n             <div class=\"container\">Kelola Pengumuman\r\n                 <div class=\"page-title-subheading\">\r\n"
+                },
+                {
+                    "date": 1631248125146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n             <div class=\"page-title-icon\">\r\n                 <i class=\" pe-7s-note icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n-            <div class=\"container\">Kelola Pengumuman\r\n+            <div class=\"container\">KELOLA PENGUMUMAN\r\n                 <div class=\"page-title-subheading\">\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631248139921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,11 @@\n             <div class=\"page-title-icon\">\r\n                 <i class=\" pe-7s-note icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n-            <div class=\"container\">KELOLA PENGUMUMAN\r\n+            <div class=\"container\">\r\n                 <div class=\"page-title-subheading\">\r\n+                    \r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1631248179388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,13 @@\n             <div class=\"page-title-icon\">\r\n                 <i class=\" pe-7s-note icon-gradient bg-mean-fruit\">\r\n                 </i>\r\n             </div>\r\n-            <div class=\"container\">\r\n+            <div>\r\n                 <div class=\"page-title-subheading\">\r\n-                    \r\n+                    <h4>\r\n+                        Kelola Data Pendaftar\r\n+                    </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1631248185025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             </div>\r\n             <div>\r\n                 <div class=\"page-title-subheading\">\r\n                     <h4>\r\n-                        Kelola Data Pendaftar\r\n+                        KELOLA PENGUMUMAN\r\n                     </h4>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1631248233978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,12 +19,12 @@\n     </div>\r\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n-        <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n         <div class=\" card mb-5 \"> <br>\r\n-                <div class=\"table container \">\r\n-                    <table class=\" table-bordered\" id=\"tableList\">\r\n+            <div class=\"table container \">\r\n+                <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n+                <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n"
+                },
+                {
+                    "date": 1631248241220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\" card mb-5 \"> <br>\r\n+            <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n             <div class=\"table container \">\r\n-                <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n                 <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n \r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1631248264571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,12 @@\n </div>\r\n <div class=\"row\">\r\n     <div class=\"col-md-12\">\r\n         <div class=\" card mb-5 \"> <br>\r\n-            <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n             <div class=\"table container \">\r\n+                <a class=\"btn btn-primary\" href=\"#\" data-toggle=\"modal\" data-target=\"#modalForAddAnnouncement\">Tambah Pengumuman</a> <hr>\r\n                 <table class=\" table-bordered\" id=\"tableList\">\r\n                         <thead>\r\n-\r\n                             <tr>\r\n                                 <th class=\"text-left pl-4\">Perihal</th>\r\n                                 <th class=\"text-left \">Deskripsi</th>\r\n                                 <th class=\"text-center \">Status</th>\r\n"
+                },
+                {
+                    "date": 1631266053043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - Setting Announcement')\r\n+@section('title', 'PPDB - ')\r\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n@@ -30,9 +30,8 @@\n                                 <th class=\"text-left \">Deskripsi</th>\r\n                                 <th class=\"text-center \">Status</th>\r\n                                 <th class=\"text-center\" width=\"20%\">Aksi</th>\r\n                             </tr>\r\n-\r\n                         </thead>\r\n                         <tbody>\r\n                             @foreach($announceData as $data)\r\n                             <tr>\r\n"
+                },
+                {
+                    "date": 1631266058847,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n @extends('layouts.master')\r\n-@section('title', 'PPDB - ')\r\n+@section('title', 'PPDB - Pengaturan Pengumuman')\r\n @section('content')\r\n <div class=\"app-page-title\">\r\n     <div class=\"page-title-wrapper\">\r\n         <div class=\"page-title-heading\">\r\n"
                 }
             ],
             "date": 1629007765168,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1630033752332,
@@ -12,6 +12,54 @@
                 {
                     "date": 1630033757646,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n \r\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n-                        <button type=\"button\" class=\"btn btn-xlg btn-warning\" id=\"resetExamFrm\">Reset</button>\r\n+                        <button type=\"button\" class=\"btn btn-xlg btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n                         <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-xlg btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n \r\n"
+                },
+                {
+                    "date": 1631344794703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,11 +88,11 @@\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n                         <button type=\"button\" class=\"btn btn-xlg btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-xlg btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n+                <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-xlg btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n \r\n                 @else\r\n                 <b>No question at this moment</b>\r\n                 @endif\r\n"
+                },
+                {
+                    "date": 1631344808063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,11 +88,11 @@\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n                         <button type=\"button\" class=\"btn btn-xlg btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-xlg btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n-                <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-xlg btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n \r\n                 @else\r\n                 <b>No question at this moment</b>\r\n                 @endif\r\n"
+                },
+                {
+                    "date": 1631344873355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n                         <button type=\"button\" class=\"btn btn-xlg btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-xlg btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n \r\n                 @else\r\n"
+                },
+                {
+                    "date": 1631344889805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,11 +86,11 @@\n \r\n \r\n                 @endforeach\r\n                 <tr>\r\n-                    <td style=\"padding: 20px;\">\r\n-                        <button type=\"button\" class=\"btn btn-xlg btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n+                    <td style=\"\">\r\n+                        <button type=\"button\" class=\"btn btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n \r\n                 @else\r\n"
+                },
+                {
+                    "date": 1631344897374,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -86,9 +86,9 @@\n \r\n \r\n                 @endforeach\r\n                 <tr>\r\n-                    <td style=\"\">\r\n+                    <td style=\"padding: 20px;\">\r\n                         <button type=\"button\" class=\"btn btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n                         <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n"
+                },
+                {
+                    "date": 1631344927186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                 @foreach($examQuestions as $question)\r\n \r\n                 <tr>\r\n                     <td>\r\n-                        <p><b><?php echo $i++; ?> .) {{$question->question}}</b></p>\r\n+                        <p><b><?php echo $i++; ?>) {{$question->question}}</b></p>\r\n                         <div class=\"col-md-4 float-left\">\r\n                             <div class=\"form-group pl-4 \">\r\n                                 <input name=\"answer[{{$question->id}}][correct]\" value=\"{{$question->opt_1}}\" class=\"form-check-input\" type=\"radio\" value=\"\" id=\"invalidCheck\" required>\r\n \r\n"
+                },
+                {
+                    "date": 1631344936989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                 @foreach($examQuestions as $question)\r\n \r\n                 <tr>\r\n                     <td>\r\n-                        <p><b><?php echo $i++; ?>) {{$question->question}}</b></p>\r\n+                        <p><b><?php echo $i++; ?>. {{$question->question}}</b></p>\r\n                         <div class=\"col-md-4 float-left\">\r\n                             <div class=\"form-group pl-4 \">\r\n                                 <input name=\"answer[{{$question->id}}][correct]\" value=\"{{$question->opt_1}}\" class=\"form-check-input\" type=\"radio\" value=\"\" id=\"invalidCheck\" required>\r\n \r\n"
+                },
+                {
+                    "date": 1631344944316,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n                 @foreach($examQuestions as $question)\r\n \r\n                 <tr>\r\n                     <td>\r\n-                        <p><b><?php echo $i++; ?>. {{$question->question}}</b></p>\r\n+                        <p><b><?php echo $i++; ?>.  {{$question->question}}</b></p>\r\n                         <div class=\"col-md-4 float-left\">\r\n                             <div class=\"form-group pl-4 \">\r\n                                 <input name=\"answer[{{$question->id}}][correct]\" value=\"{{$question->opt_1}}\" class=\"form-check-input\" type=\"radio\" value=\"\" id=\"invalidCheck\" required>\r\n \r\n"
+                },
+                {
+                    "date": 1631344968291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n                         <button type=\"button\" class=\"btn btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-primary p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n \r\n                 @else\r\n"
+                },
+                {
+                    "date": 1631344978098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -88,9 +88,9 @@\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n                         <button type=\"button\" class=\"btn btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success p-3 pl-4 pr-4 float-right\" id=\"submitAnswerFrmBtn\">\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n \r\n                 @else\r\n"
+                },
+                {
+                    "date": 1631344990821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,10 +87,10 @@\n \r\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success float-right\" id=\"submitAnswerFrmBtn\">\r\n                         <button type=\"button\" class=\"btn btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success float-right\" id=\"submitAnswerFrmBtn\">\r\n                     </td>\r\n                 </tr>\r\n \r\n                 @else\r\n"
+                },
+                {
+                    "date": 1631345009136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,10 +87,10 @@\n \r\n                 @endforeach\r\n                 <tr>\r\n                     <td style=\"padding: 20px;\">\r\n-                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success float-right\" id=\"submitAnswerFrmBtn\">\r\n-                        <button type=\"button\" class=\"btn btn-warning p-3 pl-4 pr-4\" id=\"resetExamFrm\">Reset</button>\r\n+                        <input name=\"submit\" type=\"submit\" value=\"Submit\" class=\"btn btn-success \" id=\"submitAnswerFrmBtn\">\r\n+                        <button type=\"button\" class=\"btn btn-warning\" id=\"resetExamFrm\">Reset</button>\r\n                     </td>\r\n                 </tr>\r\n \r\n                 @else\r\n"
                 }
             ],
             "date": 1630033752332,

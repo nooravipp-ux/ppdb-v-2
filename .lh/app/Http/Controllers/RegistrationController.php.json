@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 35,
+            "activePatchIndex": 38,
             "patches": [
                 {
                     "date": 1630314355623,
@@ -148,6 +148,18 @@
                 {
                     "date": 1630776972011,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => TRUE,'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true,'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n"
+                },
+                {
+                    "date": 1631328147337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     }\r\n \r\n     public function downloadFormulir($param){\r\n         $data = DB::table('t_student')->where('no_induk_siswa_nasional', $param)->first();\r\n-        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true,'enable_remote'=> TRUE,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n+        $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true,'enable_remote'=> true,'defaultFont' => 'sans-serif'])->loadView('student.download-formulir', compact('data'));\r\n         return $pdf->stream('formulir-ppdb.pdf');\r\n     }\r\n \r\n     public function getDetailRegister($id){\r\n@@ -139,9 +139,9 @@\n             'student_id' => $id,\r\n             'name' => $data->nama_lengkap,\r\n             'email' => $data->email,\r\n             'role_name' => 'siswa',\r\n-            'password' => Hash::make('Abcd1234'),\r\n+            'password' => Hash::make('ppdbsmk'),\r\n         ]);\r\n \r\n         Mail::to($user_data->email)->send(new RegistrationMailNotif($user_data));\r\n \r\n"
+                },
+                {
+                    "date": 1631328164138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n             'student_id' => $id,\r\n             'name' => $data->nama_lengkap,\r\n             'email' => $data->email,\r\n             'role_name' => 'siswa',\r\n-            'password' => Hash::make('ppdbsmk'),\r\n+            'password' => Hash::make('ppdbsmk22'),\r\n         ]);\r\n \r\n         Mail::to($user_data->email)->send(new RegistrationMailNotif($user_data));\r\n \r\n"
+                },
+                {
+                    "date": 1631328290578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -139,9 +139,9 @@\n             'student_id' => $id,\r\n             'name' => $data->nama_lengkap,\r\n             'email' => $data->email,\r\n             'role_name' => 'siswa',\r\n-            'password' => Hash::make('ppdbsmk22'),\r\n+            'password' => Hash::make('ppdbsmk21'),\r\n         ]);\r\n \r\n         Mail::to($user_data->email)->send(new RegistrationMailNotif($user_data));\r\n \r\n"
                 }
             ],
             "date": 1630314355623,

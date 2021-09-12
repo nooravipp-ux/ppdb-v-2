@@ -5,29 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-
-    <title>Bukti Pendaftaran</title>
-    <link rel="stylesheet" href="./responsiveRegistration.css">
-    <script type="text/javascript" lang="javascript" src="./responsiveRegistaration.js"></script>
+    <title>Formulir Pendaftaran</title>
     <style type="text/css" media="all">
+
         table {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+
         p {
             font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        h4 {
-            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            font-size: 20px;
+            font-size: 17px;
             font-weight: bold;
         }
-        
+
+        h4{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
         td {
             height: 10px;
         }
@@ -35,35 +31,12 @@
 </head>
 
 <body>
-    <img src="{{ public_path ('kopwd2.jpg') }}" style="width: 100px; height:100px">
-    <h4>PERNYATAAN KESEPAKATAN<br class="mt-2"> ORANG TUA/WALI SISWA</h4>
+    <img src="{{ url('landing-page/assets/img/kopwd2.jpg') }}" height="100" width="706">
     <div class="container">
-        <p>Yang bertanda tangan di bawah ini : </p>
-
-        <div class="container">
-            <table>
-
-                <tr>
-                    <td>Nama Lengkap </td>
-                    <td> : </td>
-                    <td>{{$data->nama_lengkap}}</td>
-                </tr>
-                <tr>
-                    <td>Alamat</td>
-                    <td>:</td>
-                    <td>{{$data->alamat}}</td>
-                </tr>
-                <tr>
-                    <td>Alamat</td>
-                    <td>:</td>
-                    <td>{{$data->alamat}}</td>
-                </tr>
-
-
-
-
-            </table>
-        </div>
+        {{-- Data Saya --}}
+        <p>FORMULIR PENDAFTARAN SISWA BARU <br> TAHUN PELAJARAN 2021-2022</p>
+        
+        <h4><b>I. BIODATA SISWA</b></h4>
         <table class=" pl-3">
             <tr>
                 <td style="height: 20px;"><label for="fname">No. Pendaftaran</label></td>
@@ -141,7 +114,7 @@
                 <td> : </td>
                 <td>{{$data->no_telp}}</td>
             </tr>
-        </table>
+        </table>   
     </div>
 
     <div class="container">
@@ -163,8 +136,7 @@
                 <td> :</td>
                 <td> {{$data->no_induk_siswa_nasional}}</td>
             </tr>
-            {{--
-            <tr>
+            {{-- <tr>
                 <td><label for="fname">No. Peserta Ujian Nasional</label></td>
                 <td> : </td>
                 <td>{{$data->no_peserta_ujian_nasional}}</td>
@@ -323,10 +295,8 @@
                 <td> : </td>
                 <td>{{$data->riwayat_penyakit}}</td>
             </tr>
-        </table>
+        </table> 
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>

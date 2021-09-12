@@ -1,0 +1,18 @@
+{
+    "sourceFile": "app/Mail/RegistrationMailNotif.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631328194038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631328194038,
+            "name": "Commit-0",
+            "content": "<?php\r\n\r\nnamespace App\\Mail;\r\n\r\nuse Illuminate\\Bus\\Queueable;\r\nuse Illuminate\\Contracts\\Queue\\ShouldQueue;\r\nuse Illuminate\\Mail\\Mailable;\r\nuse Illuminate\\Queue\\SerializesModels;\r\n\r\nclass RegistrationMailNotif extends Mailable\r\n{\r\n    use Queueable, SerializesModels;\r\n\r\n    /**\r\n     * Create a new message instance.\r\n     *\r\n     * @return void\r\n     */\r\n    public $data;\r\n    \r\n    public function __construct($data)\r\n    {\r\n        $this->data = $data;\r\n    }\r\n\r\n    /**\r\n     * Build the message.\r\n     *\r\n     * @return $this\r\n     */\r\n    public function build()\r\n    {\r\n        return $this->subject('Panitia PPDB SMK Widya Dirgantara')->view('mail.registrationMail');\r\n    }\r\n}\r\n"
+        }
+    ]
+}
