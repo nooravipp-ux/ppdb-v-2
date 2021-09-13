@@ -87,7 +87,7 @@
                                                     </td>
                                                     <td class="text-center">
                                                         <a rel="facebox" href="facebox_modal/updateQuestion.php?id=" class="btn btn-sm btn-warning">Edit</a>
-                                                        <button type="button" id="deleteQuestion" data-id='' class="btn btn-danger btn-sm">Hapus</button>
+                                                        <button type="button" id="deleteQuestion" data-id='{{$eq->id}}' class="btn btn-danger btn-sm">Hapus</button>
                                                     </td>
                                                 </tr>
                                                 @endforeach

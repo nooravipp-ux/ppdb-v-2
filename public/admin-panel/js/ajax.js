@@ -221,10 +221,15 @@ $(document).on("submit", "#updateQuestionFrm", function() {
 // Delete Question
 $(document).on("click", "#deleteQuestion", function(e) {
     e.preventDefault();
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
     var id = $(this).data("id");
     $.ajax({
         type: "post",
-        url: "query/deleteQuestionExe.php",
+        url: "/manage-exam/manage-exam-question/delete-question",
         dataType: "json",
         data: { id: id },
         cache: false,

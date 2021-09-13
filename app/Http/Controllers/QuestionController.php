@@ -90,4 +90,12 @@ class QuestionController extends Controller
         $score = $score[0]->score;
         return view('student.result', compact('exam','result', 'score', 'over'));
     }
+
+    public function deleteQuestion(Request $req){
+
+        $question = Question::find($req->id);
+        $question->delete();
+
+        return response()->json(['res' => 'success']);
+    }
 }

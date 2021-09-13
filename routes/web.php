@@ -31,6 +31,8 @@ Route::get('/manage-exam/manage-exam-question/{id}', [App\Http\Controllers\Manag
 Route::get('/manage-exam/exam-report', [App\Http\Controllers\ManageExamController::class, 'examReport'])->name('exam-report');
 
 Route::post('/manage-exam/manage-exam-question/add-questions', [App\Http\Controllers\QuestionController::class, 'addOrUpdateQuestions'])->name('add-questions');
+Route::post('/manage-exam/manage-exam-question/delete-question', [App\Http\Controllers\QuestionController::class, 'deleteQuestion']);
+
 Route::get('/start-exam/{id}', [App\Http\Controllers\ManageExamController::class, 'startExam'])->name('exam.id');
 Route::get('/examination-list', [App\Http\Controllers\ManageExamController::class, 'listExam'])->name('list-exam');
 
