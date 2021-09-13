@@ -25,4 +25,10 @@ class AnnouncementController extends Controller
 
         return response()->json(['status' => 'success', 'data' => $announce]);
     }
+
+    public function deleteAnnounce(Request $req){
+        $announcement = Announcement::find($req->id);
+        $announcement->delete();
+        return redirect('/announcement');
+    }
 }

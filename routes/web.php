@@ -60,5 +60,5 @@ Route::post('/biodata/update/{id}', [App\Http\Controllers\BiodataController::cla
 
 Route::get('/announcement', [App\Http\Controllers\AnnouncementController::class, 'index'])->name('announcement');
 Route::post('/announcement/add-announcement', [App\Http\Controllers\AnnouncementController::class, 'add'])->name('add-announcement');
-
+Route::post('/announcement/delete-announcement', [App\Http\Controllers\AnnouncementController::class, 'deleteAnnounce'])->name('delete-announcement');;
 

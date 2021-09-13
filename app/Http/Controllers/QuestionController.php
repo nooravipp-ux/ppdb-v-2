@@ -95,7 +95,5 @@ class QuestionController extends Controller
 
         $question = Question::find($req->id);
         $question->delete();
-
-        return response()->json(['res' => 'success']);
     }
 }
