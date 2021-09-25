@@ -169,7 +169,7 @@
     <div class="col-md-5 col-xl-5">
         <div class="card">
             <div class="text-center">
-                <a href="{{route('download-panduan', ['filename' => 'panduan-ppdb.docx'])}}" class=" btn btn-info mt-3 "><span>Download Syarat & Panduan Pendaftaran</span></a>
+                <a href="" class=" btn btn-info mt-3 "><span>Download Syarat & Panduan Pendaftaran</span></a>
             </div>
             <img src="{{asset('landing-page/assets/img/alur2.png')}}" class=" container img-fluid p-2 rounded" alt=""> <br> 
             

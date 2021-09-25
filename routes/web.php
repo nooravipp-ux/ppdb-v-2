@@ -18,10 +18,11 @@ use Illuminate\Support\Facades\Mail;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/download/panduan/{filename}', [App\Http\Controllers\RegistrationController::class, 'downloadFile'])->name('download-panduan');
 Auth::routes();
 Route::auth();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 //Exam Route
 Route::get('/manage-exam', [App\Http\Controllers\ManageExamController::class, 'manageExam'])->name('manage-exam');

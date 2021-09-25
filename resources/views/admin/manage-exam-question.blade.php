@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'PPDB - Manage Exam - Question')
+@section('title', 'PPDB - Kelola Pertanyaan Ujian')
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -30,7 +30,7 @@
                                 {{$examQuestionsCount}}
                             </span>
                             <div class="btn-actions-pane-right">
-                                <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Tambah Ujian</button>
+                                <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Tambah Soal</button>
                             </div>
                         </div>
                         <div class="card-body">

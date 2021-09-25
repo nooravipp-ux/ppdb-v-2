@@ -44,7 +44,7 @@
                                 <form method="POST" action="{{route('delete-announcement')}}">
                                     {{ csrf_field() }}
                                     <div class="form-group">
-                                        <input type="hidden" name="id" value="{{$data->id}}">
+                                        <input type="hidden" name="id" value="{{$data->id}}"> <br>
                                         <input type="submit" onclick="return confirm('Are you sure?')" class="btn btn-danger delete-user" value="Hapus">
                                     </div>
                                 </form>

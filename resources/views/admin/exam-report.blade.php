@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'PPDB - Laporan Ujian')
+@section('title', 'PPDB - Nilai Akhir')
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -30,9 +30,9 @@
         <div class="main-card mb-3 card">
             <div class="card-header">
                 NILAI UJIAN
-                {{-- <div class="btn-actions-pane-right">
-                    <a href="" class="btn btn-success">Cetak Hasil Ujian</a>
-                </div> --}}
+                <div class=" pr-3 btn-actions-pane-right">
+                    <a href="" class=" btn btn-info">Cetak Hasil Ujian</a>
+                </div>
             </div>
             <div class="table-responsive">
                 <table class="align-middle mb-0 table table-borderless table-striped table-hover">
@@ -43,7 +43,7 @@
                             <th>Nama Ujian</th>
                             <th class="text-center">Persentase</th>
                             <th class="text-center">Tanggal Ujian</th>
-                            <th class="text-center">Aksi</th>
+                            {{-- <th class="text-center">Aksi</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -55,7 +55,7 @@
                             <td>{{$re->title}}</td>
                             <td class="text-center">{{$re->score}} %</td>
                             <td class="text-center">{{date('d/m/Y', strtotime($re->date))}}</td>
-                            <td></td>
+                            {{-- <td></td> --}}
                         </tr>
                         @endforeach
                     </tbody>

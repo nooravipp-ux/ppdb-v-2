@@ -109,10 +109,10 @@
                             <input type="time" class="form-control" name="endTime" required="">
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label>Batas Pertanyaan</label>
                             <input type="number" name="examQuestDipLimit" id="question_limit" class="form-control" placeholder="Masukkan Batas Pertanyaan">
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
                             <label>Nama Ujian/Test</label>
@@ -280,7 +280,7 @@
                 <div class="modal-body">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <label>Perihal</label>
+                            <label>Judul/Perihal</label>
                             <input type="text" name="title" id="title" class="form-control" placeholder="" autocomplete="off">
                         </div>
                         <div class="form-group">

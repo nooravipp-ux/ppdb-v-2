@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'PPDB - Result')
+@section('title', 'PPDB - Nilai')
 @section('content')
 <div class="row">
     <div class="col-md-12">

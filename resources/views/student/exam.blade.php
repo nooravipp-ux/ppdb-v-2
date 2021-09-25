@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'PPDB - Start Exam')
+@section('title', 'PPDB - Mulai Ujian')
 @section('content')
 <script type="text/javascript">
     function preventBack() {
