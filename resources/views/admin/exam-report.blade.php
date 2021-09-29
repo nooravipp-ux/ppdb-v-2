@@ -1,5 +1,8 @@
 @extends('layouts.master')
 @section('title', 'PPDB - Nilai Akhir')
+@section('css')
+<link rel="stylesheet" type="text/css" href="{{asset('admin-panel/js/datatables/css/dataTables.dataTables.css')}}">
+@endsection
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -35,13 +38,13 @@
                 </div>
             </div>
             <div class="table-responsive">
-                <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                <table id="report-ujian" class="align-middle mb-0 table-striped table-borderless">
                     <thead>
                         <tr>
                             <th>No</th>
                             <th>Nama Lengkap</th>
                             <th>Nama Ujian</th>
-                            <th class="text-center">Persentase</th>
+                            <th class="text-center">Nilai Ujian</th>
                             <th class="text-center">Tanggal Ujian</th>
                             {{-- <th class="text-center">Aksi</th> --}}
                         </tr>
@@ -53,7 +56,7 @@
                             <td>{{$i++}}</td>
                             <td>{{$re->nama_lengkap}}</td>
                             <td>{{$re->title}}</td>
-                            <td class="text-center">{{$re->score}} %</td>
+                            <td class="text-center">{{$re->score}}</td>
                             <td class="text-center">{{date('d/m/Y', strtotime($re->date))}}</td>
                             {{-- <td></td> --}}
                         </tr>
@@ -64,4 +67,12 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('custom_js')
+<script>
+    $(document).ready(function() {
+        $('#report-ujian').DataTable();
+    });
+</script>
 @endsection

@@ -164,7 +164,7 @@
                     <div class="form-group row">
                         <label for="staticEmail" class="col-sm-2 col-form-label">No Pendaftaran</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" value="">
+                            <input type="text" class="form-control" value="{{$biodata->no_pendaftaran}}">
                         </div>
                     </div>
                     <div class="form-group row">

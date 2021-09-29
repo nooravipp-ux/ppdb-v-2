@@ -39,7 +39,7 @@
                     <table id="pendaftaran" class="align-middle mb-0 table-striped table-borderless">
                         <thead>
                             <tr>
-                                <th class="">No</th>
+                                <th class="">No Pendaftaran</th>
                                 <th class="">Nama Lengkap</th>
                                 <th class="">Jurusan</th>
                                 <th class="">Alamat</th>
@@ -52,7 +52,7 @@
 
                             @foreach($register as $r)
                             <tr>
-                                <td class="">1</td>
+                                <td class="">{{$r->no_pendaftaran}}</td>
                                 <td class="">{{$r->nama_lengkap}}</td>
                                 <td class="">{{$r->pilihan_jurusan}}</td>
                                 <td>{{$r->alamat}}</td>

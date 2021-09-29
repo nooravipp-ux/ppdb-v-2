@@ -53,7 +53,7 @@
                                         <option value="Teknik Bisnis dan Sepeda Motor">Teknik Bisnis dan Sepeda Motor</option>
                                         <option value="Teknik Komputer dan Jaringan">Teknik Komputer dan Jaringan</option>
                                         <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan</option>
-                                        <option value="eknik Pemesinan">Teknik Pemesinan</option>
+                                        <option value="Teknik Pemesinan">Teknik Pemesinan</option>
                                     </select>
                                 </div>
                             </div>

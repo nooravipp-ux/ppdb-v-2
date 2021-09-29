@@ -27,9 +27,16 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Exam Route
 Route::get('/manage-exam', [App\Http\Controllers\ManageExamController::class, 'manageExam'])->name('manage-exam');
 Route::post('/manage-exam/add-course', [App\Http\Controllers\ManageExamController::class, 'addCourse']);
+
+Route::post('/manage-exam/update', [App\Http\Controllers\ManageExamController::class, 'updateExam'])->name('update-exam');
+
 Route::post('/add-or-update-exam', [App\Http\Controllers\ManageExamController::class, 'addOrUpdateExam'])->name('add-or-update-exam');
 Route::get('/manage-exam/manage-exam-question/{id}', [App\Http\Controllers\ManageExamController::class, 'manageExamQuestion'])->name('manage-exam-question.id');
 Route::get('/manage-exam/exam-report', [App\Http\Controllers\ManageExamController::class, 'examReport'])->name('exam-report');
+
+Route::post('/update-question', [App\Http\Controllers\QuestionController::class, 'updateQuestion'])->name('update-question');
+
+Route::post('/manage-exam/add-course', [App\Http\Controllers\ManageExamController::class, 'addCourse']);
 
 Route::post('/manage-exam/manage-exam-question/add-questions', [App\Http\Controllers\QuestionController::class, 'addOrUpdateQuestions'])->name('add-questions');
 Route::post('/manage-exam/manage-exam-question/delete-question', [App\Http\Controllers\QuestionController::class, 'deleteQuestion']);

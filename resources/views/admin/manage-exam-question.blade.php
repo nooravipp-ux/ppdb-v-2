@@ -1,5 +1,12 @@
 @extends('layouts.master')
 @section('title', 'PPDB - Kelola Pertanyaan Ujian')
+@section('css')
+<style>
+    .modal-backdrop {
+        z-index: -99999;
+    }
+</style>
+@endsection
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -86,10 +93,11 @@
 
                                                     </td>
                                                     <td class="text-center">
-                                                        <a rel="facebox" href="facebox_modal/updateQuestion.php?id=" class="btn btn-sm btn-warning">Edit</a>
+                                                    <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion{{$eq->id}}">Edit</button>
                                                         <button type="button" id="deleteQuestion" data-id='{{$eq->id}}' onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">Hapus</button>
                                                     </td>
                                                 </tr>
+                                                @include('admin.modal-update-question')
                                                 @endforeach
                                                 @else
                                                 <tr>

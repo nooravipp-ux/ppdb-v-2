@@ -1,5 +1,18 @@
 @extends('layouts.master')
 @section('title', 'PPDB - Data Ujian')
+
+@section('css')
+<link rel="stylesheet" type="text/css" href="{{asset('admin-panel/js/datatables/css/dataTables.dataTables.css')}}">
+<style>
+    #tabel-ujian {
+        font-size: 12px;
+    }
+
+    .modal-backdrop {
+        z-index: -99999;
+    }
+</style>
+@endsection
 @section('content')
 <div class="app-page-title">
     <div class="page-title-wrapper">
@@ -9,7 +22,7 @@
                 </i>
             </div>
             <div class="container">
-                <div class="page-title-subheading"> 
+                <div class="page-title-subheading">
                     <h4>
                         KELOLA DATA UJIAN
                     </h4>
@@ -27,16 +40,16 @@
                 </a>
             </div>
             <div class="table-responsive">
-                <table class="align-middle mb-0 table table-borderless table-striped table-hover" id="tableList">
+                <table id="tabel-ujian" class="align-middle mb-0 table  table-borderless table-striped table-hover">
                     <thead>
 
                         <tr>
-                            <th class="text-left pl-4">Nama Ujian</th>
-                            <th class="text-left ">Soal Ujian</th>
+                            <th class="">Nama Ujian</th>
                             <th class="text-left ">Deskripsi</th>
                             <th class="text-left ">Waktu Ujian</th>
                             <th class="text-left ">Tanggal Ujian</th>
                             <th class="text-left ">Jam Mulai</th>
+                            <th class="text-left ">Jam Selesai</th>
                             {{-- <th class="text-left ">Jam Berakhir</th>     --}}
                             <th class="text-center" width="20%">Aksi</th>
                         </tr>
@@ -46,17 +59,20 @@
                         @foreach($exam as $exm)
                         <tr>
                             <td class="pl-4">{{$exm->title}}</td>
-                            <td>{{$exm->course_id}}</td>
                             <td>{{$exm->description}}</td>
                             <td>{{$exm->time_limit}} Menit</td>
-                            <td>{{$exm->date}}</td>
+                            <td>{{date('d-M-Y', strtotime($exm->date))}}</td>
                             <td>{{$exm->start_time}}</td>
+                            <td>{{$exm->end_time}}</td>
                             {{-- <td>{{$exm->end_time}}</td> --}}
                             <td class="text-center">
                                 <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-warning btn-sm">Edit Soal</a>
-                                <button type="button" id="deleteExam" data-id='<?php echo $exm->title; ?>' class="btn btn-danger btn-sm">Hapus</button>
+                                <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-danger btn-sm">Hapus Ujian</a>
+                                <a href="#" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalUpdateForExam{{$exm->id}}">Edit Ujian</a>
+
                             </td>
                         </tr>
+                        @include('admin.modal-update-ujian')
                         @endforeach
                     </tbody>
                 </table>
@@ -64,4 +80,13 @@
         </div>
     </div>
 </div>
+@endsection
+
+@section('custom_js')
+<script>
+    $(document).ready(function() {
+        $('#tabel-ujian').DataTable();
+        $(document).off('focusin.modal');
+    });
+</script>
 @endsection

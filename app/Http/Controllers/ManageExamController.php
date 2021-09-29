@@ -25,7 +25,9 @@ class ManageExamController extends Controller
         return view('student.exam', compact('exam','examQuestions','examQuestionsCount','exam_id'));
     }
     public function manageExam(){
-        $exam = Exam::all();
+        $exam = DB::table('t_exam')
+                ->select('t_exam.*', 'm_course.course_code','m_course.course_name')
+                ->join('m_course', 'm_course.id', '=', 't_exam.course_id')->get();;
         $course = Course::all();
         return view('admin.manage-exam', compact('exam', 'course'));
     }
@@ -46,6 +48,7 @@ class ManageExamController extends Controller
         return response()->json(['status' => 'success', 'data' => $exam]);
     }
 
+
     public function manageExamQuestion($id){
         $exam = Exam::find($id);
         $exam_id = $id;
@@ -54,11 +57,25 @@ class ManageExamController extends Controller
         return view('admin.manage-exam-question', compact('exam','examQuestions','examQuestionsCount','exam_id'));
     }
     
-    public function updateExam($id){
-        return view('admin.manage-exam', compact('id'));
+    public function updateExam(Request $request){
+        
+        $updatedData = DB::table('t_exam')
+            ->where('id', $request->id)
+            ->update([
+                'title' => $request->title,
+                'description' => $request->description,
+                'date' => $request->date,
+                'start_time' => $request->startTime,
+                'end_time' => $request->endTime,
+                'status' => $request->status,
+                'time_limit' => $request->timeLimit
+            ]);
+
+            return redirect('/manage-exam');
     }
 
-    public function deleteExam($id){
+    public function deleteExam(Request $request){
+        
         return view('admin.manage-exam');
     }
 

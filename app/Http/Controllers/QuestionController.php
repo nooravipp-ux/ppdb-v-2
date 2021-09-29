@@ -30,7 +30,20 @@ class QuestionController extends Controller
 
         return response()->json(['status' => 'success', 'data' => $question]);
     }
+    public function updateQuestion(Request $req){
+        $question = DB::table('t_exam_question')->where('id', $req->id)->update(
+            ['exam_id' => $req->exam_id, 
+            'question' => $req->question,
+            'opt_1' => $req->opt_1, 
+            'opt_2' => $req->opt_2,
+            'opt_3' => $req->opt_3,
+            'opt_4' => $req->opt_4,
+            'answer' => $req->correctAnswer]
+        );
 
+
+        return redirect('/manage-exam/manage-exam-question/'.$req->exam_id);
+    }
     public function submitAnswer(Request $req){
         $exam_answer = $req->answer;
         $examId = $req->exam_id;

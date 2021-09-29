@@ -16,7 +16,7 @@ class RegistrationController extends Controller
 {
     public function index(){
         $register = DB::table('t_registration')
-                    ->select('t_student.id','t_student.nama_lengkap', 't_student.pilihan_jurusan', 't_student.alamat','t_student.no_telp','t_student.nama_sekolah_asal', 't_registration.status')
+                    ->select('t_registration.no_pendaftaran','t_student.id','t_student.nama_lengkap', 't_student.pilihan_jurusan', 't_student.alamat','t_student.no_telp','t_student.nama_sekolah_asal', 't_registration.status')
                     ->join('t_student', 't_student.id','=', 't_registration.student_id')
                     ->get();
         return view('admin.registration', compact('register'));
@@ -32,6 +32,7 @@ class RegistrationController extends Controller
         //     'file_ijazah' => 'required|csv,txt,xlx,xls,pdf|max:2048',
         //     'file_skhun' => 'required|csv,txt,xlx,xls,pdf|max:2048'
         // ]);
+
 
         $file_ijazah = $req->file('file_ijazah')->getClientOriginalName();
         $file_skhun = $req->file('file_skhun')->getClientOriginalName();
@@ -107,8 +108,10 @@ class RegistrationController extends Controller
             ]
         );
 
+        $auto_number = $this->generateAutoNumbering($req->pilihan_jurusan);
         Registration::create([
-            'student_id' => $student->id
+            'student_id' => $student->id,
+            'no_pendaftaran' => $auto_number
         ]);
 
         return redirect()->route('success', ['param' => $req->no_induk_siswa_nasional]);
@@ -151,5 +154,26 @@ class RegistrationController extends Controller
     public function downloadFile($filename){
         $filePath = public_path('uploads/'.$filename);
     	return response()->download($filePath);
+    }
+
+    public function generateAutoNumbering($param){
+        $kode_jurusan = "";
+
+        $lastNumber = DB::table('t_registration')->count();
+
+            if($param == "Teknik Bisnis dan Sepeda Motor"){
+                $kode_jurusan = "TBSM";
+            }elseif($param  == "Teknik Komputer dan Jaringan"){
+                $kode_jurusan = "TKJ";
+            }elseif($param  == "Teknik Kendaraan Ringan"){
+                $kode_jurusan = "TKR";
+            }else{
+                $kode_jurusan = "TP";
+            }
+        
+        $number = "PPDB-".$kode_jurusan."-".date('Y')."-".$lastNumber + 1;
+
+        return $number;
+
     }
 }
