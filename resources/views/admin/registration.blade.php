@@ -37,7 +37,7 @@
             </div> <br>
             <div class="container">
                 <div class="table">
-                    <table id="pendaftaran" class="display nowrap align-middle mb-0 table-striped table-borderless">
+                    <table id="pendaftaran" class="align-middle mb-0 table-striped table-borderless">
                         <thead>
                             <tr>
                                 <th class="">No </th>

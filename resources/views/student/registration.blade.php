@@ -70,7 +70,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">NIK</label>
                                 <div class="col-sm-9 input-group-append">
                                     <div class="input-group-text"> <i class="fa fa-id-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nik_siswa" placeholder="Masukkan NIK" required>
+                                    <input type="text" class="form-control" name="nik_siswa" placeholder="Masukkan NIK">
                                 </div>
                             </div>
                             
@@ -78,7 +78,7 @@
                                 <label for="staticEmail" class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9 input-group-append">
                                     <div class="input-group-text"> <i class="fa fa-address-card text-info"> </i></div>
-                                    <textarea type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat Saat ini" required></textarea>
+                                    <textarea type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat Saat ini" ></textarea>
                                 </div>
                             </div>
                             
@@ -94,7 +94,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tempat Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-location-arrow text-info"> </i></div>
-                                    <input type="text" class="form-control" name="tempat_lahir" placeholder="Masukkan Tempat Lahir" required>
+                                    <input type="text" class="form-control" name="tempat_lahir" placeholder="Masukkan Tempat Lahir" >
                                 </div>
                             </div>
 
@@ -102,7 +102,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tanggal Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-calendar text-info"> </i></div>
-                                    <input type="date" class="form-control" name="tanggal_lahir" required>
+                                    <input type="date" class="form-control" name="tanggal_lahir" >
                                 </div>
                             </div>
 
@@ -110,14 +110,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Kartu Keluarga</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-address-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_kk" placeholder="Masukkan No. KK" required>
+                                    <input type="text" class="form-control" name="no_kk" placeholder="Masukkan No. KK" >
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload Kartu Keluarga</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="file_kk" required>
+                                    <input type="file" class="form-control-file" name="file_kk" >
                                 </div>
                             </div>
 
@@ -126,14 +126,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Registrasi Akta Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-registered text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_registrasi_akta_lahir" placeholder="Masukkan No. Akta Lahir" required>
+                                    <input type="text" class="form-control" name="no_registrasi_akta_lahir" placeholder="Masukkan No. Akta Lahir" >
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload Akta Kelahiran</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="file_akta" required>
+                                    <input type="file" class="form-control-file" name="file_akta" >
                                 </div>
                             </div>
 
@@ -160,7 +160,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Anak Ke</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-group text-info"> </i></div>
-                                    <input type="text" class="form-control" name="anak_ke" placeholder="Diisi dengan angka" required>
+                                    <input type="text" class="form-control" name="anak_ke" placeholder="Diisi dengan angka" >
                                 </div>
                             </div>
                             
@@ -168,7 +168,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Jumlah Saudara Kandung</label>
                                 <div class="col-sm-9 input-group-append">
                                     <div class="input-group-text"> <i class="fa fa-group text-info"> </i></div>
-                                    <input type="text" class="form-control" name="jumlah_saudara_kandung" placeholder="Diisi dengan angka" required>
+                                    <input type="text" class="form-control" name="jumlah_saudara_kandung" placeholder="Diisi dengan angka" >
                                 </div>
                             </div>
                             
@@ -193,7 +193,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Email</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-mail-reply-all text-info"> </i></div>
-                                    <input type="text" class="form-control" name="email" placeholder="Masukkan Email" required>
+                                    <input type="text" class="form-control" name="email" placeholder="Masukkan Email" >
                                 </div>
                             </div>
 
@@ -201,7 +201,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Telp / WhatsApp</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-th text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_telp" placeholder="Masukkan No Telepon / WhatsApp" required>
+                                    <input type="text" class="form-control" name="no_telp" placeholder="Masukkan No Telepon / WhatsApp" >
                                 </div>
                             </div>
                         </div>
@@ -222,7 +222,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Nama Asal Sekolah</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-university text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nama_sekolah_asal" placeholder="Masukkan Asal Sekolah" required>
+                                    <input type="text" class="form-control" name="nama_sekolah_asal" placeholder="Masukkan Asal Sekolah" >
                                 </div>
                             </div>
                             
@@ -230,7 +230,7 @@
                                 <label for="staticEmail" class="col-sm-3 col-form-label">Alamat</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-address-card text-info"> </i></div>
-                                    <textarea type="text" class="form-control" name="alamat_sekolah" placeholder="Masukkan Alamat Asal Sekolah" required></textarea>
+                                    <textarea type="text" class="form-control" name="alamat_sekolah" placeholder="Masukkan Alamat Asal Sekolah" ></textarea>
                                 </div>
                             </div>
                             
@@ -238,7 +238,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Induk Siswa Nasional (NISN)</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-id-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_induk_siswa_nasional" placeholder="Masukkan NISN" required>
+                                    <input type="text" class="form-control" name="no_induk_siswa_nasional" placeholder="Masukkan NISN" >
                                 </div>
                             </div>
                             
@@ -246,21 +246,21 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Peserta Ujian Nasional (SMP / MTs)</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-id-card-o text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_peserta_ujian_nasional" placeholder="Masukkan No Peserta Ujian SMP / MTs" required>
+                                    <input type="text" class="form-control" name="no_peserta_ujian_nasional" placeholder="Masukkan No Peserta Ujian SMP / MTs" >
                                 </div>
                             </div>
 
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload Surat Kelulusan</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="file_surat_kelulusan" required>
+                                    <input type="file" class="form-control-file" name="file_surat_kelulusan" >
                                 </div>
                             </div>
                             
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload Ijazah</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="file_ijazah" required>
+                                    <input type="file" class="form-control-file" name="file_ijazah" >
                                 </div>
                             </div>
                             
@@ -268,7 +268,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Seri Ijazah</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-id-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_seri_ijazah" placeholder="Masukkan No. Seri Ijazah" required>
+                                    <input type="text" class="form-control" name="no_seri_ijazah" placeholder="Masukkan No. Seri Ijazah" >
                                 </div>
                             </div>
                             
@@ -276,14 +276,14 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tahun Ijazah</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-sort-numeric-asc text-info"> </i></div>
-                                    <input type="text" class="form-control" name="tahun_ijazah" placeholder="Masukkan Tahun Ijazah" required>
+                                    <input type="text" class="form-control" name="tahun_ijazah" placeholder="Masukkan Tahun Ijazah" >
                                 </div>
                             </div>
                             
                             <div class="form-group row">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Upload SKHUN</label>
                                 <div class="col-sm-9">
-                                    <input type="file" class="form-control-file" name="file_skhun" required>
+                                    <input type="file" class="form-control-file" name="file_skhun" >
                                 </div>
                             </div>
                             
@@ -291,7 +291,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Seri SKHUN</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-id-card-o text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_seri_skhun" placeholder="Masukkan No. Seri SKHUN" required>
+                                    <input type="text" class="form-control" name="no_seri_skhun" placeholder="Masukkan No. Seri SKHUN" >
                                 </div>
                             </div>
                         </div>
@@ -313,28 +313,28 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Nama Ayah Kandung</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-text-width text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nama_ayah" placeholder="Masukkan Nama Ayah" required>
+                                    <input type="text" class="form-control" name="nama_ayah" placeholder="Masukkan Nama Ayah" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Induk Keluaraga (NIK)</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-id-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nik_ayah" placeholder="Masukkan NIK Ayah" required>
+                                    <input type="text" class="form-control" name="nik_ayah" placeholder="Masukkan NIK Ayah" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tempat Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-location-arrow text-info"> </i></div>
-                                    <input type="text" class="form-control" name="tempat_lahir_ayah" placeholder="Masukkan Tempat Lahir Ayah" required>
+                                    <input type="text" class="form-control" name="tempat_lahir_ayah" placeholder="Masukkan Tempat Lahir Ayah" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tanggal Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-calendar text-info"> </i></div>
-                                    <input type="date" class="form-control" name="tanggal_lahir_ayah" required>
+                                    <input type="date" class="form-control" name="tanggal_lahir_ayah" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
@@ -396,28 +396,28 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Nama Ibu Kandung</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-text-width text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nama_ibu" placeholder="Masukkan Nama Ibu" required>
+                                    <input type="text" class="form-control" name="nama_ibu" placeholder="Masukkan Nama Ibu" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Induk Keluaraga (NIK)</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-id-card text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nik_ibu" placeholder="Masukkan NIK Ibu" required>
+                                    <input type="text" class="form-control" name="nik_ibu" placeholder="Masukkan NIK Ibu" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tempat Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-location-arrow text-info"> </i></div>
-                                    <input type="text" class="form-control" name="tempat_lahir_ibu" placeholder="Masukkan Tempat Lahir Ibu" required>
+                                    <input type="text" class="form-control" name="tempat_lahir_ibu" placeholder="Masukkan Tempat Lahir Ibu">
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tanggal Lahir</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-calendar text-info"> </i></div>
-                                    <input type="date" class="form-control" name="tanggal_lahir_ibu" required>
+                                    <input type="date" class="form-control" name="tanggal_lahir_ibu" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
@@ -476,21 +476,21 @@
                                 <label for="staticEmail" class="col-sm-3 col-form-label">Alamat Orang Tua</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-address-card text-info"> </i></div>
-                                    <textarea type="text" class="form-control" name="alamat_ortu" placeholder="Masukkan Alamat Orang Tua" required></textarea>
+                                    <textarea type="text" class="form-control" name="alamat_ortu" placeholder="Masukkan Alamat Orang Tua" ></textarea>
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Kode POS</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-barcode text-info"> </i></div>
-                                    <input type="text" class="form-control" name="kode_pos_ortu" placeholder="Masukkan Kode POS" required>
+                                    <input type="text" class="form-control" name="kode_pos_ortu" placeholder="Masukkan Kode POS" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">No. Telp/WhatsApp Orang Tua</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-th text-info"> </i></div>
-                                    <input type="text" class="form-control" name="no_telp_ortu" placeholder="Masukkan No Telp Orang Tua" required>
+                                    <input type="text" class="form-control" name="no_telp_ortu" placeholder="Masukkan No Telp Orang Tua" >
                                 </div>
                             </div>
                             
@@ -500,7 +500,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Nama Wali</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-text-width text-info"> </i></div>
-                                    <input type="text" class="form-control" name="nama_wali" placeholder="Masukkan Nama Wali" required>
+                                    <input type="text" class="form-control" name="nama_wali" placeholder="Masukkan Nama Wali" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
@@ -536,21 +536,21 @@
                                 <label for="staticEmail" class="col-sm-3 col-form-label">Alamat Wali</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-address-card text-info"> </i></div>
-                                    <textarea type="text" class="form-control" name="alamat_wali" placeholder="Masukkan Alamat Wali" required></textarea>
+                                    <textarea type="text" class="form-control" name="alamat_wali" placeholder="Masukkan Alamat Wali" ></textarea>
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Kode POS</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-barcode text-info"> </i></div>
-                                    <input type="text" class="form-control" name="kode_pos_wali" placeholder="Masukkan Kode POS" required>
+                                    <input type="text" class="form-control" name="kode_pos_wali" placeholder="Masukkan Kode POS" >
                                 </div>
                             </div>
                             <div class="form-group row input-group">
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Hub Dengan Peserta Didik</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-group text-info"> </i></div>
-                                    <input type="text" class="form-control" name="hub_dengan_peserta_didik" placeholder="Masukkan Hubungan Kekerabatan dengan Peserta Didik" required>
+                                    <input type="text" class="form-control" name="hub_dengan_peserta_didik" placeholder="Masukkan Hubungan Kekerabatan dengan Peserta Didik" >
                                 </div>
                             </div>
                             <hr>
@@ -604,7 +604,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Berat Badan</label>
                                 <div class="col-sm-8 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-pie-chart text-info"> </i></div>
-                                    <input type="text" class="form-control" name="berat_badan" placeholder="Masukkan Berat Badan" required>
+                                    <input type="text" class="form-control" name="berat_badan" placeholder="Masukkan Berat Badan" >
                                 </div>
                                 <label for="inputPassword" class="col-sm-1 col-form-label">Kg</label>
                             </div>
@@ -613,7 +613,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Tinggi Badan</label>
                                 <div class="col-sm-8 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-line-chart text-info"> </i></div>
-                                    <input type="text" class="form-control" name="tinggi_badan" placeholder="Masukkan Tinggi Badan" required>
+                                    <input type="text" class="form-control" name="tinggi_badan" placeholder="Masukkan Tinggi Badan" >
                                 </div>
                                 <label for="inputPassword" class="col-sm-1 col-form-label">Cm</label>
                             </div>
@@ -637,7 +637,7 @@
                                 <label for="inputPassword" class="col-sm-3 col-form-label">Riwayat Penyakit</label>
                                 <div class="col-sm-9 input-group-prepend">
                                     <div class="input-group-text"> <i class="fa fa-eraser text-info"> </i></div>
-                                    <input type="text" class="form-control" name="riwayat_penyakit" placeholder="Masukkan Riwayat Penyakit" required>
+                                    <input type="text" class="form-control" name="riwayat_penyakit" placeholder="Masukkan Riwayat Penyakit" >
                                 </div>
                             </div>
 
