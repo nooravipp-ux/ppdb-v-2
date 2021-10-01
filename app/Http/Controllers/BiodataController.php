@@ -20,6 +20,21 @@ class BiodataController extends Controller
 
     public function updateBiodata(Request $req, $id)
     {
+
+        if($req->file('file_ijazah_new')){
+            $file_ijazah = $req->file('file_ijazah_new')->getClientOriginalName();;
+            $req->file('file_ijazah_new')->move('uploads', $req->file('file_ijazah_new')->getClientOriginalName());
+        }else{
+            $file_ijazah = $req->file_ijazah_old;
+        }
+
+        if($req->file('file_skhun_new')){
+            $file_skhun = $req->file('file_skhun_new')->getClientOriginalName();;
+            $req->file('file_skhun_new')->move('uploads', $req->file('file_skhun_new')->getClientOriginalName());
+        }else{
+            $file_skhun = $req->file_skhun_old;
+        }
+
         $updatedData = DB::table('t_student')
             ->where('id', $id)
             ->update([
@@ -73,7 +88,9 @@ class BiodataController extends Controller
                 'riwayat_penyakit' => $req->riwayat_penyakit,
                 'pilihan_jurusan' => $req->pilihan_jurusan,
                 'no_kk' => $req->no_kk,
-                'gol_darah' => $req->gol_darah
+                'gol_darah' => $req->gol_darah,
+                'file_ijazah' => $file_ijazah,
+                'file_skhun' => $file_skhun
             ]);
         return back()->withInput();
     }

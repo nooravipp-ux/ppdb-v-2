@@ -297,6 +297,8 @@
                             <label for="inputPassword" class="col-sm-2 col-form-label">File Ijazah</label>
                             <div class="col-sm-10">
                                 <a href="{{route('download', ['filename' => $register->file_ijazah])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_ijazah}}</a>
+                                <input type="file" class="form-control-file" name="file_ijazah_new">
+                                <input type="hidden" name="file_ijazah_old" value="{{$register->file_ijazah}}">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -315,6 +317,8 @@
                             <label for="inputPassword" class="col-sm-2 col-form-label">File SKHUN</label>
                             <div class="col-sm-10">
                                 <a href="{{route('download', ['filename' => $register->file_skhun])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_skhun}}</a>
+                                <input type="file" class="form-control-file" name="file_skhun_new">
+                                <input type="hidden" name="file_skhun_old" value="{{$register->file_skhun}}">
                             </div>
                         </div>
                         <div class="form-group row">

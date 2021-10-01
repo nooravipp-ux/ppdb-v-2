@@ -42,7 +42,6 @@ class RegistrationController extends Controller
             
         $req->file('file_ijazah')->move('uploads', $req->file('file_ijazah')->getClientOriginalName());
         $req->file('file_skhun')->move('uploads', $req->file('file_skhun')->getClientOriginalName());
-
         $req->file('file_kk')->move('uploads', $req->file('file_kk')->getClientOriginalName());
         $req->file('file_akta')->move('uploads', $req->file('file_akta')->getClientOriginalName());
         $req->file('file_surat_kelulusan')->move('uploads', $req->file('file_surat_kelulusan')->getClientOriginalName());
