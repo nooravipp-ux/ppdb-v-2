@@ -189,7 +189,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
-                            <div class="col-sm-2">
+                            <div class="col-sm-10">
                                 <input type="text" class="form-control" name="kode_pos" value="{{$register->kode_pos}}">
                             </div>
                         </div>
@@ -201,10 +201,24 @@
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
-                            <div class="col-sm-3">
+                            <div class="col-sm-10">
                                 <input type="date" class="form-control" name="tanggal_lahir" value="{{$register->tanggal_lahir}}">
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">No. Kartu Keluarga</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" name="no_kk" value="{{$register->no_kk}}" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">File Kartu Keluarga</label>
+                            <div class="col-sm-10">
+                                <a href="{{route('download', ['filename' => $register->file_kk])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_kk}}</a>
+                            </div>
+                        </div>
+
+
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">No. Registrasi Akta Lahir</label>
                             <div class="col-sm-10">
@@ -294,6 +308,13 @@
                             </div>
                         </div>
                         <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">File SKHUN</label>
+                            <div class="col-sm-10">
+                                <a href="{{route('download', ['filename' => $register->file_surat_kelulusan])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_surat_kelulusan}}</a>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">File Ijazah</label>
                             <div class="col-sm-10">
                                 <a href="{{route('download', ['filename' => $register->file_ijazah])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_ijazah}}</a>
@@ -361,7 +382,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
-                            <div class="col-sm-3">
+                            <div class="col-sm-10">
                                 <input type="date" class="form-control" name="tanggal_lahir_ayah" value="{{$register->tanggal_lahir_ayah}}">
                             </div>
                         </div>
@@ -405,7 +426,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Tanggal Lahir</label>
-                            <div class="col-sm-3">
+                            <div class="col-sm-10">
                                 <input type="date" class="form-control" name="tanggal_lahir_ibu" value="{{$register->tanggal_lahir_ibu}}">
                             </div>
                         </div>
@@ -436,7 +457,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
-                            <div class="col-sm-2">
+                            <div class="col-sm-10">
                                 <input type="text" class="form-control" name="kode_pos_ortu" value="{{$register->kode_pos_ortu}}">
                             </div>
                         </div>
@@ -473,7 +494,7 @@
                         </div>
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Kode POS</label>
-                            <div class="col-sm-2">
+                            <div class="col-sm-10">
                                 <input type="text" class="form-control" name="kode_pos_wali" value="{{$register->kode_pos_wali}}">
                             </div>
                         </div>
