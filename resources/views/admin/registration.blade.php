@@ -39,6 +39,7 @@
                     <table id="pendaftaran" class="align-middle mb-0 table-striped table-borderless">
                         <thead>
                             <tr>
+                                <th class="">No </th>
                                 <th class="">No Pendaftaran</th>
                                 <th class="">Nama Lengkap</th>
                                 <th class="">Jurusan</th>
@@ -50,8 +51,11 @@
                         </thead>
                         <tbody>
 
+                            <?php $i = 1; ?>
+
                             @foreach($register as $r)
                             <tr>
+                                <td class=""><?php echo $i++; ?></td>
                                 <td class="">{{$r->no_pendaftaran}}</td>
                                 <td class="">{{$r->nama_lengkap}}</td>
                                 <td class="">{{$r->pilihan_jurusan}}</td>

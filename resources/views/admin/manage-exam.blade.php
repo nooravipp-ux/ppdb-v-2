@@ -34,12 +34,14 @@
 <div class="row">
     <div class="col-md-12">
         <div class="main-card mb-3 card">
-            <div class="card-header"><a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#modalForExam">
-                    <i class="metismenu-icon"></i>
-                    Tambah Ujian
+            <div class="card-header">
+                <a class="btn btn-sm btn-primary" href="#" data-toggle="modal" data-target="#modalForExam">
+                        Tambah Ujian
                 </a>
+                <br>
             </div>
-            <div class="table-responsive">
+            <br>
+            <div class=" container table-responsive">
                 <table id="tabel-ujian" class="align-middle mb-0 table  table-borderless table-striped table-hover">
                     <thead>
 

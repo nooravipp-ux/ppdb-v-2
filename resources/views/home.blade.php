@@ -91,7 +91,7 @@
                             <th class="text-center">ID User</th>
                             <th class="">Nama</th>
                             <th class="text-center">Status</th>
-                            <th class="text-center">Aksi</th>
+                            {{-- <th class="text-center">Aksi</th> --}}
                         </tr>
                     </thead>
                     <tbody>
@@ -104,7 +104,7 @@
                             @else
                             <td class="text-center bg-success"> <strong> Aktif</strong></td>
                             @endif
-                            <td class="text-center"><a href="" class=" btn btn-danger">Matikan User</a></td>
+                            {{-- <td class="text-center"><a href="" class=" btn btn-danger">Matikan User</a></td> --}}
                         </tr>
                         @endforeach
                     </tbody>
