@@ -13,7 +13,7 @@
     <meta name="msapplication-tap-highlight" content="no">
     <link href="{{asset('admin-panel/main.css')}}" rel="stylesheet">
     <link href="{{asset('admin-panel/editor.css')}}" type="text/css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="{{asset('admin-panel/js/datatables/css/dataTables.bootstrap4.min.css')}}" type="text/css" rel="stylesheet"/>
 
 

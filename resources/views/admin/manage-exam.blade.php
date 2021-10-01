@@ -68,10 +68,9 @@
                             <td>{{$exm->end_time}}</td>
                             {{-- <td>{{$exm->end_time}}</td> --}}
                             <td class="text-center">
-                                <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-warning btn-sm">Edit Soal</a>
-                                <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-danger btn-sm">Hapus Ujian</a>
-                                <a href="#" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalUpdateForExam{{$exm->id}}">Edit Ujian</a>
-
+                                <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-warning btn-sm" title="Edit Soal"><i class=" fa fa-list-ul"></i></a>
+                                {{-- <a href="{{route('manage-exam-question.id', ['id' => $exm->id])}}" type="button" class="btn btn-danger btn-sm" title="Hapus Ujian"><i class=" fa fa-trash"></i></a> --}}
+                                <a href="#" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalUpdateForExam{{$exm->id}}" title="Edit Ujian"> <i class=" fa fa-list-ol"></i></a>
                             </td>
                         </tr>
                         @include('admin.modal-update-ujian')
