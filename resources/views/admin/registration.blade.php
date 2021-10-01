@@ -37,7 +37,7 @@
             </div> <br>
             <div class="container">
                 <div class="table">
-                    <table id="pendaftaran" class="display nowrap align-middle mb-0 table-striped table-borderless">
+                    <table id="pendaftaran" class="align-middle mb-0 table-striped table-borderless">
                         <thead>
                             <tr>
                                 <th class="">No </th>
@@ -90,13 +90,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
 <script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
-<script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script> 
+<script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.colVis.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#pendaftaran').DataTable({
             dom: 'Bfrtip',
             buttons: [
-                'excel', 'pdf', 'print'
+                {
+                    extend: 'excelHtml5',
+                    exportOptions: {
+                        columns: ':visible'
+                    }
+                },
+                {
+                    extend: 'pdfHtml5',
+                    exportOptions: {
+                        columns: [0, 1, 2, 5]
+                    }
+                },
+                'colvis'
             ]
         });
     });
