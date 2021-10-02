@@ -215,6 +215,8 @@
                             <label for="inputPassword" class="col-sm-2 col-form-label">File Kartu Keluarga</label>
                             <div class="col-sm-10">
                                 <a href="{{route('download', ['filename' => $register->file_kk])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_kk}}</a>
+                                <input type="file" class="form-control-file" name="file_kk_new">
+                                <input type="hidden" name="file_kk_old" value="{{$register->file_kk}}">
                             </div>
                         </div>
 
@@ -225,6 +227,18 @@
                                 <input type="text" class="form-control" name="no_registrasi_akta_lahir" value="{{$register->no_registrasi_akta_lahir}}">
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-2 col-form-label">File Akta Kelahiran</label>
+                            <div class="col-sm-10">
+                                <a href="{{route('download', ['filename' => $register->file_akta])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_akta}}</a>
+                                <input type="file" class="form-control-file" name="file_akta_new">
+                                <input type="hidden" name="file_akta_old" value="{{$register->file_akta}}">
+                            </div>
+                        </div>
+
+
+
+
                         <div class="form-group row">
                             <label for="inputPassword" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                             <div class="col-sm-10">
@@ -308,9 +322,11 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputPassword" class="col-sm-2 col-form-label">File SKHUN</label>
+                            <label for="inputPassword" class="col-sm-2 col-form-label">File Surat Kelulusan</label>
                             <div class="col-sm-10">
                                 <a href="{{route('download', ['filename' => $register->file_surat_kelulusan])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$register->file_surat_kelulusan}}</a>
+                                <input type="file" class="form-control-file" name="file_surat_kelulusan_new">
+                                <input type="hidden" name="file_surat_kelulusan_old" value="{{$register->file_surat_kelulusan}}">
                             </div>
                         </div>
 

@@ -209,12 +209,29 @@
                             <input type="date" class="form-control" name="tanggal_lahir" value="{{$biodata->tanggal_lahir}}">
                         </div>
                     </div>
+
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">No. Kartu Keluarga</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="no_kk" value="{{$biodata->no_kk}}" >
+                        </div>
+                    </div>
                     <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">No. Registrasi Akta Lahir</label>
                         <div class="col-sm-10">
                             <input type="text" class="form-control" name="no_registrasi_akta_lahir" value="{{$biodata->no_registrasi_akta_lahir}}">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">File Kartu Keluarga</label>
+                        <div class="col-sm-10">
+                            <a href="" data-toggle="tooltip" data-placement="top" title="Download File">{{$biodata->file_kk}}</a>
+                            <input type="file" class="form-control-file" name="file_kk_new">
+                            <input type="hidden" name="file_kk_old" value="{{$biodata->file_kk}}">
+                        </div>
+                    </div>
+
+
                     <div class="form-group row">
                         <label for="inputPassword" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                         <div class="col-sm-10">
@@ -301,6 +318,8 @@
                         <label for="inputPassword" class="col-sm-2 col-form-label">File Ijazah</label>
                         <div class="col-sm-10">
                             <a href="{{route('download', ['filename' => $biodata->file_ijazah])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$biodata->file_ijazah}}</a>
+                            <input type="file" class="form-control-file" name="file_ijazah_new">
+                            <input type="hidden" name="file_ijazah_old" value="{{$biodata->file_kk}}">
                         </div>
                     </div>
                     <div class="form-group row">
@@ -319,6 +338,8 @@
                         <label for="inputPassword" class="col-sm-2 col-form-label">File SKHUN</label>
                         <div class="col-sm-10">
                             <a href="{{route('download', ['filename' => $biodata->file_skhun])}}" data-toggle="tooltip" data-placement="top" title="Download File">{{$biodata->file_skhun}}</a>
+                            <input type="file" class="form-control-file" name="file_skhun_new">
+                            <input type="hidden" name="file_skhun_old" value="{{$biodata->file_kk}}">
                         </div>
                     </div>
                     <div class="form-group row">

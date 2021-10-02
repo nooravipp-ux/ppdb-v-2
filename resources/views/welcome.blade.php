@@ -42,8 +42,8 @@
         <header id="header" class="fixed-top ">
                 <div class="container d-flex align-items-center pl-5">
                     <h1 class="logo me-auto"> 
-                        {{-- <img src="{{asset('landing-page/assets/img/smkwd.png')}}" class="img-fluid" alt=""> --}}
-                    <a href="index.html"> PPDB SMK</a></h1>
+                    <img src="{{asset('./landing-page/assets/img/smkwd.png')}}" class="img-fluid pb-2" alt="">
+                    <a href="index.html"> PPDB SMK WD</a></h1>
 
                     <nav id="navbar" class="navbar navbar-expand-lg">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -305,7 +305,7 @@
                         <h3>TESTIMONI ALUMNI</h3>
                         <p> Berawal dari Sekolah SMK Widya Dirgantara banyak pelajaran yang saya dapatkan tentang kesidiplinan, karakter dan masih banyak lagi, kompetensi keahlian Teknik Bisnis dan Sepeda Motor mengajarkan siswa - siswinya untuk teliti dalam hal apapun terutama dalam memperbaiki sepeda motor.</p>
                         <p>~ Andi  ~</p>
-                        <p>Selama tiga Tahun saya belajar di jurusan Rekayasa Perangkat Lunak (RPL) SMK TEUKU UMAR membentuk saya menjadi insan yang terampil sesuai keinginan saya dalam bidang IT dan menjadi insan yang berkarakter luhur, karena selain menekankan akademik maupun kejuruan, juga menekankan nilai-nilai agama islam yang diterapkan pada saat proses pembelajaran. Alhamdulillah berkat ketekunan, doa orang tua, bekal ilmu, serta bimbingan bapak/ibu guru saya lolos seleksi PTN sehingga dapat melanjutkan pendidikan di UNDIP Jurusan TEKNIK KOMPUTER yang merupakan salah satu universitas negeri terbaik di Indonesia, Sesuai dengan cita-cita saya ingin menjadi programmer yang Handal dan menjadi hacker konten-konten yang tidak baik bagi umat manusia.</p>
+                        <p>Selama tiga Tahun saya belajar di jurusan Teknik Komputer dan Jaringan di SMK Wiyda Dirgantara membentuk saya menjadi insan yang terampil sesuai keinginan saya dalam bidang IT dan menjadi insan yang berkarakter luhur, karena selain menekankan akademik maupun kejuruan, juga menekankan nilai-nilai agama islam yang diterapkan pada saat proses pembelajaran.</p>
                         <p>~ Tijo ~</p>
 
                     </div>

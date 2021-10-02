@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'PPDB - Nilai Akhir')
+@section('title', 'PPDB - LAPORAN NILAI')
 @section('css')
 <link rel="stylesheet" type="text/css" href="{{asset('admin-panel/js/datatables/css/dataTables.dataTables.css')}}">
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
@@ -40,14 +40,16 @@
             </div>
             <br>
             <div class="table-responsive container ">
-                <table id="report-ujian" class="align-middle mb-0 table-striped table-borderless">
+                <table id="report-ujian" class="align-middle mb-0 table-striped table-bordered">
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Nama Lengkap</th>
-                            <th>Nama Ujian</th>
-                            <th class="text-center">Nilai Ujian</th>
-                            <th class="text-center">Tanggal Ujian</th>
+                            <th class=" text-center">Nama Lengkap</th>
+                            <th class=" text-center">Jurusan</th>
+                            <th class=" text-center">Nama Ujian</th>
+                            <th class=" text-center">Nilai Ujian</th>
+                            <th class=" text-center">Tanggal Ujian</th>
+                            <th class=" text-center">Keterangan</th>
                             {{-- <th class="text-center">Aksi</th> --}}
                         </tr>
                     </thead>
@@ -55,11 +57,17 @@
                         <?php $i = 1; ?>
                         @foreach($reportExam as $re)
                         <tr>
-                            <td>{{$i++}}</td>
-                            <td>{{$re->nama_lengkap}}</td>
-                            <td>{{$re->title}}</td>
-                            <td class="text-center">{{$re->score}}</td>
-                            <td class="text-center">{{date('d/m/Y', strtotime($re->date))}}</td>
+                            <td class=" text-center">{{$i++}}</td>
+                            <td class=" text-center">{{$re->nama_lengkap}}</td>
+                            <td class=" text-center">{{$re->pilihan_jurusan}}</td>
+                            <td class=" text-center">{{$re->title}}</td>
+                            <td class=" text-center">{{$re->score}}</td>
+                            <td class=" text-center">{{date('d/m/Y', strtotime($re->date))}}</td>
+                            @if($re->score > 75)
+                                <td class=" text-center">LULUS</td>
+                            @else
+                                <td class=" text-center">TIDAK LULUS</td>
+                            @endif
                             {{-- <td></td> --}}
                         </tr>
                         @endforeach
@@ -86,18 +94,30 @@
         $('#report-ujian').DataTable({
             dom: 'Bfrtip',
             buttons: [
+                // {
+                //     extend: 'print',
+                //     exportOptions: {
+                //         columns: ':visible'
+                //     }
+                // },
                 {
                     extend: 'excelHtml5',
+                    text : 'Export Excel',
                     exportOptions: {
                         columns: ':visible'
                     }
                 },
                 {
                     extend: 'pdfHtml5',
+                    text: 'Export PDF',
                     exportOptions: {
-                        columns: ':visible'
+                        columns: ':visible',
+                    },
+                    customize : function(doc) {
+                        doc.content[1].table.widths = [ '10%', '20%', '20%', '15%', '15%', '20%'];
                     }
-                },
+                    
+                },     
                 'colvis'
             ]
         });
