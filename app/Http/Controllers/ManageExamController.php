@@ -14,8 +14,9 @@ class ManageExamController extends Controller
         $this->middleware('auth');
     }
     public function listExam(){
+        $timeNow = $this->getTime();
         $listExam = Exam::all();
-        return view('student.exam-list', compact('listExam'));
+        return view('student.exam-list', compact('listExam', 'timeNow'));
     }
     public function startExam($id){
         $exam = Exam::find($id);
@@ -110,6 +111,14 @@ class ManageExamController extends Controller
         }else{
             return false;
         }
+    }
+
+    public function getTime(){
+        date_default_timezone_set('Asia/Jakarta');
+
+        $timeNow = date('Y-m-d H:i:s');
+
+        return response()->json($timeNow);
     }
 
 }

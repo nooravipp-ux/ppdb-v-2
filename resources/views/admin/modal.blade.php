@@ -101,12 +101,12 @@
                             <input type="date" class="form-control" name="date" required="">
                         </div>
                         <div class="form-group">
-                            <label>Jam Mulai</label>
-                            <input type="time" class="form-control" name="startTime" required="">
+                            <label>Waktu Mulai</label>
+                            <input type="datetime-local" class="form-control" name="startTime" required="">
                         </div>
                         <div class="form-group">
-                            <label>Jam Berakhir</label>
-                            <input type="time" class="form-control" name="endTime" required="">
+                            <label>Waktu Berakhir</label>
+                            <input type="datetime-local" class="form-control" name="endTime" required="">
                         </div>
 
                         {{-- <div class="form-group">

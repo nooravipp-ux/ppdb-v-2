@@ -73,7 +73,7 @@
                     <div class="widget-content-wrapper text-white">
                         <div class="widget-content-left">
                             <div class="widget-heading">
-                                <h5>Persentase</h5>
+                                <h5>Nilai Ujian</h5>
                             </div>
                             <div class="widget-subheading" style="color: transparent;">/</div>
                         </div>
@@ -82,8 +82,7 @@
                                 <span>
                                 <?php 
                                     $ans = $score / $over * 100;
-                                    echo number_format($ans,2);
-                                    echo "%"; 
+                                    echo number_format($ans);
                                  ?>
                                 </span>
                                 

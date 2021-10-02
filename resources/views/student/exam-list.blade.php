@@ -66,20 +66,20 @@
                     <h6 class="heading">{{$list->title}}</h6>
                     <hr class="line-color">
                     <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
-                        <div class="d-flex align-items-center">  <span class="hour ml-1">Tanggal : {{$list->date}}</span> </div>
+                        <div class="d-flex align-items-center"> <span class="hour ml-1">Tanggal : {{date('d/m /Y',strtotime($list->start_time))}}</span> </div>
                     </div>
                     <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
-                        <div class="d-flex align-items-center">  <span class="hour ml-1">Waktu Mulai : {{$list->start_time}} - {{$list->end_time}}</span> </div>
+                        <div class="d-flex align-items-center"> <span class="hour ml-1">Waktu Mulai : Pukul {{date('H:i', strtotime($list->start_time))}}</span> </div>
                     </div>
                     <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
-                        <div class="d-flex align-items-center">  <span class="hour ml-1">Batas Waktu : {{$list->time_limit}} Menit</span> </div>
+                        <div class="d-flex align-items-center"> <span class="hour ml-1">Waktu Selesai : Pukul {{date('H:i', strtotime($list->end_time))}}</span> </div>
                     </div>
                     <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
-                        <div class="d-flex align-items-center">  <span class="hour ml-1">Deskripsi : {{$list->description}} </span> </div>
+                        <div class="d-flex align-items-center"> <span class="hour ml-1">Deskripsi : {{$list->description}} </span> </div>
                     </div>
                 </div>
                 <hr class="line-color">
-                <div class="third mt-4"> <a href="{{route('exam.id', ['id' => $list->id])}}" class="btn btn-success btn-block"><i class="fa fa-clock-o"></i> Mulai</a>
+                <div class="third mt-4"> <a href="{{route('exam.id', ['id' => $list->id])}}" class="btn btn-success btn-block"><i class="fa fa-clock-o"></i> Mulai Ujian</a>
                 </div>
             </div>
         </div>

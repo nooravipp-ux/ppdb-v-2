@@ -25,8 +25,8 @@
                 <div class="page-title-actions mr-5" style="font-size: 20px;">
                     <form name="cd">
                         <input type="hidden" name="" id="timeExamLimit" value="{{$exam->time_limit}}">
-                        <label>Remaining Time : </label>
-                        <input style="border:none;background-color: transparent;color:blue;font-size: 25px;" name="disp" type="text" class="clock" id="txt" value="00:00" size="5" readonly="true" />
+                        <input type="hidden" name="" id="endTime" value="{{$exam->end_time}}">
+                        <label>Watu Berakhir Pukul <span>{{date('H:i', strtotime($exam->end_time))}}</span> </label>
                     </form>
                 </div>
             </div>
@@ -44,7 +44,7 @@
 
                 <tr>
                     <td>
-                        <p><b><?php echo $i++; ?>.  {{$question->question}}</b></p>
+                        <p><b><?php echo $i++; ?>. {{$question->question}}</b></p>
                         <div class="col-md-4 float-left">
                             <div class="form-group pl-4 ">
                                 <input name="answer[{{$question->id}}][correct]" value="{{$question->opt_1}}" class="form-check-input" type="radio" value="" id="invalidCheck" required>
@@ -101,4 +101,34 @@
         </form>
     </div>
 </div>
+@endsection
+
+@section('custom_js')
+<script>
+    $(document).ready(function() {
+        var interval = setInterval(function(){checkTime()}, 4000);
+    });
+
+    function checkTime() {
+        let endTime = $('#endTime').val();
+        $.ajax({
+            url: "{{route('get.time')}}",
+            type: "get", //send to manageExamController
+            success: function(timeNow) {
+                console.log(endTime);
+                console.log(timeNow);
+                
+                if(timeNow >= endTime){
+                    $('#examAction').val("timeout");
+                    $('#submitAnswerFrm').submit();
+                }
+
+            },
+            error: function(xhr) {
+                //Do Something to handle error
+            }
+        });
+    }
+</script>
+
 @endsection

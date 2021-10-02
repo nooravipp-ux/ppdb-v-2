@@ -41,11 +41,11 @@
                         </div>
                         <div class="form-group">
                             <label>Jam Mulai</label>
-                            <input type="time" class="form-control" name="startTime" required="" value="{{$exm->start_time}}">
+                            <input type="text" class="form-control" name="startTime" required="" value="{{$exm->start_time}}">
                         </div>
                         <div class="form-group">
                             <label>Jam Berakhir</label>
-                            <input type="time" class="form-control" name="endTime" required="" value="{{$exm->end_time}}">
+                            <input type="text" class="form-control" name="endTime" required="" value="{{$exm->end_time}}">
                         </div>
 
                         {{-- <div class="form-group">

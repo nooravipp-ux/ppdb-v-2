@@ -438,13 +438,8 @@ $(document).on('submit', '#submitAnswerFrm', function() {
     if (examAction != "") {
         Swal.fire({
             title: 'Time Out',
-            text: "your time is over, please click ok",
+            text: "Watu Anda Habis !!!",
             icon: 'warning',
-            showCancelButton: false,
-            allowOutsideClick: false,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'OK!'
         }).then((result) => {
             if (result.value) {
 
@@ -459,7 +454,7 @@ $(document).on('submit', '#submitAnswerFrm', function() {
                     } else if (data.res == "success") {
                         Swal.fire({
                             title: 'Success',
-                            text: "your answer successfully submitted!",
+                            text: "Jawaban Anda Berhasil di Simpan !",
                             icon: 'success',
                             allowOutsideClick: false,
                             confirmButtonColor: '#3085d6',
@@ -523,7 +518,6 @@ $(document).on('submit', '#submitAnswerFrm', function() {
                             }
 
                         });
-
 
                     } else if (data.res == "failed") {
                         Swal.fire(

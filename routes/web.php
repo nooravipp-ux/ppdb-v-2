@@ -40,6 +40,7 @@ Route::post('/manage-exam/add-course', [App\Http\Controllers\ManageExamControlle
 
 Route::post('/manage-exam/manage-exam-question/add-questions', [App\Http\Controllers\QuestionController::class, 'addOrUpdateQuestions'])->name('add-questions');
 Route::post('/manage-exam/manage-exam-question/delete-question', [App\Http\Controllers\QuestionController::class, 'deleteQuestion']);
+Route::get('/manage-exam/get-time-now', [App\Http\Controllers\ManageExamController::class, 'getTime'])->name('get.time');
 
 Route::get('/start-exam/{id}', [App\Http\Controllers\ManageExamController::class, 'startExam'])->name('exam.id');
 Route::get('/examination-list', [App\Http\Controllers\ManageExamController::class, 'listExam'])->name('list-exam');
