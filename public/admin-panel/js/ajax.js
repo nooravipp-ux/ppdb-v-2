@@ -254,6 +254,45 @@ $(document).on("click", "#deleteQuestion", function(e) {
     return false;
 });
 
+// Delete Question
+$(document).on("click", "#updateReport", function(e) {
+    e.preventDefault();
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+    var id = $(this).data("id");
+    var status = $(this).data("status");
+    $.ajax({
+        type: "post",
+        url: "/manage-exam/exam-report/update-status",
+        dataType: "json",
+        data: { id: id, status: status },
+        cache: false,
+        success: function(data) {
+            if (data.res == "success") {
+                Swal.fire(
+                    'Update',
+                    'Selected report successfully updated',
+                    'success'
+                )
+                refreshDiv();
+                location.reload();
+            }
+        },
+        error: function(xhr, ErrorStatus, error) {
+            console.log(status.error);
+        }
+
+    });
+
+
+
+    return false;
+});
+
+
 
 //Add Question
 // $(document).on("submit", "#addQuestionFrm", function() {

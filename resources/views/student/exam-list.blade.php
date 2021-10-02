@@ -79,8 +79,17 @@
                     </div>
                 </div>
                 <hr class="line-color">
-                <div class="third mt-4"> <a href="{{route('exam.id', ['id' => $list->id])}}" class="btn btn-success btn-block"><i class="fa fa-clock-o"></i> Mulai Ujian</a>
-                </div>
+                @if($list->start_time <= now() && $list->end_time >= now())
+                <div class="third mt-4"> <a href="{{route('exam.id', ['id' => $list->id])}}" class="btn btn-success btn-block"><i class="fa fa-clock-o"></i>Mulai Ujian</a></div>
+                @endif
+
+                @if($list->start_time < now() && $list->end_time < now())
+                <div class="third mt-4"> <a href="#" class="btn btn-danger btn-block"><i class="fa fa-clock-o"></i>Ujian Sudah di Tutup</a></div>
+                @endif
+
+                @if($list->start_time > now() && $list->end_time > now())
+                <div class="third mt-4"> <a href="#" class="btn btn-secondary btn-block"><i class="fa fa-clock-o"></i>Ujian Belum Di buka</a></div>
+                @endif
             </div>
         </div>
     </div>

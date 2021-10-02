@@ -50,7 +50,7 @@
                             <th class=" text-center">Nilai Ujian</th>
                             <th class=" text-center">Tanggal Ujian</th>
                             <th class=" text-center">Keterangan</th>
-                            {{-- <th class="text-center">Aksi</th> --}}
+                            <th class="text-center">Aksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,12 +63,14 @@
                             <td class=" text-center">{{$re->title}}</td>
                             <td class=" text-center">{{$re->score}}</td>
                             <td class=" text-center">{{date('d/m/Y', strtotime($re->date))}}</td>
-                            @if($re->score > 75)
+                            @if($re->status == 1)
                                 <td class=" text-center">LULUS</td>
                             @else
                                 <td class=" text-center">TIDAK LULUS</td>
                             @endif
-                            {{-- <td></td> --}}
+                            <td>
+                            <button type="button" id="updateReport" data-status='{{$re->status}}' data-id='{{$re->id}}' onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">Update Status</button>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>

@@ -34,6 +34,8 @@ Route::post('/add-or-update-exam', [App\Http\Controllers\ManageExamController::c
 Route::get('/manage-exam/manage-exam-question/{id}', [App\Http\Controllers\ManageExamController::class, 'manageExamQuestion'])->name('manage-exam-question.id');
 Route::get('/manage-exam/exam-report', [App\Http\Controllers\ManageExamController::class, 'examReport'])->name('exam-report');
 
+Route::post('/manage-exam/exam-report/update-status', [App\Http\Controllers\ManageExamController::class, 'updateStatusKelulusan']);
+
 Route::post('/update-question', [App\Http\Controllers\QuestionController::class, 'updateQuestion'])->name('update-question');
 
 Route::post('/manage-exam/add-course', [App\Http\Controllers\ManageExamController::class, 'addCourse']);

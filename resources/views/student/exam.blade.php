@@ -26,7 +26,7 @@
                     <form name="cd">
                         <input type="hidden" name="" id="timeExamLimit" value="{{$exam->time_limit}}">
                         <input type="hidden" name="" id="endTime" value="{{$exam->end_time}}">
-                        <label>Watu Berakhir Pukul <span>{{date('H:i', strtotime($exam->end_time))}}</span> </label>
+                        <label>Waktu Berakhir Pukul <span>{{date('H:i', strtotime($exam->end_time))}}</span> </label>
                     </form>
                 </div>
             </div>

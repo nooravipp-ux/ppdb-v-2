@@ -69,13 +69,19 @@ class QuestionController extends Controller
                 t_exam_question.id = t_exam_answer.question_id
                 AND t_exam_question.answer = t_exam_answer.exam_answer
                 WHERE t_exam_answer.exam_id = $examId AND t_exam_answer.student_id = $student_id");
-        $score = (int)$score[0]->score / $over * 100;        
+        $score = (int)$score[0]->score / $over * 100;   
+        
+        if($score >= 70){
+            $status = 1;
+        }else{
+            $status = 0;
+        }
 
         ExamAttemp::updateOrCreate(
             ['exam_id' => $examId,
             'student_id' => auth::user()->student_id,
             'score' => $score,
-            'status' => 1]
+            'status' => $status]
         );
 
         
@@ -108,5 +114,7 @@ class QuestionController extends Controller
 
         $question = Question::find($req->id);
         $question->delete();
+
+        return response()->json(['res' => 'success']); 
     }
 }
