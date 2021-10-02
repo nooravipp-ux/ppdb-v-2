@@ -37,7 +37,7 @@
             </div> <br>
             <div class="container">
                 <div class="table">
-                    <table id="pendaftaran" class="align-middle mb-0 table-striped table-borderless">
+                    <table id="pendaftaran" class="align-middle mb-0 table-striped table-bordered">
                         <thead>
                             <tr>
                                 <th class="">No </th>
@@ -63,9 +63,9 @@
                                 <td>{{$r->alamat}}</td>
                                 <td class="">{{$r->nama_sekolah_asal}}</td>
                                 @if($r->status == 0)
-                                <td class="text-center bg-primary">Applying</td>
+                                <td class="text-center bg-primary" >Applying</td>
                                 @elseif($r->status == 1)
-                                <td class="text-center bg-warning">Terkonfirmasi</td>
+                                <td class="text-center bg-warning" >Terkonfirmasi</td>
                                 @else
                                 <td class="text-center bg-success">Terdaftar</td>
                                 @endif
@@ -97,6 +97,13 @@
         $('#pendaftaran').DataTable({
             dom: 'Bfrtip',
             buttons: [
+                // {
+                //     extend: 'print',
+                //     // autoPrint: false,
+                //     exportOptions: {
+                //         columns: ':visible'
+                //     }
+                // },
                 {
                     extend: 'excelHtml5',
                     exportOptions: {
@@ -110,7 +117,7 @@
                     }
                 },
                 'colvis'
-            ]
+            ],
         });
     });
 </script>

@@ -94,7 +94,7 @@ class ManageExamController extends Controller
 
     public function examReport(){
         $reportExam = DB::table('t_exam_attemp')
-                    ->select('t_student.nama_lengkap','t_exam.title','t_exam_attemp.score','t_exam_attemp.date')
+                    ->select('t_student.nama_lengkap', 't_student.pilihan_jurusan','t_exam.title','t_exam_attemp.score','t_exam_attemp.date')
                     ->join('t_student', 't_student.id', '=', 't_exam_attemp.student_id')
                     ->join('t_exam', 't_exam.id', '=', 't_exam_attemp.exam_id')
                     ->orderBy('t_exam_attemp.score', 'desc')

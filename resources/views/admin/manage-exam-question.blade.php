@@ -18,7 +18,7 @@
             <div>
                 <div class="page-title-subheading">
                     <h4>
-                        Kelola Soal Ujian
+                        KELOLA SOAL UJIAN
                     </h4>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                                                 @foreach($examQuestions as $eq)
                                                 <tr>
                                                     <td>
-                                                        <b><?php echo $i++; ?> ) {{$eq['question']}}</b><br>
+                                                        <b><?php echo $i++; ?>. {{$eq['question']}}</b><br>
 
                                                         <!-- // Choice A -->
                                                         @if ($eq->opt_1 == $eq->answer)

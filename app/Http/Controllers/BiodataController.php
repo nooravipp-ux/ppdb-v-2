@@ -14,7 +14,11 @@ class BiodataController extends Controller
 
     public function biodata()
     {
-        $biodata = DB::table('t_student')->where('id', auth()->user()->student_id)->first();
+        $biodata = DB::table('t_registration')
+                    ->join('t_student', 't_student.id','=', 't_registration.student_id')
+                    ->where('t_student.id', auth()->user()->student_id)
+                    ->first();
+        // dd($biodata);
         return view('student.biodata', compact('biodata'));
     }
 
@@ -35,9 +39,30 @@ class BiodataController extends Controller
             $file_skhun = $req->file_skhun_old;
         }
 
+        if($req->file('file_surat_kelulusan_new')){
+            $file_surat_kelulusan = $req->file('file_surat_kelulusan_new')->getClientOriginalName();;
+            $req->file('file_surat_kelulusan_new')->move('uploads', $req->file('file_surat_kelulusan_new')->getClientOriginalName());
+        }else{
+            $file_surat_kelulusan = $req->file_skhun_old;
+        }
+
+        if($req->file('file_akta_new')){
+            $file_akta = $req->file('file_akta_new')->getClientOriginalName();;
+            $req->file('file_akta_new')->move('uploads', $req->file('file_akta_new')->getClientOriginalName());
+        }else{
+            $file_akta = $req->file_akta_old;
+        }
+
+        if($req->file('file_kk_new')){
+            $file_kk = $req->file('file_kk_new')->getClientOriginalName();;
+            $req->file('file_kk_new')->move('uploads', $req->file('file_kk_new')->getClientOriginalName());
+        }else{
+            $file_kk = $req->file_kk_old;
+        }
+
         $updatedData = DB::table('t_student')
             ->where('id', $id)
-            ->update([
+            ->update([    
                 'nama_lengkap' => $req->nama_lengkap,
                 'nik_siswa' => $req->nik_siswa,
                 'tempat_lahir' => $req->tempat_lahir,
@@ -90,7 +115,10 @@ class BiodataController extends Controller
                 'no_kk' => $req->no_kk,
                 'gol_darah' => $req->gol_darah,
                 'file_ijazah' => $file_ijazah,
-                'file_skhun' => $file_skhun
+                'file_skhun' => $file_skhun,
+                'file_surat_kelulusan' => $file_surat_kelulusan,
+                'file_akta' => $file_akta,
+                'file_kk' => $file_kk
             ]);
         return back()->withInput();
     }

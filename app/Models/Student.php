@@ -9,7 +9,7 @@ class Student extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['id','nama_lengkap','nik_siswa','tempat_lahir','jenis_kelamin',
+    protected $fillable = ['id','no_pendaftaran','nama_lengkap','nik_siswa','tempat_lahir','jenis_kelamin',
                         'tanggal_lahir','no_registrasi_akta_lahir','anak_ke','jumlah_saudara_kandung','agama','email',
                         'no_telp','alamat','kode_pos','nama_sekolah_asal','alamat_sekolah','no_induk_siswa_nasional',
                         'no_peserta_ujian_nasional','tahun_ijazah','no_seri_ijazah','no_seri_skhun','nama_ayah','nik_ayah',
