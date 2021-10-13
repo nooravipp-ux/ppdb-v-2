@@ -44,25 +44,20 @@
             <div class=" container table-responsive">
                 <table id="tabel-ujian" class="align-middle mb-0 table  table-borderless table-striped table-hover">
                     <thead>
-
                         <tr>
                             <th class="">Nama Ujian</th>
                             <th class="text-left ">Deskripsi</th>
-                            <th class="text-left ">Waktu Ujian</th>
                             <th class="text-left ">Tanggal Ujian</th>
                             <th class="text-left ">Jam Mulai</th>
                             <th class="text-left ">Jam Selesai</th>
-                            {{-- <th class="text-left ">Jam Berakhir</th>     --}}
                             <th class="text-center" width="20%">Aksi</th>
                         </tr>
-
                     </thead>
                     <tbody>
                         @foreach($exam as $exm)
                         <tr>
                             <td class="pl-4">{{$exm->title}}</td>
                             <td>{{$exm->description}}</td>
-                            <td>{{$exm->time_limit}} Menit</td>
                             <td>{{date('d-M-Y', strtotime($exm->date))}}</td>
                             <td>{{$exm->start_time}}</td>
                             <td>{{$exm->end_time}}</td>

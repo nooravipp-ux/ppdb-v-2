@@ -199,7 +199,12 @@
                                     <i class="metismenu-icon pe-7s-volume"></i>
                                     Pengaturan Pengumuman
                                 </a>
-
+                            </li>
+                            <li>
+                                <a href="{{url('/announcement')}}">
+                                    <i class="metismenu-icon pe-7s-id"></i>
+                                    Testimoni Alumni
+                                </a>
                             </li>
                             @else
                             <li class="app-sidebar__heading">Dashboard</li>

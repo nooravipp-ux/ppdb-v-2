@@ -75,7 +75,7 @@
                         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Tutorial Pendaftaran</span></a>
                     </div> 
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="{{route('download-panduan', ['filename' => 'panduan-ppdb.docx'])}}" class="btn-get-started scrollto"><span>Syarat & Panduan Pendaftaran</span></a>
+                        <a href="{{route('download-panduan', ['filename' => 'panduan-ppdb.docx'])}}" class="btn-get-started scrollto"><span>Download Syarat & Panduan Pendaftaran</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -341,8 +341,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM KETERAMPILAN</h4>
                             <p>TKRO</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-1.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -351,8 +351,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM PENGETAHUAN</h4>
                             <p>TBSM</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -361,8 +361,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM PENGETAHUAN</h4>
                             <p>TP</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-2.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -371,8 +371,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM PENGETAHUAN</h4>
                             <p>TBSM</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-3.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -381,8 +381,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM KETERAMPILAN</h4>
                             <p>TKJ</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-4.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -391,8 +391,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM PENGETAHUAN</h4>
                             <p>TBSM</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-5.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -401,8 +401,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM KETERAMPILAN</h4>
                             <p>TKRO</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -411,8 +411,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM PENGETAHUAN</h4>
                             <p>TKJ</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-7.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-7.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -421,8 +421,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM KETERAMPILAN</h4>
                             <p>TP</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-7.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-7.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -431,8 +431,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM PENGETAHUAN</h4>
                             <p>TKJ</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-8.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-8.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -441,8 +441,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM KETERAMPILAN</h4>
                             <p>TKJ</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-9.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-9.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -451,8 +451,8 @@
                         <div class="portfolio-info">
                             <h4>UJIKOM KETERAMPILAN</h4>
                             <p>TKRO</p>
-                            <a href="{{asset('landing-page/assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+                            {{-- <a href="{{asset('landing-page/assets/img/portfolio/portfolio-6.jpg')}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a> --}}
+                            {{-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a> --}}
                         </div>
                     </div>
 
@@ -560,7 +560,7 @@
 
         <div class="container footer-bottom clearfix">
             <div class="copyright">
-                &copy; Copyright <strong><span>Skripsi2021</span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span>MulyanaOfficial</span></strong>. All Rights Reserved
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->

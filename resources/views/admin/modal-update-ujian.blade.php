@@ -25,7 +25,7 @@
                             </select>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label>Waktu Ujian</label>
                             <select class="form-control" name="timeLimit" required="">
                                 <option value="{{$exm->time_limit}}">{{$exm->time_limit}} Menit</option>
@@ -33,7 +33,7 @@
                                 <option value="60">60 Menit</option>
                                 <option value="90">90 Menit</option>
                             </select>
-                        </div>
+                        </div> --}}
                         <div class="form-group">
                             <label>Tanggal Ujian</label>
                             <input type="hidden" name="id" value="{{$exm->id}}" >

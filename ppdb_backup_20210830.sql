@@ -1,160 +1,229 @@
-/*
-SQLyog Enterprise
-MySQL - 10.4.19-MariaDB : Database - db_ppdb
-*********************************************************************
-*/
+-- phpMyAdmin SQL Dump
+-- version 5.1.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 13, 2021 at 07:46 PM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 8.0.9
 
-/*!40101 SET NAMES utf8 */;
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
-/*!40101 SET SQL_MODE=''*/;
 
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-/*Table structure for table `failed_jobs` */
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `ppdb_backup_20210830`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `failed_jobs`
+--
 
 CREATE TABLE `failed_jobs` (
-  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL,
   `uuid` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `connection` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `queue` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `payload` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `exception` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `failed_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`)
+  `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-/*Data for the table `failed_jobs` */
+-- --------------------------------------------------------
 
-/*Table structure for table `m_course` */
-
-CREATE TABLE `m_course` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `course_code` varchar(30) DEFAULT NULL,
-  `course_name` varchar(50) DEFAULT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
-
-/*Data for the table `m_course` */
-
-insert  into `m_course`(`id`,`course_code`,`course_name`,`created_at`) values 
-(5,'C001','Uji Akadmeik','2021-06-28 23:04:13'),
-(6,'C0032','Uji Kompetensi','2021-06-29 02:06:51'),
-(7,'ujian_test01','ujian test 01','2021-07-30 23:56:54');
-
-/*Table structure for table `migrations` */
+--
+-- Table structure for table `migrations`
+--
 
 CREATE TABLE `migrations` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `id` int(10) UNSIGNED NOT NULL,
   `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `batch` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `batch` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-/*Data for the table `migrations` */
+--
+-- Dumping data for table `migrations`
+--
 
-insert  into `migrations`(`id`,`migration`,`batch`) values 
-(1,'2014_10_12_000000_create_users_table',1),
-(2,'2014_10_12_100000_create_password_resets_table',1),
-(3,'2019_08_19_000000_create_failed_jobs_table',1);
+INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+(1, '2014_10_12_000000_create_users_table', 1),
+(2, '2014_10_12_100000_create_password_resets_table', 1),
+(3, '2019_08_19_000000_create_failed_jobs_table', 1);
 
-/*Table structure for table `password_resets` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `m_course`
+--
+
+CREATE TABLE `m_course` (
+  `id` bigint(20) NOT NULL,
+  `course_code` varchar(30) DEFAULT NULL,
+  `course_name` varchar(50) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `m_course`
+--
+
+INSERT INTO `m_course` (`id`, `course_code`, `course_name`, `created_at`) VALUES
+(16, 'MP01', 'Bahasa Indonesia', '2021-10-09 06:05:01'),
+(17, 'MP02', 'Matematika', '2021-10-12 05:34:39');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `password_resets`
+--
 
 CREATE TABLE `password_resets` (
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  KEY `password_resets_email_index` (`email`)
+  `created_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-/*Data for the table `password_resets` */
+-- --------------------------------------------------------
 
-/*Table structure for table `t_announcement` */
+--
+-- Table structure for table `t_announcement`
+--
 
 CREATE TABLE `t_announcement` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) NOT NULL,
   `title` varchar(225) DEFAULT NULL,
   `description` text DEFAULT NULL,
   `status` int(2) DEFAULT NULL,
-  `created_at` datetime DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
+  `created_at` datetime DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_announcement` */
+--
+-- Dumping data for table `t_announcement`
+--
 
-insert  into `t_announcement`(`id`,`title`,`description`,`status`,`created_at`) values 
-(4,'test Pengumuman','<p><em>Dalam rangka peringatan hari Sumpah Pemuda, akan segera diadakan beberapa kegiatan. Berbagai acara yang akan diadakan mencerminkan ketangguhan pemuda Indonesia dalam menghadapi tantangan zaman. Datang dan juga jadikanlah sejarah dengan mengunjungi Gedung Pemuda pada:</em><br />\r\n<br />\r\n<em>hari &nbsp; &nbsp; &nbsp; &nbsp;: Kamis</em><br />\r\n<em>tanggal &nbsp; : 24 Oktober 2007</em><br />\r\n<em>waktu &nbsp; &nbsp; &nbsp;: pukul 08.00 s.d. selesai</em><br />\r\n<em>tempat &nbsp; &nbsp; : Jl. Pemuda.</em><br />\r\n<br />\r\n<em>Untuk menumbuhkan rasa cinta tanah air dan juga mengingat pentingnya acara tersebut ajaklah bersama generasi muda di sekolah kamu.</em></p>\r\n\r\n<p><em>Hormat kami,</em></p>\r\n\r\n<p><em><strong>Panitia Peringatan Sumpah Pemuda</strong></em></p>',1,'2021-07-31 01:34:16'),
-(5,'Pengumuman Hari Kebangkitan Nasional','<p><em>Diberitahukan kepada seluruh siswa Kelas VII untuk dapat hadir pada peringatan hari Kebangkitan nasional pada:</em></p>\r\n\r\n<p><em>hari &nbsp; &nbsp; &nbsp;: Rabu</em><br />\r\n<em>tanggal : 23 Mei 2007</em><br />\r\n<em>waktu &nbsp; &nbsp;: pukul 8.00 WIB</em><br />\r\n<em>tempat &nbsp; : Lapangan Timur Sekolah</em></p>\r\n\r\n<p><em>Mengingat pentingnya acara tersebut, semua siswa-siswa diharapkan agar hadir tepat pada waktunya. Terimakasih atas perhatian teman-teman sekalian.</em></p>\r\n\r\n<p><em><strong>Dewan Sekolah</strong></em></p>',1,'2021-07-31 01:42:27');
+INSERT INTO `t_announcement` (`id`, `title`, `description`, `status`, `created_at`) VALUES
+(8, 'TES POTENSI AKADEMIK', '<p>Pelaksanaan Tes Khusus / Tes Potensi Akademik (TPA) Kegiatan PPDB SMK Widya Dirgantara&nbsp;Tahun pelajaran 2021/2022 akan dilaksanakan pada :<br />\r\nHari / Tanggal:<br />\r\n<strong>Senin / 21 Juni 2022&nbsp;(1 hari)</strong><br />\r\nBentuk Soal:<br />\r\n<strong>Pilihan Ganda</strong><br />\r\nJumlah Soal:<br />\r\n<strong>40 Soal</strong><br />\r\nAlokasi waktu:<br />\r\n<strong>45 menit</strong></p>\r\n\r\n<p>Dengan rincian jadwal pembagian sesi sebagai berikut :</p>\r\n\r\n<p><strong>SESI 1 - 08.00 s.d 08.45 WIB</strong></p>\r\n\r\n<p><strong>SESI 2 - 09.00 s.d 09.45 WIB</strong><br />\r\n&nbsp;</p>\r\n\r\n<p>PERHATIAN!!!&nbsp;TES KHUSUS HANYA DILAKSANAKAN DALAM 1 HARI, TIDAK ADA TES KHUSUS SUSULAN</p>', 1, '2021-09-27 09:06:47');
 
-/*Table structure for table `t_exam` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_exam`
+--
 
 CREATE TABLE `t_exam` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL,
   `course_id` int(10) DEFAULT NULL,
   `title` varchar(50) DEFAULT NULL,
   `time_limit` varchar(1000) DEFAULT NULL,
   `question_limit_display` int(10) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
   `date` date DEFAULT NULL,
-  `start_time` time DEFAULT NULL,
-  `end_time` time DEFAULT NULL,
+  `start_time` datetime DEFAULT NULL,
+  `end_time` datetime DEFAULT NULL,
   `status` int(2) DEFAULT 0,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4;
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_exam` */
+--
+-- Dumping data for table `t_exam`
+--
 
-insert  into `t_exam`(`id`,`course_id`,`title`,`time_limit`,`question_limit_display`,`description`,`date`,`start_time`,`end_time`,`status`,`created_at`) values 
-(18,5,'Uji Akademik Calon Siswa','10',10,'Ujian masuk peserta didik baru','2021-07-07','07:00:00','09:00:00',1,'2021-06-28 23:05:37'),
-(19,5,'test akademik gel 2','30',10,'test akademik gel 2','2021-07-14','09:00:00','10:00:00',1,'2021-06-29 00:07:56'),
-(20,6,'UTS','20',100,'Ujian Tengah Semester','2021-07-21','12:30:00','14:00:00',1,'2021-06-29 02:07:37'),
-(21,7,'ujian test','60',20,'test eaxamination','2021-07-31','10:00:00','12:00:00',0,'2021-07-31 00:01:52');
+INSERT INTO `t_exam` (`id`, `course_id`, `title`, `time_limit`, `question_limit_display`, `description`, `date`, `start_time`, `end_time`, `status`, `created_at`) VALUES
+(31, 16, 'Bahasa Indonesia', NULL, NULL, 'Tes Kemampuan Verbal', '2021-10-12', '2021-10-12 12:38:00', '2021-10-12 13:00:00', 1, '2021-10-09 06:05:47'),
+(32, 17, 'Perhitungan', NULL, NULL, 'Variabel', '2021-10-12', '2021-10-12 12:35:00', '2021-10-12 12:40:00', 0, '2021-10-12 05:35:42');
 
-/*Table structure for table `t_exam_answer` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_exam_answer`
+--
 
 CREATE TABLE `t_exam_answer` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL,
   `student_id` int(10) DEFAULT NULL,
   `exam_id` int(10) DEFAULT NULL,
   `question_id` int(10) DEFAULT NULL,
   `exam_answer` varchar(100) DEFAULT NULL,
   `exam_answer_status` int(2) DEFAULT 1,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=150 DEFAULT CHARSET=utf8mb4;
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_exam_answer` */
+--
+-- Dumping data for table `t_exam_answer`
+--
 
-insert  into `t_exam_answer`(`id`,`student_id`,`exam_id`,`question_id`,`exam_answer`,`exam_answer_status`,`created_at`) values 
-(146,30,18,16,'bandung',0,'2021-08-20 00:16:53'),
-(147,30,18,17,'new delhi',0,'2021-08-20 00:16:53'),
-(148,30,18,18,'RAM',0,'2021-08-20 00:16:53'),
-(149,30,18,19,'Ariawan',0,'2021-08-20 00:16:53');
+INSERT INTO `t_exam_answer` (`id`, `student_id`, `exam_id`, `question_id`, `exam_answer`, `exam_answer_status`, `created_at`) VALUES
+(185, 60, 31, 50, 'Nyata', 0, '2021-10-09 06:19:28'),
+(186, 60, 31, 51, 'Ilmu bahasa', 0, '2021-10-09 06:19:28'),
+(187, 60, 31, 52, 'Membelah', 0, '2021-10-09 06:19:28'),
+(188, 60, 31, 53, 'Pembongkaran', 0, '2021-10-09 06:19:28'),
+(189, 60, 31, 54, 'Kacau', 0, '2021-10-09 06:19:28'),
+(190, 60, 31, 55, 'Mustahil', 0, '2021-10-09 06:19:28'),
+(191, 60, 31, 56, 'Tak setuju', 0, '2021-10-09 06:19:28'),
+(192, 60, 31, 57, 'Aposteriori', 0, '2021-10-09 06:19:28'),
+(193, 60, 31, 58, 'Agamis', 0, '2021-10-09 06:19:28'),
+(194, 60, 31, 59, 'Kesempatan', 0, '2021-10-09 06:19:28'),
+(195, 65, 31, 50, 'Nyata', 0, '2021-10-11 23:23:15'),
+(196, 65, 31, 51, 'Bahasa simbol', 0, '2021-10-11 23:23:15'),
+(197, 65, 31, 52, 'Perpecahan', 0, '2021-10-11 23:23:15'),
+(198, 65, 31, 53, 'Pembongkaran', 0, '2021-10-11 23:23:15'),
+(199, 65, 31, 54, 'Kacau', 0, '2021-10-11 23:23:15'),
+(200, 65, 31, 55, 'Mustahil', 0, '2021-10-11 23:23:15'),
+(201, 65, 31, 56, 'Tak setuju', 0, '2021-10-11 23:23:15'),
+(202, 65, 31, 57, 'Proporsi', 0, '2021-10-11 23:23:15'),
+(203, 65, 31, 58, 'Agamis', 0, '2021-10-11 23:23:15'),
+(204, 65, 31, 60, 'Kesempatan', 0, '2021-10-11 23:23:15'),
+(205, 67, 31, 50, 'Nyata', 0, '2021-10-12 05:39:24'),
+(206, 67, 31, 51, 'Bahasa simbol', 0, '2021-10-12 05:39:24'),
+(207, 67, 31, 52, 'Perpecahan', 0, '2021-10-12 05:39:24'),
+(208, 67, 31, 53, 'Pembongkaran', 0, '2021-10-12 05:39:24'),
+(209, 67, 31, 54, 'Kacau', 0, '2021-10-12 05:39:24'),
+(210, 67, 31, 55, 'Masuk akal', 0, '2021-10-12 05:39:24'),
+(211, 67, 31, 56, 'Tak setuju', 0, '2021-10-12 05:39:24'),
+(212, 67, 31, 57, 'Proporsi', 0, '2021-10-12 05:39:24'),
+(213, 67, 31, 58, 'Agamis', 0, '2021-10-12 05:39:24'),
+(214, 67, 31, 61, 'Sejalan', 0, '2021-10-12 05:39:24');
 
-/*Table structure for table `t_exam_attemp` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_exam_attemp`
+--
 
 CREATE TABLE `t_exam_attemp` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL,
   `exam_id` int(10) DEFAULT NULL,
   `student_id` int(10) DEFAULT NULL,
   `score` decimal(10,0) DEFAULT NULL,
   `status` int(2) DEFAULT 0,
-  `date` timestamp NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_exam_attemp` */
+--
+-- Dumping data for table `t_exam_attemp`
+--
 
-insert  into `t_exam_attemp`(`id`,`exam_id`,`student_id`,`score`,`status`,`date`) values 
-(18,18,30,0,1,'2021-08-20 00:16:53');
+INSERT INTO `t_exam_attemp` (`id`, `exam_id`, `student_id`, `score`, `status`, `date`) VALUES
+(30, 31, 60, '20', 0, '2021-10-09 06:19:28'),
+(31, 31, 65, '20', 1, '2021-10-11 23:23:15'),
+(32, 31, 67, '40', 1, '2021-10-12 05:39:24');
 
-/*Table structure for table `t_exam_question` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_exam_question`
+--
 
 CREATE TABLE `t_exam_question` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL,
   `exam_id` int(10) DEFAULT NULL,
   `question` text DEFAULT NULL,
   `opt_1` varchar(255) DEFAULT NULL,
@@ -162,65 +231,61 @@ CREATE TABLE `t_exam_question` (
   `opt_3` varchar(255) DEFAULT NULL,
   `opt_4` varchar(255) DEFAULT NULL,
   `answer` varchar(255) DEFAULT NULL,
-  `status` int(11) DEFAULT 0,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
+  `status` int(11) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_exam_question` */
+--
+-- Dumping data for table `t_exam_question`
+--
 
-insert  into `t_exam_question`(`id`,`exam_id`,`question`,`opt_1`,`opt_2`,`opt_3`,`opt_4`,`answer`,`status`) values 
-(1,13,'siapa presiden pertama RI ?','ir soekarno','bj habibi','soeharto','megawati','ir soekarno',0),
-(2,13,'siapa nama ayah naruto ?','sasuke','kakashi','madara','yondaime','yondaime',0),
-(3,13,'tytyt','o','u','r','t',NULL,0),
-(4,13,'apa nama saya ?','apip','jhon','dalton','doni',NULL,0),
-(5,13,'apa nama saya','jhon','dalton','muri','apip',NULL,0),
-(6,13,'sebutkan nama dari perangkat keras, kecuali :','cpu','ram','keyboard','mouse',NULL,0),
-(7,13,'apa nama lain dari burung ?','aves','omnivora','karnivora','predator',NULL,0),
-(8,13,'siapa presiden kedua indonesia ?','soekarnoo','soeharto','bj habibi','megawati',NULL,0),
-(9,17,'SIAPA NAMA PRESIDEN AMERIKA ?','BARACK OBAMA','DONAL TRUMP','MCMOHAN','THE ROCK',NULL,0),
-(10,17,'SIAPA NAMA DOSEN FIKI UNTUK MATA KULIAH TEKNIK KOMPILASI ?','ZEIN MUHAMMAAD','FUAD MUHAMMAD','NOPI RAMSARI','TEDI HIDAYAT',NULL,0),
-(11,16,'siapa nama presiden amerika ?','barack obama','donal trump','hilary clinton','jhon due',NULL,0),
-(12,16,'siapa nama ibu dia ?','rukimah','solihah','muslihat','cucu',NULL,0),
-(13,16,'apa ibu kota indonesia','bandung','jakarta','surabaya','bekasi',NULL,0),
-(14,16,'nama hero dalam film superman ?','tony startk',NULL,NULL,NULL,NULL,0),
-(15,16,'siapa nama presiden jimbabwe','uhuhuh','hshas','hjhj','lk','lk',0),
-(16,18,'Apa nama ibu kota indonesia ?','jakarta','bandung','surabaya','semarang','jakarta',0),
-(17,18,'Apa nama ibu kota amerika sertikat ?','canada','new york','new delhi','paris','new york',0),
-(18,18,'Berikut salah satu komponen komputer, kecuali :','CPU','Keyboard','RAM','RODA','RODA',0),
-(19,18,'Siapa KA Prodi Fakultas Ilmu Komputer dan Informatika di univaersitas Nurtanio Bandung sekarang ?','Nopi Ramsari','Suharjanto Utomo','Tutwuri Handayani','Ariawan','Suharjanto Utomo',0),
-(20,19,'siapa nama presiden ke 2 indonesia ?','soeharto','soekarno','habibi','jokowi dodo','soeharto',0),
-(21,20,'Apa nama lain dari Co2 ?','Api','Air','Tanah','Angin','Air',0),
-(22,20,'Siapa presiden indonesia pertama ?','Soekarno','Soeharto','megawati','jokowi','Soekarno',0),
-(23,20,'Siapa nama karakter utama pada serial Naruto Shipudden?','Naruto Uzumaki','Hatake Kakashi','Gaara','Sasuke','Naruto Uzumaki',0),
-(24,20,'Dibawah ini contoh makanan yang mengandung protein, kecuali :','Ayam','Wortel','Kalkun','Batu','Ayam',0),
-(25,20,'Apa butir sila ke 3 pada pancasila ?','Ketuhanan yang Maha Esa','Keadilan yang beradab','kemanusiaan yang beradab','Persatuan Indonesia','Persatuan Indonesia',0),
-(26,20,'Berikut bagian komponen dari komputer kecuali :','CPU','Keyboard','RAM','Karpet','Karpet',0),
-(27,20,'Untuk menginstall komputer kita perlu menyiapkan','Sistem Operasi','Kentang','CPU','HARDISK','Sistem Operasi',0),
-(28,20,'Kombinasi pengkabelan straight pada jaringan komputer yang sesuai dengan standart internasional adalah..','White orange – orange - white green – blue - white blue - green – white brown - brown','White orange – orange - white green – green - white blue - blue – white brown - brown','White green – green - white orange – blue - white blue - orange – white brown - brown','White orange – orange - white green - green - white blue - blue – white brown - brown','White orange – orange - white green – blue - white blue - green – white brown - brown',0),
-(29,20,'Skema desain pembangunan sebuah jaringan komputer dikenal dengan istilah','Jaringan tipe','Topologi','Desain Jaringan','Media transmisi','Topologi',0),
-(30,20,'Text perintah yang harus dijalankan untuk melihat apakah kita sudah terhubung ke domain.com adalah dengan menjalankan perintah','install domain.com','ls domain.com','ping domain.com','rm domain.com','ping domain.com',0),
-(31,20,'Berikut adalah kota yang di bom atom di jepang, kecuali :','Hiroshima','Tokyo','Nevada','Washington','Hiroshima',0);
+INSERT INTO `t_exam_question` (`id`, `exam_id`, `question`, `opt_1`, `opt_2`, `opt_3`, `opt_4`, `answer`, `status`) VALUES
+(50, 31, 'Virtual', 'Maya', 'Impian', 'Nyata', 'Virgin', 'Impian', 0),
+(51, 31, 'Semiotika', 'Ilmu tentang tanda', 'Ilmu seni', 'Ilmu bahasa', 'Bahasa simbol', 'Ilmu tentang tanda', 0),
+(52, 31, 'Friksi', 'Membelah', 'Melepaskan', 'Perpecahan', 'Putus Asa', 'Perpecahan', 0),
+(53, 31, 'Renovasi', 'Pemagaran', 'Pemugaran', 'Pembongkaran', 'Peningkatan', 'Pemugaran', 0),
+(54, 31, 'Rancu', 'Canggung', 'Jorok', 'Kacau', 'Tidak wajar', 'Kacau', 0),
+(55, 31, 'Absurd', 'Omong kosong', 'Istilah terkini', 'Mustahil', 'Masuk akal', 'Masuk akal', 0),
+(56, 31, 'Prominen', 'Konsisten', 'Biasa', 'Tak setuju', 'Konsekuen', 'Biasa', 0),
+(57, 31, 'Apriori', 'Unggulan', 'Tidak Istimewa', 'Proporsi', 'Aposteriori', 'Aposteriori', 0),
+(58, 31, 'Utopis', 'Komunis', 'Realistis', 'Agamis', 'Sosialis', 'Realistis', 0),
+(61, 31, 'Paradoks', 'Keseimbangan', 'Sejalan', 'Natural', 'Verbal', 'Sejalan', 0);
 
-/*Table structure for table `t_registration` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_registration`
+--
 
 CREATE TABLE `t_registration` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL,
   `no_pendaftaran` varchar(225) DEFAULT NULL,
   `student_id` int(11) DEFAULT NULL,
   `status` int(10) DEFAULT 0,
-  `date` timestamp NOT NULL DEFAULT current_timestamp(),
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8mb4;
+  `date` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_registration` */
+--
+-- Dumping data for table `t_registration`
+--
 
-insert  into `t_registration`(`id`,`no_pendaftaran`,`student_id`,`status`,`date`) values 
-(46,NULL,47,0,'2021-08-30 01:30:19');
+INSERT INTO `t_registration` (`id`, `no_pendaftaran`, `student_id`, `status`, `date`) VALUES
+(59, 'PPDB-TKJ-2021-1', 60, 1, '2021-10-02 10:04:18'),
+(60, 'PPDB-TBSM-2021-2', 61, 0, '2021-10-11 15:24:46'),
+(61, 'PPDB-TBSM-2021-3', 62, 0, '2021-10-11 15:54:00'),
+(62, 'PPDB-TBSM-2021-4', 63, 0, '2021-10-11 15:54:24'),
+(63, 'PPDB-TBSM-2021-5', 64, 0, '2021-10-11 15:55:31'),
+(64, 'PPDB-TP-2021-6', 65, 1, '2021-10-11 18:19:35'),
+(65, 'PPDB-TKJ-2021-7', 66, 1, '2021-10-11 23:30:22'),
+(66, 'PPDB-TKJ-2021-8', 67, 1, '2021-10-11 23:36:18');
 
-/*Table structure for table `t_student` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `t_student`
+--
 
 CREATE TABLE `t_student` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) NOT NULL,
   `user_id` int(10) DEFAULT NULL,
   `pilihan_jurusan` varchar(255) DEFAULT NULL,
   `nama_lengkap` varchar(225) DEFAULT NULL,
@@ -282,19 +347,25 @@ CREATE TABLE `t_student` (
   `file_kk` varchar(255) DEFAULT NULL,
   `file_kk_path_name` varchar(255) DEFAULT NULL,
   `file_akta` varchar(255) DEFAULT NULL,
-  `file_akta_path_name` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8mb4;
+  `file_akta_path_name` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-/*Data for the table `t_student` */
+--
+-- Dumping data for table `t_student`
+--
 
-insert  into `t_student`(`id`,`user_id`,`pilihan_jurusan`,`nama_lengkap`,`nik_siswa`,`no_kk`,`tempat_lahir`,`tanggal_lahir`,`no_registrasi_akta_lahir`,`anak_ke`,`jumlah_saudara_kandung`,`jenis_kelamin`,`agama`,`email`,`no_telp`,`alamat`,`kode_pos`,`nama_sekolah_asal`,`alamat_sekolah`,`no_induk_siswa_nasional`,`no_peserta_ujian_nasional`,`tahun_ijazah`,`no_seri_ijazah`,`no_seri_skhun`,`nama_ayah`,`nik_ayah`,`tempat_lahir_ayah`,`tanggal_lahir_ayah`,`pendidikan_ayah`,`pekerjaan_ayah`,`penghasilan_ayah`,`nama_ibu`,`nik_ibu`,`tempat_lahir_ibu`,`tanggal_lahir_ibu`,`pendidikan_ibu`,`pekerjaan_ibu`,`penghasilan_ibu`,`alamat_ortu`,`kode_pos_ortu`,`no_telp_ortu`,`nama_wali`,`pekerjaan_wali`,`penghasilan_wali`,`alamat_wali`,`kode_pos_wali`,`hub_dengan_peserta_didik`,`berat_badan`,`tinggi_badan`,`gol_darah`,`riwayat_penyakit`,`jarak_rumah_ke_sekolah`,`transportasi`,`file_ijazah`,`file_ijazah_path_name`,`file_skhun`,`file_skhun_path_name`,`file_surat_kelulusan`,`file_surat_kelulusan_path_name`,`file_kk`,`file_kk_path_name`,`file_akta`,`file_akta_path_name`) values 
-(47,NULL,'Teknik Komputer dan Jaringan','Mulyana Yana','32003666397','44253878','Ciamis','2021-08-24','878324873284',2,3,'L','Islam','mulyana@gmail.com','08991848066','Kp.babakan kidul Rt.07 , Cimahi Tengah',5520112,'MAN Salopa','Tasikamlaya','55203462','4567-67KU5678-678','2012','74873284','23213213','jajang','337827388','Tasikmalaya','2021-08-27','D3','Buruh','> 2.000.000','Dhlis','324567234567','bandung','2021-08-31','S2','Lainnya','1.000.000 - 2.000.000','tasikmalaya cimais',73638,'89809809','wali','POLRI','1.000.000 - 2.000.000','bandung','32423','anak haram',34,175,'AB','diare','1 - 3 Km','Mobil Pribadi','Kartu Vaksin NURAPIP.pdf',NULL,'Kartu Vaksin NURAPIP.pdf',NULL,'KARTU KENDALI PELAYANAN VAKSINASI COVID.pdf',NULL,'KARTU KENDALI PELAYANAN VAKSINASI COVID.pdf',NULL,'Kartu Vaksin NURAPIP.pdf',NULL);
+INSERT INTO `t_student` (`id`, `user_id`, `pilihan_jurusan`, `nama_lengkap`, `nik_siswa`, `no_kk`, `tempat_lahir`, `tanggal_lahir`, `no_registrasi_akta_lahir`, `anak_ke`, `jumlah_saudara_kandung`, `jenis_kelamin`, `agama`, `email`, `no_telp`, `alamat`, `kode_pos`, `nama_sekolah_asal`, `alamat_sekolah`, `no_induk_siswa_nasional`, `no_peserta_ujian_nasional`, `tahun_ijazah`, `no_seri_ijazah`, `no_seri_skhun`, `nama_ayah`, `nik_ayah`, `tempat_lahir_ayah`, `tanggal_lahir_ayah`, `pendidikan_ayah`, `pekerjaan_ayah`, `penghasilan_ayah`, `nama_ibu`, `nik_ibu`, `tempat_lahir_ibu`, `tanggal_lahir_ibu`, `pendidikan_ibu`, `pekerjaan_ibu`, `penghasilan_ibu`, `alamat_ortu`, `kode_pos_ortu`, `no_telp_ortu`, `nama_wali`, `pekerjaan_wali`, `penghasilan_wali`, `alamat_wali`, `kode_pos_wali`, `hub_dengan_peserta_didik`, `berat_badan`, `tinggi_badan`, `gol_darah`, `riwayat_penyakit`, `jarak_rumah_ke_sekolah`, `transportasi`, `file_ijazah`, `file_ijazah_path_name`, `file_skhun`, `file_skhun_path_name`, `file_surat_kelulusan`, `file_surat_kelulusan_path_name`, `file_kk`, `file_kk_path_name`, `file_akta`, `file_akta_path_name`) VALUES
+(65, NULL, 'Teknik Pemesinan', 'Handayani', '3207090506930003', '3207010501930001', 'Ciamis', '2021-10-11', '3714-LE-28112012-021', 1, 3, 'P', 'Islam', 'emul8871@gmail.com', '089173746815', 'Jln. Wastu No. 12 RT01/RW01 Dusun Babakan Kecamatan Panjalu Kabupaten Ciamis', 46255, 'SMP N 1 Kawali', 'Jln Veteran No.12 RT04/RW04 Dusun Kawali Kecamatan Kawali Kabupaten Ciamis', '9205218337', '3-43-03-28-305-821-4', '2018', 'DN-07 Mk/12 0019425', 'DN-01 M 0525216', 'Lukman Nurhakim', '3042161536320026', 'Tasimalaya', '1975-12-29', 'S1', 'POLRI', '> 2.000.000', 'Nisa Siti', '3045471303890007', 'Ciamis', '1980-01-30', 'S1', 'Guru', '1.000.000 - 2.000.000', 'Jln Lingga Kencana No.78  RT05/RW10 Dusun Cisaga Kecamatan Cisaga Kabupaten Ciamis', 46254, '082368060761', 'Tuti Wartati', 'Buruh', '500.000 - 1.000.000', 'Jln Provinsi No.2 RT09/RW10 Kelurahan Cipaku Kecamatan Desa Wetan Kota Banjar', '46253', 'Kakak Kandung', '70', '180', 'A', 'Jantung', '1 - 3 Km', 'Motor', 'Ijazah Handayani.jpg', NULL, 'SKHUN Handayani.jpg', NULL, 'Surat Lulus Handayani.jpg', NULL, 'KK Handayani.jpg', NULL, 'Akta Handayani.jpeg', NULL),
+(67, NULL, 'Teknik Komputer dan Jaringan', 'Yana Mulyana', '3207090506930002', '3207090506930009', 'Ciamis', '1998-01-07', '3578-LU-28112012-0018', 2, NULL, 'L', 'Islam', 'mulyanasmkwd@gmail.com', '089668060761', 'Jln. Lingga Kencana No. 48 RT02/RW08 Dusun Banjarwaru Kecamatan Kawali Kabupaten Ciamis', 46253, 'MTs Gereba', NULL, '9985057235', '4-17-02-14-104-195-6', '2017', 'DN-02 Mk/13 0056716', 'DN-02 M 0146308', 'Pirman', '3028140907250001', 'Ciamis', '1976-03-24', 'SMA / Sederajat', 'Wiraswasta', '500.000 - 1.000.000', 'Cicoh', '3025471305890005', 'Ciamis', '1980-04-21', 'SMA / Sederajat', 'Buruh', '500.000 - 1.000.000', 'Jln Lingga Kencana No.52 RT02/RW08 Dusun Banjarwaru Kecamatan Kawali', 46253, '089668060761', 'Ade Tatang', 'Guru', '1.000.000 - 2.000.000', 'Jln Lingga Kencana No.52 RT02 RW08 Dusun Banjarwaru Kecamatan Kawali Kabupaten', '46253', 'Kakak Kandung', '56', '175', NULL, 'Tidak Ada', '1 - 3 Km', 'Motor', 'Ijazah Yana.jpg', NULL, 'SKHUN Yana.jpg', NULL, 'SKHUN Yana.jpg', NULL, 'KK Yana.jpg', NULL, 'Akta Yana.jpeg', NULL);
 
-/*Table structure for table `users` */
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
 
 CREATE TABLE `users` (
-  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `id` bigint(20) UNSIGNED NOT NULL,
   `student_id` int(10) DEFAULT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -304,17 +375,167 @@ CREATE TABLE `users` (
   `role_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp(),
-  `is_active` int(2) DEFAULT 0,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `users_email_unique` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+  `is_active` int(2) DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-/*Data for the table `users` */
+--
+-- Dumping data for table `users`
+--
 
-insert  into `users`(`id`,`student_id`,`name`,`email`,`email_verified_at`,`password`,`remember_token`,`role_name`,`created_at`,`updated_at`,`is_active`) values 
-(1,NULL,'admin','admin@admin.com',NULL,'$2y$10$uAA/DJxTI0S5s46nzAXOROap5j1jFE4vs9OiCyqKUpPdDpn8.9xze',NULL,'admin','2021-06-24 12:06:04','2021-06-24 12:06:04',1),
-(18,30,'Nurapip','noor.avipp11@gmail.com',NULL,'$2y$10$SqBmxwNUt4r0SyuGXQwr/uDBoJqZHFUp6Wgj2YqdrpeuOnf4bk3bm',NULL,'siswa','2021-08-13 20:58:01','2021-08-13 20:58:01',0);
+INSERT INTO `users` (`id`, `student_id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `role_name`, `created_at`, `updated_at`, `is_active`) VALUES
+(1, NULL, 'admin', 'admin@admin.com', NULL, '$2y$10$uAA/DJxTI0S5s46nzAXOROap5j1jFE4vs9OiCyqKUpPdDpn8.9xze', NULL, 'admin', '2021-06-24 05:06:04', '2021-06-24 05:06:04', 1),
+(31, 65, 'Handayani', 'emul8871@gmail.com', NULL, '$2y$10$gQ7b6P4HPgjY1KgM7rVfWe9ziVrv./e/t4DMKSpeo0Rkvo6v7vcUq', NULL, 'siswa', '2021-10-11 16:16:06', '2021-10-11 16:16:06', 0),
+(33, 67, 'Yana Mulyana', 'mulyanasmkwd@gmail.com', NULL, '$2y$10$Y0.G1KSB1AzPzfyV/8Arouh0oxMT1zViCrPRcb2HM4Vv7a5jampC6', NULL, 'siswa', '2021-10-11 22:29:41', '2021-10-11 22:29:41', 0);
 
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `failed_jobs_uuid_unique` (`uuid`);
+
+--
+-- Indexes for table `migrations`
+--
+ALTER TABLE `migrations`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `m_course`
+--
+ALTER TABLE `m_course`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `password_resets`
+--
+ALTER TABLE `password_resets`
+  ADD KEY `password_resets_email_index` (`email`);
+
+--
+-- Indexes for table `t_announcement`
+--
+ALTER TABLE `t_announcement`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_exam`
+--
+ALTER TABLE `t_exam`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_exam_answer`
+--
+ALTER TABLE `t_exam_answer`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_exam_attemp`
+--
+ALTER TABLE `t_exam_attemp`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_exam_question`
+--
+ALTER TABLE `t_exam_question`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_registration`
+--
+ALTER TABLE `t_registration`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `t_student`
+--
+ALTER TABLE `t_student`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `users_email_unique` (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `failed_jobs`
+--
+ALTER TABLE `failed_jobs`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `migrations`
+--
+ALTER TABLE `migrations`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `m_course`
+--
+ALTER TABLE `m_course`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
+-- AUTO_INCREMENT for table `t_announcement`
+--
+ALTER TABLE `t_announcement`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `t_exam`
+--
+ALTER TABLE `t_exam`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `t_exam_answer`
+--
+ALTER TABLE `t_exam_answer`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=215;
+
+--
+-- AUTO_INCREMENT for table `t_exam_attemp`
+--
+ALTER TABLE `t_exam_attemp`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+
+--
+-- AUTO_INCREMENT for table `t_exam_question`
+--
+ALTER TABLE `t_exam_question`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+
+--
+-- AUTO_INCREMENT for table `t_registration`
+--
+ALTER TABLE `t_registration`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+
+--
+-- AUTO_INCREMENT for table `t_student`
+--
+ALTER TABLE `t_student`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

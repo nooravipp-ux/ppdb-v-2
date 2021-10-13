@@ -97,21 +97,16 @@
         $('#pendaftaran').DataTable({
             dom: 'Bfrtip',
             buttons: [
-                // {
-                //     extend: 'print',
-                //     // autoPrint: false,
-                //     exportOptions: {
-                //         columns: ':visible'
-                //     }
-                // },
                 {
                     extend: 'excelHtml5',
+                    text : 'Export Excel',
                     exportOptions: {
                         columns: ':visible'
                     }
                 },
                 {
                     extend: 'pdfHtml5',
+                    text : 'Export PDF',
                     exportOptions: {
                         columns: ':visible'
                     }

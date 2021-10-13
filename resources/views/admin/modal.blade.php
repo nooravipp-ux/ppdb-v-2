@@ -87,7 +87,7 @@
                             </select>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label>Waktu Ujian</label>
                             <select class="form-control" name="timeLimit" required="">
                                 <option value="0">- Pilih Waktu Ujian/Tes -</option>
@@ -95,7 +95,7 @@
                                 <option value="60">60 Menit</option>
                                 <option value="90">90 Menit</option>
                             </select>
-                        </div>
+                        </div> --}}
                         <div class="form-group">
                             <label>Tanggal Ujian</label>
                             <input type="date" class="form-control" name="date" required="">
