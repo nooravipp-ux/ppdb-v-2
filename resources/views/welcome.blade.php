@@ -370,7 +370,7 @@
 
                 <div class="row">
                     <div class="col-6">
-                        <h3 class="mb-3">TESTIMONI ALUMNI</h3>
+                        <h3 class="mb-3">TESTIMONI LULUSAN</h3>
                         
                     </div>
                     <div class="col-6" style="text-align:right!important;">
