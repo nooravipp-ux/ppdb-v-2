@@ -20,12 +20,6 @@
                 </div>
             </div>
         </div>
-        {{-- <div class="page-title-actions">
-            <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Cari Nama" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cari</button>
-              </form>
-        </div> --}}
     </div>
 </div>
 
@@ -34,9 +28,6 @@
         <div class="main-card mb-3 card">
             <div class="card-header">
                 NILAI UJIAN
-                {{-- <div class=" pr-3 btn-actions-pane-right">
-                    <a href="" class=" btn btn-info">Cetak Hasil Ujian</a>
-                </div> --}}
             </div>
             <br>
             <div class="table-responsive container ">
@@ -108,11 +99,7 @@
                     text: 'Export PDF',
                     exportOptions: {
                         columns: ':visible',
-                    },
-                    customize : function(doc) {
-                        doc.content[1].table.widths = [ '10%', '20%', '20%', '15%', '15%', '20%'];
                     }
-                    
                 },     
                 'colvis'
             ]

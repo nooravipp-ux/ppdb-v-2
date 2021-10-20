@@ -363,16 +363,6 @@
                                     autocomplete="off">
                             </div>
                         </div>
-                        {{-- <div class="col-sm-6">
-                            <div class="form-group">
-                                <label>Status</label>
-                                <select name="status_testimoni" id="status_testimoni" class="form-control">
-                                    <option value="">-</option>
-                                    <option value="1">Tampilkan</option>
-                                    <option value="0">Tidak Tampilkan</option>
-                                </select>
-                            </div>
-                        </div> --}}
                     </div>
                     <div class="row">
                         <div class="col-sm-12">

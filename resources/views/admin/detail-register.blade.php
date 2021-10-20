@@ -138,12 +138,6 @@
                     Cetak Bukti Pendaftaran
                 </a>
                 @endif
-
-                {{-- <a href="{{route('confirm.id', ['id' => $register->id])}}" class="btn btn-success btn-sm">Confirm</a> --}}
-
-                {{-- <button type="button" class="btn btn-info ml-1">
-                        Hapus
-                    </button> --}}
             </div>
             <hr>
 

@@ -30,7 +30,6 @@
                             <th class="" width="15%">Nama</th>
                             <th class="">Testimoni</th>
                             <th class=" "width="10%">Lulusan</th>
-                            {{-- <th class="text-center ">Status</th> --}}
                             <th class="text-center" width="10%">Aksi</th>
                         </tr>
                     </thead>
@@ -40,7 +39,6 @@
                             <td class="text-left pl-4">{{$data->nama}}</td>
                             <td><?php echo html_entity_decode($data->testimoni); ?></td>
                             <td><?php echo html_entity_decode($data->lulusan); ?></td>
-                            {{-- <td class="text-center">{{($data->status == 1)? "Ditampilkan" : "Tidak Ditampilkan"}}</td> --}}
                             <td class=" text-center">
                                 <a href="" class="btn btn-warning"> Edit</a>
                                 <form method="POST" action="{{route('delete-testimoni')}}">

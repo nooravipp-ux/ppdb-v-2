@@ -371,6 +371,7 @@
                 <div class="row">
                     <div class="col-6">
                         <h3 class="mb-3">TESTIMONI ALUMNI</h3>
+                        
                     </div>
                     <div class="col-6" style="text-align:right!important;">
                         <a class="btn mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev"
